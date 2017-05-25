@@ -2,6 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
-
+main-content{
+  width: 1400px;
+  height: 700px;
+}
 /* Any custom CSS (or Sass, including imports) go here, immediately after the @import line */
 /* This is explained @ https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/ */
