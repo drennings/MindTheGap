@@ -1,22 +1,34 @@
----
-layout: default
-title: Mind the Gap
----
+--- layout: default title: Mind the Gap ---
 
 <head>
-    <meta charset="utf-8">
-    <title>Mind the Gap</title>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="css/skill.css"/> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	<meta charset="utf-8">
+	<title>Mind the Gap</title>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/skill.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+
 <body>
-	<div class="one-liner">
+	<div class="row">
+		<div class="col-sm-8" style="margin-left: 20px;">
 		<h1>So you want to do GSE?</h1>
-		<p>Well there are <a href="">some difficulties</a> to that, but we are here to show you the tools that can help you manage these difficulties.</p>
+			Are you part of a globally distributed software engineering project? Or trying to learn how to manage one? Or maybe you didn’t even start such a project, 
+			but are looking to engage in one and want to know how to deal with the challenges of a globally distributed software engineering project. Then you came to 
+			the right place! More and more companies are using globally distributed software engineering as a tool for their software development process. On this website,
+			we speak of Globally distributed software engineering as a contractual relationship between a client and vendor organization, where the client organization 
+			outsources parts of its development process. There are a number of advantages of globally distributed software engineering which are stated in 
+			<a href="http://www.brian-fitzgerald.com/wp-content/uploads/2014/01/icsp08-final-draft.pdf">this paper</a>. This website will focus mainly on the solutions of the disadvantages, which is why this website is setup by a group of students from 
+			the Technical University of Delft. We are trying to propose valuable solutions to four core challenges which pose serious risks to the smooth execution 
+			of a globally distributed software engineering project. These four core challenges are communication, coordination, cultural differences and team bonding. 
+			In the next section a “skillmap” is defined for these four challenges. Per challenge a number of sub challenges are defined and per sub challenge solutions 
+			are proposed. These can be accessed by hovering your mouse through the “skillmap”.  
+
+		
+		</div>
 	</div>
-	  
-    	<div id="skills">
+
+	<div id="skills">
 		<div id="skillmap">
 			<div class="skills-wrapper">
 				<div class="skills-sunburst"></div>
@@ -25,23 +37,77 @@ title: Mind the Gap
 				</div>
 			</div>
 		</div>
-    	</div>
-    
+	</div>
+
+	<!doctype html>
+
+	<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+		<title>Tests</title>
+		<script src="../bower_components/web-component-tester/browser.js"></script>
+	</head>
+
+	<body>
+		<script>
+			WCT.loadSuites([
+				'weave-friday test suite.html?dom=shadow',
+				'weave-friday test suite.html?wc-shadydom=true',
+			]);
+		</script>
+	</body>
+
+	</html>
+
+	<test-fixture id="WeaveFridayTestElement">
+		<template>
+			<weave-friday></weave-friday>
+		</template>
+	</test-fixture>
+	<script>
+		suite('weave friday tests', function () {
+
+			var weaveFriday;
+			setup(function () {
+				weaveFriday = fixture("WeaveFridayTestElement");
+			});
+
+			test('Weave friday test the important stuff', function () {
+				assert.isTrue(weaveFriday.$.stefan.orderedEveryoneABeer());
+			});
+		});
+
+
+		server = sinon.fakeServer.create();
+		server.respondWith(
+			'GET',
+			/\/responds_to_get_with_json.*/, [
+				200,
+				responseHeaders.json,
+				'{"success":true}'
+			]
+		);
+
+		
+	</script>
+
 	<div class="difficulties">
 		<h1>Four main difficulties in GSE</h1>
 		<p>TODO</p>
 	</div>
-	
+
 	<div class="communication">
 		<h1>Tools for communication</h1>
 		<p>TODO</p>
 	</div>
-	
+
 	<div class="coordination">
 		<h1>Tools for coordination</h1>
 		<p>TODO</p>
 	</div>
-	
+
 	<div class="cultural">
 		<h1>Tools for cultural differences</h1>
 		<p>TODO</p>
@@ -51,16 +117,12 @@ title: Mind the Gap
 		<h1>Tools for team bonding</h1>
 		<p>TODO</p>
 	</div>
-	
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="skillsdata.js"></script>
 	<script type="text/javascript" src="skill.js"></script>
 	<script type="text/javascript">
-      
-	// Hack to make this example display correctly in an iframe on bl.ocks.org
+		// Hack to make this example display correctly in an iframe on bl.ocks.org
       	//d3.select(self.frameElement).style("height", "700px");
-  	</script> 
+	</script>
 </body>
-
-
-
