@@ -39,60 +39,6 @@
 		</div>
 	</div>
 
-	<!doctype html>
-
-	<html lang="en">
-
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-		<title>Tests</title>
-		<script src="../bower_components/web-component-tester/browser.js"></script>
-	</head>
-
-	<body>
-		<script>
-			WCT.loadSuites([
-				'weave-friday test suite.html?dom=shadow',
-				'weave-friday test suite.html?wc-shadydom=true',
-			]);
-		</script>
-	</body>
-
-	</html>
-
-	<test-fixture id="WeaveFridayTestElement">
-		<template>
-			<weave-friday></weave-friday>
-		</template>
-	</test-fixture>
-	<script>
-		suite('weave friday tests', function () {
-
-			var weaveFriday;
-			setup(function () {
-				weaveFriday = fixture("WeaveFridayTestElement");
-			});
-
-			test('Weave friday test the important stuff', function () {
-				assert.isTrue(weaveFriday.$.stefan.orderedEveryoneABeer());
-			});
-		});
-
-
-		server = sinon.fakeServer.create();
-		server.respondWith(
-			'GET',
-			/\/responds_to_get_with_json.*/, [
-				200,
-				responseHeaders.json,
-				'{"success":true}'
-			]
-		);
-
-		
-	</script>
-
 	<div class="difficulties">
 		<h1>Four main difficulties in GSE</h1>
 		<p>TODO</p>
