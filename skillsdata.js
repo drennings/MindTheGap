@@ -2,7 +2,7 @@ var skillsdata;
 
 skillsdata = {
   "Skills": {
-    "Server & WinForm": {
+    "Coordination": {
       "Protocol": {
         "Propose": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
         "USSD": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 60, 50, 40, 30],
@@ -26,7 +26,7 @@ skillsdata = {
         "Face recognition": [0, 0, 0, 0, 0, 0, 0, 10, 40, 70, 60, 50, 40, 40, 40]
       }
     },
-    "Web Development": {
+    "Communication": {
       "Server Side": {
         "Active Page": {
           "ASP": [0, 0, 10, 30, 60, 60, 40, 20, 20, 20, 20, 20, 20, 20, 20],
@@ -72,7 +72,7 @@ skillsdata = {
         }
       }
     },
-    "Language": {
+    "Cultural": {
       "Dotnet": {
         "C#": [0, 0, 0, 0, 0, 0, 20, 50, 70, 80, 90, 95, 95, 95, 95],
         "Xaml": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 50],
@@ -101,7 +101,7 @@ skillsdata = {
         "IEC61131": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 40]
       }
     },
-    "Other": {
+    "Team bonding": {
       "HW&FW": {
         "Protues": [0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 25, 20, 20, 25],
         "Keil": [0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 25, 20, 20, 25],
