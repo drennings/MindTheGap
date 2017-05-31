@@ -3,91 +3,126 @@ layout: default
 title: Mind the Gap 
 ---
 
+
 <head>
 	<meta charset="utf-8">
 	<title>Mind the Gap</title>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/skill.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 
 <body>
-	<div class="intro">
-		``Global software development is not a phenomenon but a reality nowadays.'' (http://www.lu.lv/materiali/apgads/raksti/733_pp_9-23.pdf)  
+	<div class="intro text-div">
+		"Global software development is not a phenomenon but a reality nowadays" <a href="http://www.lu.lv/materiali/apgads/raksti/733_pp_9-23.pdf">[1]</a>.  
         Hence, more and more companies are using (or at least considering) distributed software engineering as a means to develop software. 
-        On this website, we speak of (globally) distributed software engineering as a contractual relationship between a client
+        On this website, we speak of global(ly distributed) software engineering (G(D)SE) as a contractual relationship between a client
 		and vendor organization, where the client organization outsources parts of its development process. There are a number
-		of advantages of this approach to software development which are stated in
-		<a href="http://www.brian-fitzgerald.com/wp-content/uploads/2014/01/icsp08-final-draft.pdf">this paper</a>
-		<!-- TODO: Wim add such as .... -->. However, these advantages do not come without drawbacks. On this website we discuss these advantages and serve the reader with solutions in the form of technology. 
-        We propose valuable solutions to the four core challenges
-		which pose serious risks to the smooth execution of a distributed software engineering project. These four core
-		challenges are communication, coordination, cultural differences and team bonding. 
+		of advantages to this approach of developing software, such as cost savings, reduced time to market and proximity to the market and customer <a href="http://www.brian-fitzgerald.com/wp-content/uploads/2014/01/icsp08-final-draft.pdf">[2]</a>.
+		Unfortunately, these advantages do not come without drawbacks that are the result of a gap between developers. A renowned study in the area of GDSE identifies this gap alongside four directions: communication, coordination, cultural differences and team bonding.
+        In the following we discuss these categories and divide them in subcategories which pose serious risks to the smooth execution of a distributed software engineering project. Per subcategory we serve the reader with solutions that make developers happy, namely: technology. 
+        Shortley said, we propose a collection of tools to actively mind the gap in your distributed software project.
+        <br />
+        Talking about tools, we created the following tool for you to explore solutions to challenges in GSE. 
+        If you want, you can read all of our suggestions in a linear manner by scrolling down. 
+        But if you are in a hurry, you can hover over the core categories, subcategories and tools to get a feeling of their meaning. 
+        Clicking on them, will actually send you right away to the details.
         
-        In the next section a “skillmap” is
-		defined for these four challenges. Per challenge a number of sub challenges are defined and per sub challenge solutions
-		are proposed. These can be accessed by hovering your mouse through the “skillmap”.
-		<!-- typo: Delft University of Technology, references los -->
-		<!-- Reference naar four challenges paper -->
-		<!-- sunburst diagram -->
+        <h2>References:</h2>
+        1. http://www.lu.lv/materiali/apgads/raksti/733_pp_9-23.pdf <br />
+        2. http://www.brian-fitzgerald.com/wp-content/uploads/2014/01/icsp08-final-draft.pdf
 	</div>
+	<hr/>
+	<div id="skillmap">
+		<div class="skills-wrapper">
+			<div class="skills-sunburst"></div>
 
-	<div id="skills">
-		<div id="skillmap">
-			<div class="skills-wrapper">
-				<div class="skills-sunburst"></div>
-				<div class="skills-chart">
-					<div id="skills-chart-breadcrumb"></div>
+			<div class="container">
+				<div id="skills-chart-breadcrumb"></div>
+				<a id="titlelink" href="">
+					<h1 id="title"></h1>
+				</a>
+				<div id="smalltext">
+
 				</div>
+
 			</div>
 		</div>
 	</div>
-
-	<div class="difficulties">
+	<hr/>
+	<div class="difficulties text-div">
 		<h1>Four main difficulties in GSE</h1>
 		<p>TODO</p>
 	</div>
-
-	<div class="communication">
+	<hr/>
+	<div class="communication text-div">
 		<h1>Tools for communication</h1>
 		In this section we will primarily discuss the mentioned tools communication-wise. Communication is key in software engineering,
-		but with globally distributed engineering, communication is harder to maintain. ... describes that a gap between two people
-		<!-- TODO ... -->
-		over 50 meter, drastically reduces the chance to meet up and talk. However there are a lot of tools nowadays that can help
-		increase communication again which is beneficial for productivity. We divide communication tools into three subcategories,
-		which are all important to closing the virtual gap between multiple software teams. The three sub categories are:
+		but with globally distributed engineering, communication is harder to maintain. Thomas Allen invented 'The Allen Curve'
+		in the seventies, the curve describes that a gap between two people over 50 meter drastically reduces the chance of unplanned
+		communicaton. However there are a lot of tools nowadays that can help increase communication again which is beneficial
+		for productivity. We divide communication tools into three subcategories, which are all important to closing the virtual
+		gap between multiple software teams. The three sub categories are:
 		<ul>
-			<li>Share tools
-				<!-- TODO: change this name into something fancier -->
-			</li>
+			<li>Share tools</li>
 			<li>Task and reporting tools</li>
 			<li>Free talk</li>
 		</ul>
 
+		<!--                        Tools For Communication
+-Fix font size
+-Subintros for Sharing is caring, ..., ...
+-Change text
+
+Per tool
+-Image of tool logo
+-Minitexts about each tool for in hovering figure
+-URL naar guide how to use it, URL hier kan je hem krijgen (kan dezelfde zijn)
+-Probeer getallen, hoe vaak gebruikt, hoeveel gedownload, ...-->
 		<div id="share">
-			<h2>Sharing is caring</h2>
+			<h2>Sharing</h2>
+			Communication in teams can happen for several reasons, one of them is sharing code, designs and/or concepts. There are many
+			tools that benefit communication and workflow, in this section a few are named that stand out. All these tools can help
+			close the distance gap virtually to increase unplanned communication.
 
-			<h3>ConceptShare</h3>
-			<p>
-				ConceptShare is a communication tool especially designed for creative types. It helps you streamline the review and approval
-				process for any project, and it allows for online proofing with workflow automation, which means you can work with clients
-				from one place without having to send a hundred emails back and forth.
-			</p>
+			<h3 id="conceptshare">ConceptShare</h3>
+			ConceptShare is a communication tool especially designed for creative types. It helps you streamline the review and approval
+			process for any project, and it allows for online proofing with workflow automation, which means you can work with clients
+			from one place without having to send a hundred emails back and forth.
+			<br/> <br/> ConceptShare can work well in global software engineering for multiple reasons. Mostly because while the design
+			process is ongoing and new requirements are still being introduced, a lot of communication is needed. In this process,
+			sharing designs, documents and creating a steady workflow are of great benefit. Because ConceptShare makes you interact
+			in an efficient way and needs updates when the product changes, interactions will happen in a more steady basis.
+			<br/> <br/>
+			<a href="https://www.conceptshare.com/" target="_blank">Try out ConceptShare</a>
+			<br/>
+			<img src="https://static1.squarespace.com/static/55633148e4b0c18afa44ec31/t/56dde9292eeb81e1bfd12dba/1457383739221/SNAP.png?format=500w">
 
-			<h3>InVision</h3>
-			<p>
-				InVision is web-based (and mobile) app that lets designers/developers turn their work into active prototypes with animations.
-				Clients can provide feedback and comments directly on the site and track progress in real-time by looking at your to-do
-				list.
-			</p>
+			<h3 id="invision">InVision</h3>
+			InVision is a web-based (and mobile) app that lets designers/developers turn their work into active prototypes with animations.
+			Clients can provide feedback and comments directly on the site and track progress in real-time by looking at your to-do
+			list.
+			<br/><br/> InVision can help in global system engineering in the design phase. InVision lets designers off-shore create
+			a full app in a mock-up way where you can click through the app. Via todo's that you can immediately add when clicking
+			through you can communicate in an efficient way.
+			<br/><br/>
+			<a href="https://www.invisionapp.com/" target="_blank">Try out InVision</a>
+			<br/>
+			<img src="https://www.invisionapp.com/assets/img/home/animations/new/mockup-5.png" height="100%">
 
-			<h3>Screen Hero</h3>
-			<p> This screen sharing software works well with Slack (who recently bought by them). Screen Hero allows members of the team
-				to share their screen in real time, and to allow multiple cursors so you can actually pair program on someone else’s
-				machine.
-			</p>
+
+			<h3 id="screenhero">Screen Hero</h3>
+			Screen hero is screen sharing software, it works well in combination with Slack. Screen Hero allows members of the team to
+			share their screen in real time, and to allow multiple cursors so you can actually pair program on someone else’s machine.
+			<br/><br/> With Screen Hero you can actually combine the power of inhouse programmers with off-shore programmers. Pair
+			programming is made much easier with Screen Hero and problem can be solved much faster when inhouse programmers can help,
+			or the other way around.
+			<br/><br/>
+			<a href="https://www.screenhero.com/" target="_blank">Try out ScreenHero</a>
+			<br/>
+			<img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/06/146651093402-screenhero.jpg">
 		</div>
-
 		<div id="tasks">
 			<h2>Task and reporting</h2>
 			<h3>Basecamp</h3>
@@ -103,7 +138,7 @@ title: Mind the Gap
 				being micromanaged (or needing to micromanage), Trello is the perfect solution. It also has the bonus of adding a visual
 				element to otherwise technical projects.
 			</p>
-			<h3>Asana</h3>
+			<h3 id="asana">Asana</h3>
 			<p>
 				Asana is a free project management tool designed to help teams track projects from start to finish. One of its best features
 				is that it lets you see the overall progress of your project step by step, so your clients know exactly how long something
@@ -127,10 +162,9 @@ title: Mind the Gap
 				or on multiple projects with a single client at once.
 			</p>
 		</div>
-		<p>TODO</p>
 	</div>
-
-	<div class="coordination">
+	<hr/>
+	<div class="coordination text-div">
 		<h1>Tools for Coordination</h1>
 			Coordination in software development teams can be divided into the following categories:
 			<ul>
@@ -213,8 +247,9 @@ title: Mind the Gap
 			notifies the teams of any potential conflicts.
 
 	</div>
+	<hr/>
 
-	<div class="cultural">
+	<div class="cultural text-div">
 		<h1>Tools for cultural differences</h1>
 		<p>
 			A problem that causes a gap between members of a global distributed software engineering project is culture. Using global
@@ -224,57 +259,90 @@ title: Mind the Gap
 			<h2>Managing:</h2>
 			Managing a culture diverse team is different from managing a team consisting of members with the same cultural background.
 			To help manage a multi-cultural team there are three different aspects that can help according to 1:
-			<h3>Systems to harmonize between outsourcer and supplier</h3>
-			The first point can be done by using technology and coordination/control systems so members of the team can be kept up to
-			date of the process of the project. For example using agile and scrum to manage the process of the project with tools
-			like jira or github in order to keep track of issues.
-			<h3>Understand differences in norms and values</h3>
-			The second point is about defining the hierarchy/power between the members and the companies. State how different people
-			practice business differently and define which aspects should be included in the project and which not.
-			<h3>Encourage 'negotiated culture' of cross-cultural teams developing compromise 'working culture'</h3>
-			The last point concerns the exchange of mechanisms between members, so that members can learn from each other and try create
-			custom mechanisms for the current team that works with all the members.
+			<ul>
+				<li><b>Systems to harmonize between outsourcer and supplier</b></li>
+				The first point can be done by using technology and coordination/control systems so members of the team can be kept up to
+				date of the process of the project. Universal tools that is understood by everyone in the field independent of culture can help accomplish that.
+				<li><b>Understand differences in norms and values</b></li>
+				The second point is about defining the hierarchy/power between the members and the companies. State how different people
+				practice business differently and define which aspects should be included in the project and which not.
+				<li><b>Encourage 'negotiated culture' of cross-cultural teams developing compromise 'working culture'</b></li>
+				The last point concerns the exchange of mechanisms between members, so that members can learn from each other and try create
+				custom mechanisms for the current team that works with all the members.
+			</ul>
+
+			<h3 id="globesmart"><a target="_blank" href="http://www.aperianglobal.com/learning-solutions/online-learning-tools/globesmart/">Globesmart</a></h3>
+			GlobeSmart is a tool that helps manage a cultural diverse team. The tool provides information on managening the team and how to do assements.
+
+			<h3 id="git"><a target="_blank" href="https://git-scm.com/">Git</a></h3>
+			Using Git helps with version control and mananging projects, independent of any culture.
+
+			<h3 id="github"><a target="_blank" href="https://github.com/">GitHub</a></h3>
+			GitHub is a version control platform tool, that is a standard in the software engineering industry. Thus this tool can be used to manage files, independent of culture.
+
+			<h3 id="trello"><a target="_blank" href="https://trello.com/">Trello</a></h3>
+			Trello can help provide a general overview of the progress of the project. It can help planning with SCRUM and Agile development.
+
+			<h3 id="jira"><a target="_blank" href="https://www.atlassian.com/software/jira">JIRA</a></h3>
+			JIRA can be used to manage projects in an easy to understand way, independent of any culture.
+
+			<h3 id="slack"><a target="_blank" href="https://slack.com/">Slack</a></h3>
+			In order to communicate for exchanging experience and methods between team members of different cultures, slack can be used. Slack can help with both sending files, using bots, and chat.
+
+			<h3 id="skype"><a target="_blank" href="https://www.skype.com/">Skype</a></h3>
+			Skype can be used to have a direct communication line for team members to exchange methods and experience.
 
 			<h2>Staff:</h2>
 			Choosing the right staff is another important aspect for overcoming cultural differences. 1 defines the following three points
 			related to choosing the right staff:
-			<h3>Recognize limits to cultural adaptation</h3>
-			The first point states that there are limits to adaption of culture. So foreigners cannot become locals and vice versa. Don’t
-			try to change people completely so that only one culture exists in the team.
-			<h3>Use 'cultural bridging' staff</h3>
-			The second point tries to have people in the team that is familiar with both cultures in the team. These people can help
-			bridge the differences between the team members with different cultures.
-			<h3>Use locally-relevant recruitment and retention incentives</h3>
-			The last point is about the different salary and status/expertise acquisition. Make sure that these are according to the
-			standards of the different culture, but are not too different in the team.
+			<ul>
+				<li><b>Recognize limits to cultural adaptation</b></li>
+				The first point states that there are limits to adaption of culture. So foreigners cannot become locals and vice versa. Don’t
+				try to change people completely so that only one culture exists in the team.
+				<li><b>Use 'cultural bridging' staff</b></li>
+				The second point tries to have people in the team that is familiar with both cultures in the team. These people can help
+				bridge the differences between the team members with different cultures.
+				<li><b>Use locally-relevant recruitment and retention incentives</b></li>
+				The last point is about the different salary and status/expertise acquisition. Make sure that these are according to the
+				standards of the different culture, but are not too different in the team.
+			</ul>
+
+			<h3 id="linkedin"><a target="_blank" href="https://www.linkedin.com/">Linkedin</a></h3>
+			Linkedin is a tool that can provide the right staff for the team. It can also be used to search for developers who are multicultural.
 
 			<h2>Training:</h2>
 			The last aspect is training. The team needs to be trained so they learn how to communicate and work together with the different
 			team members. Three aspects can be looked into when considering training 1:
-			<h3>Give pro-posting cultural training for supplier employees working in outsourcer companies (supplier)</h3>
-			The first point is about learning the language and cultural practices, norms and values. This way team members know how different
-			people have different views on various aspects.
-			<h3>Develop systematic on-the-job cross-cultural training</h3>
-			The second point is used to reflect on ongoing experience and share knowledge with colleagues, so that the team members can
-			learn from each other and how they experienced and handle curtain (technical) situations.
-			<h3>Recognize that training needs are two-way (outsourcer)</h3>
-			The third point makes sure that not only the outsourced part of the team is trained, but the local team should be trained
-			to work with different members as well. This way the local team can get familiar with the outsourced team members so they
-			know what drives them and how the best communicate and work together with them.<br>
-			<br> So in order to close the gap between different team members, cultural differences must be dealt with. By looking
-			at managing, staff and training a diverse team can become easy to work with and should be efficient when doing globally
-			distributed software engineering.
+			<ul>
+				<li><b>Give pro-posting cultural training for supplier employees working in outsourcer companies (supplier)</b></li>
+				The first point is about learning the language and cultural practices, norms and values. This way team members know how different
+				people have different views on various aspects.
+				<li><b>Develop systematic on-the-job cross-cultural training</b></li>
+				The second point is used to reflect on ongoing experience and share knowledge with colleagues, so that the team members can
+				learn from each other and how they experienced and handle curtain (technical) situations.
+				<li><b>Recognize that training needs are two-way (outsourcer)</b></li>
+				The third point makes sure that not only the outsourced part of the team is trained, but the local team should be trained
+				to work with different members as well. This way the local team can get familiar with the outsourced team members so they
+				know what drives them and how the best communicate and work together with them.
+			</ul>
+
+			<h3 id="duolingo"><a target="_blank" href="https://duolingo.com">duolingo</a></h3>
+			Duolingo is a tool that can help members of the team to learn languages spoken by other members of the team in an easy and fun way. This can help understand different team members better.
+
+			So in order to close the gap between different team members, cultural differences must be dealt with. By looking at managing, staff and training a diverse team can become easy to work with and should be efficient when doing globally distributed software engineering.
 
 			<h2>References:</h2>
-			1. http://folk.uio.no/sundeeps/publications/KrishnaSahayWalsham.pdf
+			<ol>
+				<li>http://folk.uio.no/sundeeps/publications/KrishnaSahayWalsham.pdf</li>
+			</ol>
 		</p>
 	</div>
-
-	<div class="team">
+	<hr/>
+	<div class="team text-div">
 		<h1>Tools for team bonding</h1>
 		<p>TODO</p>
 	</div>
-
+	<script type="text/javascript" src="masterninja.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="skillsdata.js"></script>
 	<script type="text/javascript" src="skill.js"></script>

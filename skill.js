@@ -15,9 +15,9 @@ function mouseover(data) {
     d3
         .selectAll(".skills-sunburst path")
         .style("opacity", .3), sunburst
-        .selectAll("path")
-        .filter(function (a) { return c.indexOf(a) >= 0 })
-        .style("opacity", 1)
+            .selectAll("path")
+            .filter(function (a) { return c.indexOf(a) >= 0 })
+            .style("opacity", 1)
 }
 function mouseleave() {
     d3
@@ -38,7 +38,7 @@ function initbreadcrumb() {
     d3
         .select("#skills-chart-breadcrumb")
         .append("svg:svg")
-        .attr("width", 500)
+        .attr("width", 620)
         .attr("height", 50)
         .attr("class", "trail")
 }
@@ -54,32 +54,43 @@ function h(a, d3) {
 }
 function i(a) {
     a[a.length - 1]._color, a.length;
+    
     var c = d3
         .select("#skills-chart-breadcrumb .trail")
         .selectAll("g")
         .remove();
+
+
     c = d3
         .select("#skills-chart-breadcrumb .trail")
         .selectAll("g")
         .data(a, function (a) { return a.key + a.depth });
+        var test = a.length * 200 + 20;
+        c[0].parentNode.setAttribute("width", test+"px");
+        if(test < 600){
+            test = 600;
+        }
+        $("#smalltext")[0].style.width =  test+"px";
+        
     var d = c.enter().append("svg:g");
     d
         .append("svg:polygon")
         .attr("points", h)
-        .style("fill", function (a) { return a._color }), 
-    d
-        .append("svg:text")
-        .attr("x", r.w / 2 + 2)
-        .attr("y", r.h / 2)
-        .attr("dy", "0.35em")
-        .attr("text-anchor", "middle")
-        .attr("class", "breadcumb-text")
-        .style("fill", function (a) { return getcolor(d3.rgb(a._color)) < 150 ? "#fff" : "#000" })
-        .text(function (a) { return a.key }),
-    c
-        .attr("transform", function (a, b) { return "translate(" + b * (r.w + r.s) + ", 0)" }), 
-    c.exit().remove(), 
-    d3.select(".trail").style("visibility", "")
+
+        .style("fill", function (a) { return a._color }),
+        d
+            .append("svg:text")
+            .attr("x", r.w / 2 + 2)
+            .attr("y", r.h / 2)
+            .attr("dy", "0.35em")
+            .attr("text-anchor", "middle")
+            .attr("class", "breadcumb-text")
+            .style("fill", function (a) { return getcolor(d3.rgb(a._color)) < 150 ? "#fff" : "#000" })
+            .text(function (a) { return a.key }),
+        c
+            .attr("transform", function (a, b) { return "translate(" + b * (r.w + r.s) + ", 0)" }),
+        c.exit().remove(),
+        d3.select(".trail").style("visibility", "")
 }
 function getcolor(color) {
     return .299 * color.r + .587 * color.g + .114 * color.b
@@ -89,7 +100,7 @@ function k(a) {
         d = [-.1, -.05, 0];
     if (1 == a.depth) {
         var e = c[coloralternative % 5];
-        return coloralternative++, e
+        return coloralternative++ , e
     }
     if (a.depth > 1) {
         var f = d[a.value % 3];
@@ -112,40 +123,62 @@ var chart = function (d3) {
         j.domain(d3.extent(b, function (a) { return a.date }));
         k
             .domain([0, 100]), cpath
-            .append("g")
-            .attr("class", "x-axis axis")
-            .attr("transform", "translate(0," + h + ")")
-            .call(bottomtick)
-            .append("text")
-            .attr("x", 450)
-            .attr("y", -8)
-            .style("text-anchor", "end")
-            .text("Time"), cpath
-            .append("g")
-            .attr("class", "y-axis axis")
-            .call(lefttick)
-            .append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", ".91em")
-            .style("text-anchor", "end")
-            .text("Proficiency"), cpath
-            .append("path")
-            .datum(b)
-            .attr("class", "line")
-            .attr("id", "skills-chart-line")
-            .attr("d", n)
-            .attr("stroke", function () { return c._color })
+                .append("g")
+                .attr("class", "x-axis axis")
+                .attr("transform", "translate(0," + h + ")")
+                .call(bottomtick)
+                .append("text")
+                .attr("x", 450)
+                .attr("y", -8)
+                .style("text-anchor", "end")
+                .text("Time"), cpath
+                    .append("g")
+                    .attr("class", "y-axis axis")
+                    .call(lefttick)
+                    .append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 6)
+                    .attr("dy", ".91em")
+                    .style("text-anchor", "end")
+                    .text("Proficiency"), cpath
+                        .append("path")
+                        .datum(b)
+                        .attr("class", "line")
+                        .attr("id", "skills-chart-line")
+                        .attr("d", n)
+                        .attr("stroke", function () { return c._color })
+    }
+
+    function ninjamaster(data) {
+        var title = data.key;
+        while (data.children != undefined && data.children[0].key !== "0") {
+            data = data.children[0];
+        }
+        var array = [];
+        while (data.parent != undefined) {
+            array.push(data.key);
+            data = data.parent;
+        }
+        var value = masterninja["Skills"];
+        for (var i = array.length - 1; i >= 0; i--) {
+            value = value[array[i]];
+        }
+        if (value.description != undefined) {
+            $("#smalltext")[0].innerHTML = value.description;
+            $("#title")[0].innerHTML = title;
+            $("#titlelink")[0].href = "#"+value.linkid;
+      }
     }
     function refreshChart(data) {
+        ninjamaster(data);
         var e = processdata(data),
             f = d3.select("#skills-chart-line");
-        null === f[0][0] 
-        ? c(e, data) 
-        : f
-            .datum(e)
-            .attr("d", n)
-            .attr("stroke", function () { return data._color })
+        null === f[0][0]
+            ? c(e, data)
+            : f
+                .datum(e)
+                .attr("d", n)
+                .attr("stroke", function () { return data._color })
     }
     var chart = {},
         rect = {
@@ -188,15 +221,15 @@ var chart = function (d3) {
             .attr("height", h + rect.top + rect.bottom)
             .append("g")
             .attr("transform", "translate(" + rect.left + "," + rect.top + ")");
-        chart.refreshChart = refreshChart;
-        return chart;
-    }(d3),
-    width = 580,
-    height = 580,
+    chart.refreshChart = refreshChart;
+    return chart;
+}(d3),
+    width = 832,
+    height = 832,
     rad = Math.min(width, height) / Math.PI - 25,
     q = k,
     r = {
-        w: 116,
+        w: 200,
         h: 30,
         s: 3,
         t: 7
@@ -210,15 +243,15 @@ var chart = function (d3) {
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 sunburst.append("svg:circle").attr("r", rad).style("opacity", 0);
 var t = function (a, b) {
-        var c = [],
-            d = a.length;
-        if (a.length !== b.length) c = a.length > b.length ? a : b;
-        else for (var e = 0; d > e; e++) {
-            var f = Math.max(a[e], b[e]) - Math.abs(a[e] - b[e]) / 8;
-            c.push(f)
-        }
-        return c
-    },
+    var c = [],
+        d = a.length;
+    if (a.length !== b.length) c = a.length > b.length ? a : b;
+    else for (var e = 0; d > e; e++) {
+        var f = Math.max(a[e], b[e]) - Math.abs(a[e] - b[e]) / 8;
+        c.push(f)
+    }
+    return c
+},
     u = function (a) {
         if (a instanceof Array) return a;
         var b = [];
@@ -232,7 +265,7 @@ var t = function (a, b) {
         .sort(null)
         .size([2 * Math.PI, rad])
         .children(function (a) {
-            return a.value instanceof Array 
+            return a.value instanceof Array
                 ? (a._proficiency = a.value, d3.entries([a.value[a.value.length - 1]]))
                 : (a._proficiency = u(a.value), isNaN(a.value) ? d3.entries(a.value) : null)
         })
@@ -259,21 +292,21 @@ path
     .attr("stroke", "#fff")
     .attr("fill", function (a) { return a._color = q(a), a._color })
     .attr("fill-rule", "evenodd").attr("display", function (a) { return a.children ? null : "none" })
-    .on("mouseover", mouseover); 
+    .on("mouseover", mouseover);
 path.
     append("svg:text")
     .attr("transform", function (a) {
         var r = 180 * ((a.x + a.dx / 2 - Math.PI / 2) / Math.PI);
         return "rotate(" + r + ")"
     })
-    .attr("x", function (a) { return rad / Math.PI * a.depth})
+    .attr("x", function (a) { return rad / Math.PI * a.depth })
     .attr("dx", "6").attr("dy", ".1em").text(function (a) { return a.key })
     .attr("display", function (a) { return a.children ? null : "none" })
-    .on("mouseover", mouseover); 
+    .on("mouseover", mouseover);
 d3
     .select(".skills-sunburst")
-    .on("mouseleave", mouseleave); 
-l = path.node().__data__.value; 
+    .on("mouseleave", mouseleave);
+l = path.node().__data__.value;
 sunburst
     .append("circle")
     .attr("r", rad / Math.PI)
