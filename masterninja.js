@@ -35,7 +35,7 @@ masterninja = {
       "Freely": {
         "Slack": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
       },
-      "Task and reporting": {
+      "Todo's": {
         "Asana": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"asana" },
       }
     },
