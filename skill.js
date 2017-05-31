@@ -38,7 +38,7 @@ function initbreadcrumb() {
     d3
         .select("#skills-chart-breadcrumb")
         .append("svg:svg")
-        .attr("width", "100%")
+        .attr("width", 620)
         .attr("height", 50)
         .attr("class", "trail")
 }
@@ -54,18 +54,26 @@ function h(a, d3) {
 }
 function i(a) {
     a[a.length - 1]._color, a.length;
+    
     var c = d3
         .select("#skills-chart-breadcrumb .trail")
         .selectAll("g")
         .remove();
+
+
     c = d3
         .select("#skills-chart-breadcrumb .trail")
         .selectAll("g")
         .data(a, function (a) { return a.key + a.depth });
+        var test = a.length * 200 + 20;
+        c[0].parentNode.setAttribute("width", test+"px");
+        $("#smalltext")[0].style.width =  test+"px";
+        
     var d = c.enter().append("svg:g");
     d
         .append("svg:polygon")
         .attr("points", h)
+
         .style("fill", function (a) { return a._color }),
         d
             .append("svg:text")
@@ -140,7 +148,6 @@ var chart = function (d3) {
 
     function ninjamaster(data) {
         var title = data.key;
-        console.log("title: ", title);
         while (data.children != undefined && data.children[0].key !== "0") {
             data = data.children[0];
         }

@@ -8,19 +8,23 @@ body {
 }
 @media only screen and (min-width: 1113px) {
   #skillmap .container{
-    margin-top:  10em;
   }
 }
 
 @media only screen and (max-width: 1112px) {
   #skillmap .container{
-    margin-top:  1.5em;
   }
 }
 
-#skillmap.container{
+#skills{
+  max-width: 100%!important;
+}
+#skillmap .container{
     float:left;
-    margin-left:5em;
+}
+
+#skills-chart-breadcrumb{
+  width:100%;
 }
 
 #skillmap .skills-wrapper {
