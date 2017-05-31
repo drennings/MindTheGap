@@ -3,27 +3,21 @@ var masterninja;
 masterninja = {
   "Skills": {
     "Coordination": {
-      "Protocol": {
-        "Propose": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "USSD": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "UAP": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Socket Raw": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "Structure": {
+        "SonarQube": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Code analysis tool","linkid":"sonarqube" },
+        "Codefactor": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Code analysis tool","linkid":"codefactor" },
       },
-      "Optimization": {
-        "Performance": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Distribute": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Stability": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "Dependencies": {
+        "Trello": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Project mangaging tool for SCRUM & Agile","linkid":"coordination_dependencies_trello" },
+        "Github": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Version control platform tool","linkid":"coordination_dependencies_github" },
       },
-      "UI": {
-        "WinForm": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "WPF": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "GDI": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "DX": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Flash": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "Documentation": {
+        "Github Wiki": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Project documentation management tool","linkid":"github_wiki" },
+        "ReadTheDocs": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Project documentation manegement tool","linkid":"readthedocs" },
       },
-      "Algorithm": {
-        "Image Processing": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Face recognition": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "Progress": {
+        "Github": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Project mangaging tool for SCRUM & Agile","linkid":"coordination_progress_github" },
+        "Palantir": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Software development conflict detection tool","linkid":"palantir" }
       }
     },
     "Communication": {
