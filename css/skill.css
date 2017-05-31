@@ -6,14 +6,29 @@ body {
   height: 700px;
   margin-top: 10px;
 }
+@media only screen and (min-width: 1113px) {
+  #skillmap .container{
+    margin-top:  10em;
+  }
+}
+
+@media only screen and (max-width: 1112px) {
+  #skillmap .container{
+    margin-top:  1.5em;
+  }
+}
+
+#skillmap.container{
+    float:left;
+    margin-left:5em;
+}
+
 #skillmap .skills-wrapper {
-  margin-top: 10px;
+  margin-top:  1.5em;
   overflow: auto;
 }
 #skillmap .skills-sunburst {
   float: left;
-  width: 500px;
-  margin-left: -80px;
 }
 #skillmap .skills-sunburst svg {
   font: 11px 'Source Sans Pro', sans-serif;

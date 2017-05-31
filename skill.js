@@ -38,7 +38,7 @@ function initbreadcrumb() {
     d3
         .select("#skills-chart-breadcrumb")
         .append("svg:svg")
-        .attr("width", 500)
+        .attr("width", "100%")
         .attr("height", 50)
         .attr("class", "trail")
 }
@@ -139,6 +139,8 @@ var chart = function (d3) {
     }
 
     function ninjamaster(data) {
+        var title = data.key;
+        console.log("title: ", title);
         while (data.children != undefined && data.children[0].key !== "0") {
             data = data.children[0];
         }
@@ -153,7 +155,9 @@ var chart = function (d3) {
         }
         if (value.description != undefined) {
             $("#smalltext")[0].innerHTML = value.description;
-        }
+            $("#title")[0].innerHTML = title;
+            $("#titlelink")[0].href = "#"+value.linkid;
+      }
     }
     function refreshChart(data) {
         ninjamaster(data);
@@ -210,12 +214,12 @@ var chart = function (d3) {
     chart.refreshChart = refreshChart;
     return chart;
 }(d3),
-    width = 580,
-    height = 580,
+    width = 832,
+    height = 832,
     rad = Math.min(width, height) / Math.PI - 25,
     q = k,
     r = {
-        w: 116,
+        w: 200,
         h: 30,
         s: 3,
         t: 7
