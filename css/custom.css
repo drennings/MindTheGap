@@ -4,7 +4,7 @@
 }
 
 .text-div{
-  width: 65em!important;
+  max-width: 65em!important;
   margin: 0 auto;
 }
 
