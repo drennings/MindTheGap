@@ -40,32 +40,20 @@ masterninja = {
       }
     },
     "Cultural": {
-      "Dotnet": {
-        "C#": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Xaml": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "F#": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "Managing": {
+        "GlobeSmart": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Managing tool for cultural teams","linkid":"globesmart" },
+        "Git": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Version control tool","linkid":"git" },
+        "GitHub": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Version control platform tool","linkid":"github" },
+        "Trello": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Project mangaging tool for SCRUM & Agile","linkid":"trello" },
+        "Jira": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Project mangaging tool for Agile","linkid":"jira" },
+        "Slack": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Chat tool","linkid":"slack" },
+        "Skype": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Videocall tool","linkid":"skype" }
       },
-      "Script": {
-        "Javascript": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "VBScript": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "CoffeeScript": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Python": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "Staff": {
+        "Linkedin": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Business- and employment-oriented social networking service","linkid":"linkedin" }
       },
-      "Java": {
-        "Android": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-      },
-      "Embedded": {
-        "X86 Asm": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "C": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-      },
-      "Other": {
-        "T-SQL": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "(E)BNF": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "XSD/XSLT": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "QB": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "VB": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Pascal": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "IEC61131": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "Training": {
+        "duolingo": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"Language learning tool","linkid":"duolingo" }
       }
     },
     "Team bonding": {
