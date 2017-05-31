@@ -67,6 +67,9 @@ function i(a) {
         .data(a, function (a) { return a.key + a.depth });
         var test = a.length * 200 + 20;
         c[0].parentNode.setAttribute("width", test+"px");
+        if(test < 600){
+            test = 600;
+        }
         $("#smalltext")[0].style.width =  test+"px";
         
     var d = c.enter().append("svg:g");

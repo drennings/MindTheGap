@@ -16,10 +16,6 @@ body {
   }
 }
 
-.main-content{
-  max-width: none!important;
-  padding: 2rem 1rem!important;
-}
 #skillmap .container{
     float:left;
 }
