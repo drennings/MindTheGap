@@ -20,5 +20,6 @@ img {
 }
 
 .text-div a{
-  color: #155e92;
+    color: #155e92;
+    font-weight:bold;
 }
