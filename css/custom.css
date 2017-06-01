@@ -18,3 +18,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.text-div a{
+  color: #155e92;
+}

@@ -224,8 +224,8 @@ var chart = function (d3) {
     chart.refreshChart = refreshChart;
     return chart;
 }(d3),
-    width = 832,
-    height = 832,
+    width = (($(window).width()<832 ? $(window).width() : 832)),
+    height = (($(window).width()<832 ? $(window).width() : 832)),
     rad = Math.min(width, height) / Math.PI - 25,
     q = k,
     r = {
@@ -241,6 +241,7 @@ var chart = function (d3) {
         .attr("height", height)
         .append("svg:g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+        
 sunburst.append("svg:circle").attr("r", rad).style("opacity", 0);
 var t = function (a, b) {
     var c = [],
