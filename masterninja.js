@@ -28,7 +28,7 @@ masterninja = {
       },
       "Freely": {
         "Slack": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 150], "description":"Slack is a popular communication tool, and for good reason. It takes the best of email and live-chat features and combines them into one app that you can use on your desktop or mobile device. Aside from private messages you can also create collaborative boards around different projects or topics, which is helpful if you’re working with a larger team of people or on multiple projects with a single client at once. <center>
-					<img src="https://www.masoutreach.frl/wp-content/uploads/2016/03/Slack-tool_masoutreach.png">
+					<img src='https://www.masoutreach.frl/wp-content/uploads/2016/03/Slack-tool_masoutreach.png'>
 				</center>","linkid":"slack" },
       },
       "Todo's": {
