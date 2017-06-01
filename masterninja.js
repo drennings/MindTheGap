@@ -52,49 +52,12 @@ masterninja = {
       }
     },
     "Team bonding": {
-      "HW&FW": {
-        "Protues": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Keil": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Code Warrior": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Protel": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Multisim": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Lego": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
+      "External": {
+        "Ariadne": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"A tool for fostering external social capital through a digital library of knowledge called a Knowledge Pool System (KPS).","linkid":"Ariadne" },
       },
-      "Productivity": {
-        "Vim": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "AHK": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Office": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Photoshop": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Batch": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Shell": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Linux": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Marked Text": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-      },
-      "Project": {
-        "Agile": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "CI": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Repos": {
-          "Git": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-          "SVN": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-          "Clearcase": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-        },
-        "Track": {
-          "Redmine": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-          "Trello": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-        },
-        "Wiki": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Quality Assurance": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-      },
-      "Cloud": {
-        "IaaS": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "PaaS": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "SaaS": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-      },
-      "Test": {
-        "TDD": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "cucumber": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" },
-        "Load test": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"story of this wonderfull tool","linkid":"id" }
-      }
+	  "Internal": {
+		  "WIP": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":"This is a work in progress.","linkid":"WIP" },
+	  }
     }
   }
 };
