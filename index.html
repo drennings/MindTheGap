@@ -15,12 +15,12 @@ title: Mind the Gap
 
 <body>
 	<div class="intro text-div">
-		"Global software development is not a phenomenon but a reality nowadays" <a href="http://www.lu.lv/materiali/apgads/raksti/733_pp_9-23.pdf">[1]</a>.  
+		"Global software development is not a phenomenon but a reality nowadays" <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.459.7894">[1]</a>.  
         Hence, more and more companies are using (or at least considering) distributed software engineering as a means to develop software. 
         On this website, we consider a global(ly distributed) software engineering (G(D)SE) to be a contractual relationship between a client
 		and vendor organization, where the client organization outsources parts of its development process. There are a number
-		of advantages to this approach of developing software, such as cost savings, reduced time to market and proximity to the market and customer <a href="http://www.brian-fitzgerald.com/wp-content/uploads/2014/01/icsp08-final-draft.pdf">[2]</a>.
-		Unfortunately, these advantages do not come without drawbacks as a result of gaps between developers. A renowned study in the area of GDSE identifies these gaps alongside four directions: communication, coordination, cultural differences and team bonding.
+		of advantages to this approach of developing software, such as cost savings, reduced time to market and proximity to the market and customer <a href="https://link.springer.com/chapter/10.1007/978-3-540-79588-9_1">[2]</a>.
+		Unfortunately, these advantages do not come without drawbacks as a result of gaps between developers. Based on renowned work in the area of GDSE (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>), we identify this gap alongside four directions: communication, coordination, cultural differences and team bonding.
         On this website we will discuss these categories and divide them in subcategories which pose serious risks to the smooth execution of a distributed software engineering project. Per subcategory we serve the reader with solutions that make developers happy, namely: technology. 
         In short, we will propose a collection of tools to actively mind the gap in your distributed software project.
         <br />
@@ -28,10 +28,6 @@ title: Mind the Gap
         You can read all of our suggestions in a linear manner by scrolling down. 
         If you are in a hurry however you can hover over the core categories, subcategories and tools for a short description. 
         Clicking on them will send you directly to the details.
-        
-        <h2>References:</h2>
-        1. http://www.lu.lv/materiali/apgads/raksti/733_pp_9-23.pdf <br />
-        2. http://www.brian-fitzgerald.com/wp-content/uploads/2014/01/icsp08-final-draft.pdf
 	</div>
 	<hr/>
 	<div id="skillmap">
@@ -53,7 +49,16 @@ title: Mind the Gap
 	<hr/>
 	<div class="difficulties text-div">
 		<h1>Four main difficulties in GSE</h1>
-		TODO
+		Almost two decades ago(!), Carmel described in his renowned book "Global Software Teams: Colloborating Across Borders and Time Zones" (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>), the five centrifugal forces of global software teams:
+		<ul>
+			<li>Geographical dispersion</li>
+			<li>Coordination breakdown</li>
+			<li>Loss of communication richness</li>
+			<li>Loss of teamness</li>            
+			<li>Cultural differences</li>
+		</ul>
+As you may have noticed, we here only discuss four of these forces. We chose to do so, since we think that there are no tools that directly address and therefore nicely fit the problem of geographical dispersion. Moreover, we see dispersion as a force that strengthens the other four centrifugal forces of GSE, for which we do present technology that can help developers to manage them.
+In this approach we also freely transalted the forces as defined by Carmel in 1999 to coordination, communication, team bonding and cultural differences. A more elaborate description of these forces, their subcategories and tools that may help developers to manage them is provided next.
 	</div>
 	<hr/>
 	<div class="communication text-div">
@@ -285,7 +290,7 @@ title: Mind the Gap
 			bring down the gap between team members, cultural differences must be dealt with. To do so the following tools can help.
 			<h2>Managing:</h2>
 			Managing a culture diverse team is different from managing a team consisting of members with the same cultural background.
-			To help manage a multi-cultural team there are three different aspects that can help according to 1:
+			To help manage a multi-cultural team there are three different aspects that can help according to <a href="http://dl.acm.org/citation.cfm?id=975818">[4]</a>:
 			<ul>
 				<li><b>Systems to harmonize between outsourcer and supplier</b></li>
 				The first point can be done by using technology and coordination/control systems so members of the team can be kept up to
@@ -368,6 +373,16 @@ title: Mind the Gap
 		<h1>Tools for team bonding</h1>
 		TODO
 	</div>
+    <hr/>
+    <div class="library">
+        <h2>References:</h2>
+			<ol>
+				<li>Šmite, Darja, and Juris Borzovs. "Managing uncertainty in globally distributed software development projects." University of Latvia, Computer Science and Information Technologies 733 (2008): 9-23.</li>
+                <li>Ågerfalk, Pär J., et al. "Benefits of global software development: the known and unknown." International Conference on Software Process. Springer Berlin Heidelberg, 2008.</li>
+                <li>Carmel, Erran. Global software teams: collaborating across borders and time zones. Prentice Hall PTR, 1999.</li>
+                <li>Krishna, Srinivas, Sundeep Sahay, and Geoff Walsham. "Managing cross-cultural issues in global software outsourcing." Communications of the ACM 47.4 (2004): 62-66.</li>
+			</ol>
+    </div>
 	<script type="text/javascript" src="masterninja.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="skillsdata.js"></script>
