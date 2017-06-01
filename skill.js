@@ -8,7 +8,25 @@ function initchart() {
     };
     chart.refreshChart(data)
 }
+
+function mouseclick(data){
+    while (data.children != undefined && data.children[0].key !== "0") {
+            data = data.children[0];
+        }
+        var array = [];
+        while (data.parent != undefined) {
+            array.push(data.key);
+            data = data.parent;
+        }
+        var value = masterninja["Skills"];
+        for (var i = array.length - 1; i >= 0; i--) {
+            value = value[array[i]];
+        }
+        window.location.replace('https://drennings.github.io/MindTheGap/#'+value.linkid);
+}
+
 function mouseover(data) {
+    console.log("mouseover",data);
     chart.refreshChart(data);
     var c = getcrumbpath(data);
     i(c);
@@ -293,7 +311,7 @@ path
     .attr("stroke", "#fff")
     .attr("fill", function (a) { return a._color = q(a), a._color })
     .attr("fill-rule", "evenodd").attr("display", function (a) { return a.children ? null : "none" })
-    .on("mouseover", mouseover);
+    .on("mouseover", mouseover).on("click", mouseclick);
 path.
     append("svg:text")
     .attr("transform", function (a) {
@@ -303,7 +321,7 @@ path.
     .attr("x", function (a) { return rad / Math.PI * a.depth })
     .attr("dx", "6").attr("dy", ".1em").text(function (a) { return a.key })
     .attr("display", function (a) { return a.children ? null : "none" })
-    .on("mouseover", mouseover);
+    .on("mouseover", mouseover).on("click", mouseclick);
 d3
     .select(".skills-sunburst")
     .on("mouseleave", mouseleave);
