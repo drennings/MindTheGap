@@ -40,7 +40,7 @@ body {
   float: right;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
-  margin: 80px 20px 0 0;
+  /*margin: 80px 20px 0 0;*/
 }
 #skillmap .skills-chart .breadcumb-text {
   font-size: 13px;
