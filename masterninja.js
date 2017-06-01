@@ -27,7 +27,9 @@ masterninja = {
         "Screen hero": {"array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description": "	Screen hero is screen sharing software, it works well in combination with Slack. Screen Hero allows members of the team to share their screen in real time, and to allow multiple cursors so you can actually pair program on someone else’s machine.", "linkid": "screenhero"}
       },
       "Freely": {
-        "Slack": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 150], "description":"Slack is a popular communication tool, and for good reason. It takes the best of email and live-chat features and combines them into one app that you can use on your desktop or mobile device. Aside from private messages you can also create collaborative boards around different projects or topics, which is helpful if you’re working with a larger team of people or on multiple projects with a single client at once.","linkid":"slack" },
+        "Slack": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 150], "description":"Slack is a popular communication tool, and for good reason. It takes the best of email and live-chat features and combines them into one app that you can use on your desktop or mobile device. Aside from private messages you can also create collaborative boards around different projects or topics, which is helpful if you’re working with a larger team of people or on multiple projects with a single client at once. <center>
+					<img src="https://www.masoutreach.frl/wp-content/uploads/2016/03/Slack-tool_masoutreach.png">
+				</center>","linkid":"slack" },
       },
       "Todo's": {
         "Asana": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 100], "description":"Asana is a free project management tool designed to help teams track projects from start to finish. One of its best features is that it lets you see the overall progress of your project step by step, so your clients know exactly how long something will take without having to bug you about it.","linkid":"asana" },
