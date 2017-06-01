@@ -21,7 +21,6 @@ masterninja = {
       }
     },
     "Communication": {
-      "linkid":"communicationtools",
       "Sharing": {
         "InVision": { "array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description":'InVision is a web-based (and mobile) app that lets designers/developers turn their work into active prototypes with animations. Clients can provide feedback and comments directly on the site and track progress in real-time by looking at your to-do list.',"linkid":"invision" },
         "ConceptShare": {"array":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description": "ConceptShare is a communication tool especially designed for creative types. It helps you streamline the review and approval process for any project, and it allows for online proofing with workflow automation, which means you can work with clients from one place without having to send a hundred emails back and forth.", "linkid":"conceptshare" },
