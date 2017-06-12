@@ -185,6 +185,7 @@ var chart = function (d3) {
             $("#smalltext")[0].innerHTML = value.description;
             $("#title")[0].innerHTML = title;
             $("#titlelink")[0].href = "#"+value.linkid;
+            $("#buttonlink")[0].href = "#"+ value.linkid;
       }
     }
     function refreshChart(data) {

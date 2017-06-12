@@ -1,5 +1,21 @@
 var masterninja;
 
+example = {
+  "Skills": {
+    "dimension": {
+      "name": "Coordination",
+      "linkid": "test",
+      "subcategorie": {
+        "name": "Structure",
+        "tool": {
+          "name":"SonarQube",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50], "description": "Code analysis tool", "linkid": "sonarqube"
+        }
+      }
+    }
+  }
+}
+
 masterninja = {
   "Skills": {
     "Coordination": {
