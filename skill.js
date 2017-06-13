@@ -9,24 +9,46 @@ function initchart() {
     chart.refreshChart(data)
 }
 
-function mouseclick(data){
-    while (data.children != undefined && data.children[0].key !== "0") {
-            data = data.children[0];
+function mouseclick(data) {
+     var title = data.key;
+        var depth = data.depth;
+        var dims = masterninjadata.dimensions;
+        if (depth === 1) {
+            for (var i = 0; i < dims.length; i++) {
+                if (dims[i].name === title) {
+                    goToLink(dims[i]);
+                }
+            }
+        } else if (depth === 2) {
+            for (var i = 0; i < dims.length; i++) {
+                var curSubs = dims[i].subcategories;
+                for(var j = 0; j < curSubs.length; j++){
+                    if(curSubs[j].name === title){
+                        goToLink(curSubs[j]);
+                    }
+                }
+            }
+        } else {
+             for (var i = 0; i < dims.length; i++) {
+                var curSubs = dims[i].subcategories;
+                for(var j = 0; j < curSubs.length; j++){
+                    var curTools = curSubs[j].tools;
+                    for(var k = 0; k < curTools.length; k++){
+                        if(curTools[k].name === title){
+                            goToLink(curTools[k]);
+                        }
+                    }
+                }
+            }
         }
-        var array = [];
-        while (data.parent != undefined) {
-            array.push(data.key);
-            data = data.parent;
-        }
-        var value = masterninja["Skills"];
-        for (var i = array.length - 1; i >= 0; i--) {
-            value = value[array[i]];
-        }
-        window.location.replace('https://drennings.github.io/MindTheGap/#'+value.linkid);
+}
+
+function goToLink(value){
+    window.location.replace('https://drennings.github.io/MindTheGap/#' + value.linkid);
 }
 
 function mouseover(data) {
-    console.log("mouseover",data);
+    // console.log("mouseover",data);
     chart.refreshChart(data);
     var c = getcrumbpath(data);
     i(c);
@@ -72,7 +94,7 @@ function h(a, d3) {
 }
 function i(a) {
     a[a.length - 1]._color, a.length;
-    
+
     var c = d3
         .select("#skills-chart-breadcrumb .trail")
         .selectAll("g")
@@ -83,13 +105,13 @@ function i(a) {
         .select("#skills-chart-breadcrumb .trail")
         .selectAll("g")
         .data(a, function (a) { return a.key + a.depth });
-        var test = a.length * 200 + 20;
-        c[0].parentNode.setAttribute("width", test+"px");
-        if(test < 600){
-            test = 600;
-        }
-        $("#smalltext")[0].style.width =  test+"px";
-        
+    var test = a.length * 200 + 20;
+    c[0].parentNode.setAttribute("width", test + "px");
+    if (test < 600) {
+        test = 600;
+    }
+    $("#smalltext")[0].style.width = test + "px";
+
     var d = c.enter().append("svg:g");
     d
         .append("svg:polygon")
@@ -169,24 +191,45 @@ var chart = function (d3) {
 
     function ninjamaster(data) {
         var title = data.key;
-        while (data.children != undefined && data.children[0].key !== "0") {
-            data = data.children[0];
+        var depth = data.depth;
+        var dims = masterninjadata.dimensions;
+        if (depth === 1) {
+            for (var i = 0; i < dims.length; i++) {
+                if (dims[i].name === title) {
+                    setExplanation(dims[i]);
+                }
+            }
+        } else if (depth === 2) {
+            for (var i = 0; i < dims.length; i++) {
+                var curSubs = dims[i].subcategories;
+                for(var j = 0; j < curSubs.length; j++){
+                    if(curSubs[j].name === title){
+                        setExplanation(curSubs[j]);
+                    }
+                }
+            }
+        } else {
+             for (var i = 0; i < dims.length; i++) {
+                var curSubs = dims[i].subcategories;
+                for(var j = 0; j < curSubs.length; j++){
+                    var curTools = curSubs[j].tools;
+                    for(var k = 0; k < curTools.length; k++){
+                        if(curTools[k].name === title){
+                            setExplanation(curTools[k]);
+                        }
+                    }
+                }
+            }
         }
-        var array = [];
-        while (data.parent != undefined) {
-            array.push(data.key);
-            data = data.parent;
-        }
-        var value = masterninja["Skills"];
-        for (var i = array.length - 1; i >= 0; i--) {
-            value = value[array[i]];
-        }
-        if (value.description != undefined) {
+    }
+    function setExplanation(value) {
+        if (value.description != undefined && value.description != "") {
             $("#smalltext")[0].innerHTML = value.description;
-            $("#title")[0].innerHTML = title;
-            $("#titlelink")[0].href = "#"+value.linkid;
-            $("#buttonlink")[0].href = "#"+ value.linkid;
-      }
+            $("#title")[0].innerHTML = value.name;
+            $("#titlelink")[0].href = "#" + value.linkid;
+            $("#buttonlink")[0].href = "#" + value.linkid;
+            $("#desccontainer")[0].style.backgroundImage = "url('"+value.backgroundlogo+"')"
+        }
     }
     function refreshChart(data) {
         ninjamaster(data);
@@ -243,8 +286,8 @@ var chart = function (d3) {
     chart.refreshChart = refreshChart;
     return chart;
 }(d3),
-    width = (($(window).width()<832 ? $(window).width() : 832)),
-    height = (($(window).width()<832 ? $(window).width() : 832)),
+    width = (($(window).width() < 832 ? $(window).width() : 832)),
+    height = (($(window).width() < 832 ? $(window).width() : 832)),
     rad = Math.min(width, height) / Math.PI - 25,
     q = k,
     r = {
@@ -260,7 +303,7 @@ var chart = function (d3) {
         .attr("height", height)
         .append("svg:g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-        
+
 sunburst.append("svg:circle").attr("r", rad).style("opacity", 0);
 var t = function (a, b) {
     var c = [],
