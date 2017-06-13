@@ -12,11 +12,34 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.active{
+    color: black!important;
+    font-weight: bold;
+}
+
 /* The navigation menu links */
-.sidenav a {
+.sidenav .dim a  {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav .sub a  {
+    padding: 8px 8px 8px 36px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav .tool a  {
+    padding: 8px 8px 8px 45px;
+    text-decoration: none;
+    font-size: 15px;
     color: #f1f1f1;
     display: block;
     transition: 0.3s
