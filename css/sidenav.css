@@ -17,6 +17,10 @@
     font-weight: bold;
 }
 
+#menubuttondiv{
+    margin-top: -410px;
+}
+
 /* The navigation menu links */
 .sidenav .dim a  {
     padding: 8px 8px 8px 32px;
@@ -77,7 +81,7 @@ body{
 }
 
 #menubutton{
-      color: #155e92;
+      color: white;
       float:right;
       margin-left: 4px;
       margin-top:3px;
