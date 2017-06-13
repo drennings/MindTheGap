@@ -11,9 +11,20 @@ title: Mind the Gap
 	<link rel="stylesheet" type="text/css" href="css/skill.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
 </head>
-
+<div id="mySidenav" class="sidenav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
 <body>
+	<div id="menubuttondiv" class="menubutton">
+		<i id="menubutton" onclick="openNav()" class="fa fa-bars fa-3x fa-align-center"></i>
+	</div>	
 	<div class="intro text-div">
 		"Global software development is not a phenomenon but a reality nowadays" <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.459.7894">[1]</a>.  
         Hence, more and more companies are using (or at least considering) distributed software engineering as a means to develop software. 
@@ -459,10 +470,12 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 				</ol>
 		</div>
 	</div>
-	<script type="text/javascript" src="masterninja.js"></script>
+	<script type="text/javascript" src="js/masterninja.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="skillsdata.js"></script>
-	<script type="text/javascript" src="skill.js"></script>
+	<script type="text/javascript" src="js/skillsdata.js"></script>
+	<script type="text/javascript" src="js/skill.js"></script>
+	<script type="text/javascript" src="js/sidenav.js"></script>
+	
 	<script type="text/javascript">
 		// Hack to make this example display correctly in an iframe on bl.ocks.org
       	//d3.select(self.frameElement).style("height", "700px");
