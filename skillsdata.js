@@ -1,18 +1,28 @@
-var skillsdata = JSON.parse(JSON.stringify(masterninja));;
 
+var masterninjadata = JSON.parse(JSON.stringify(masterninja));
 
-function bla(hi) {
-  for (var key in hi) {
-    if (hi.hasOwnProperty(key)) {
-      if (typeof hi[key] === 'object') {
-        if (hi[key].array !== undefined) {
-          hi[key] = hi[key].array;
-        } else {
-          bla(hi[key]);
+function convertExample(json, temp) {
+  for (var key in json) {
+    if (typeof json[key] === 'object') {
+      for (var j = 0; j < json[key].length; j++) {
+        var curProp = json[key][j];
+        if (curProp.subcategories !== undefined) {
+          temp.Skills[curProp.name] = {};
+          for (var i = 0; i < curProp.subcategories.length; i++) {
+            console.log("subcatgegories", curProp.subcategories[i]);
+            temp.Skills[curProp.name][curProp.subcategories[i].name] = {}
+            convertExample(curProp.subcategories[i], temp.Skills[curProp.name][curProp.subcategories[i].name]);
+          }
+        } else if (curProp.array !== undefined) {
+          temp[curProp.name] = curProp.array;
         }
+
       }
     }
   }
 }
 
-bla(skillsdata);
+
+var skillsdata = { "Skills": {} }
+
+convertExample(masterninjadata, skillsdata);
