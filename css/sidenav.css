@@ -30,7 +30,9 @@
     display: block;
     transition: 0.3s
 }
-
+.sidenav{
+    text-align: left;
+}
 .sidenav .sub a  {
     padding: 8px 8px 8px 36px;
     text-decoration: none;
@@ -81,7 +83,7 @@ body{
 }
 
 #menubutton{
-      color: white;
+      color: #159957;
       float:right;
       margin-left: 4px;
       margin-top:3px;
