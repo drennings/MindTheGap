@@ -223,11 +223,12 @@ var chart = function (d3) {
         }
     }
     function setExplanation(value) {
-        if (value.description != undefined) {
+        if (value.description != undefined && value.description != "") {
             $("#smalltext")[0].innerHTML = value.description;
             $("#title")[0].innerHTML = value.name;
             $("#titlelink")[0].href = "#" + value.linkid;
             $("#buttonlink")[0].href = "#" + value.linkid;
+            $("#desccontainer")[0].style.backgroundImage = "url('"+value.backgroundlogo+"')"
         }
     }
     function refreshChart(data) {
