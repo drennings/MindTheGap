@@ -295,13 +295,13 @@ masterninja = {
     {
       "name": "Team bonding",
       "linkid": "test",
-      "description": "dim desc",
+      "description": "One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally. Sue Newell, Carole Tansley and Jimmy Huang define two kinds of social capital, described in <a href='http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8551.2004.00405.x/epdf'>[5]</a>: External bridging social capital, and internal bonding social capital."
       "subcategories": [
         {
           "name": "External",
           "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "test",
-          "description": "subdesc",
+          "description": "External bridging social capital tools are tools that increase a feeling of 'teamness' between different teams that are working on different locations/projects. An often observed occurrance is that while internal trust and cohesion of the different teams are fine, there is little trust between teams on different locations. Many of the tools described before are increase this bonding and trust.",
           "tools": [
             {
               "name": "Ariadne",
@@ -315,7 +315,7 @@ masterninja = {
           "name": "Internal",
           "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "test",
-          "description": "subdesc",
+          "description": "Another challenge that can play a role in globally distributed software engineering is the internal bonding social capital of a team. If there is no internal trust, this will have serious impact on the quality of the software.",
           "tools": [
             {
               "name": "WIP",
