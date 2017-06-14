@@ -14,37 +14,36 @@ masterninja = {
           "description": "Communication in teams can happen for several reasons, one of them is sharing code, designs and/or concepts. There are many tools that benefit communication and workflow, in this section a few are named that stand out. All these tools can help to virtually close the gap to increase unplanned communication. There are a few types of applications that work via a sharing concept, most of them focus on sharing concepts, pieces of code or design quickly to the development team, management and/or clients.	Combined with communication aspects like a bulletin board per project or instant note sharing per design screen helps engagement across multiple people that does not necessarily have to be close to each other. Another benefit some sharing applications bring, is the possibility to share your whole screen, this benefits developers that are far away from each other while they can still work via pair programming.",
           "tools": [
             {
-              "name": "Appear.in",
-              "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-              "description": "Appearin focuses on remote distrubted teams, so essentially build for GSE. It is build to work in your browser by creating a new chatroom what enables you to share your screen and do group conversations.",
-              "linkid": "appearin"
-            },
-            {
               "name": "ConceptShare",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "A communication tool especially designed for creative types. It helps you streamline the review and approval process for any project, and it allows for online proofing with workflow automation, which means you can work with clients from one place without having to send a hundred emails back and forth.",
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
-              "linkid": "conceptshare"
+              "linkid": "conceptshare",
+              "backgroundlogo": "images/logos/conceptshare.jpg"
+              
             },
             {
               "name": "InVision",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": 'A web-based (and mobile) app that lets designers/developers turn their work into active prototypes with animations. Clients can provide feedback and comments directly on the site and track progress in real-time by looking at your to-do list.',
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
-              "linkid": "invision"
+              "linkid": "invision",
+              "backgroundlogo": "images/logos/invision.png"              
             },
             {
               "name": "Screen hero",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "Screen sharing software that works well in combination with Slack. Screen Hero allows members of the team to share their screen in real time, and to allow multiple cursors so you can actually pair program on someone else’s machine.",
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
-              "linkid": "screenhero"
+              "linkid": "screenhero",
+              "backgroundlogo": "images/logos/screenhero.png"
             },
             {
               "name": "BlueJeans",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "BlueJeans is a cloud video conferencing platform, which enables your remote teams to video conference on any platform with ease. Seeing the other party when communicating can be a beneficial factor for bonding and expressing yourself, which is hard to do in GSE because of the distance between remote teams.",
-              "linkid": "bluejeans"
+              "linkid": "bluejeans",
+              "backgroundlogo": "images/logos/bluejeans.jpg"
             }
           ]
         },
@@ -58,20 +57,23 @@ masterninja = {
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 100],
               "description": "A free project management tool designed to help teams track projects from start to finish. One of its best features is that it lets you see the overall progress of your project step by step, so your clients know exactly how long something will take without having to bug you about it.",
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
-              "linkid": "asana"
+              "linkid": "asana",
+              "backgroundlogo": "images/logos/asana.png"
             },
             {
               "name": "Wunderlist",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "A to-do list tool that helps you plan your individual tasks, set notifications and reminders, and collaborate with clients so they can see exactly what you’re up to and when you’re working. It is available on both desktop and mobile so you can update it on the go. If you have clients who want to see the project laid out in detail, this will help.",
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
-              "linkid": "wunderlist"
+              "linkid": "wunderlist",
+              "backgroundlogo": "images/logos/wunderlist.png"
             },
             {
               "name": "Basecamp",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 100],
               "description": "Basecamp is a very popular web-based project management tool that helps multiple groups rally around a single project. Because the project is the focus, you can create a system where both you and the client are on the same page about various stages of the project.",
-              "linkid": "basecamp"
+              "linkid": "basecamp",
+              "backgroundlogo": "images/logos/basecamp-logo.png",
             },
             {
               "name": "Trello",
@@ -92,6 +94,13 @@ masterninja = {
               "description": "A popular communication tool, and for good reason. It takes the best of email and live-chat features and combines them into one app that you can use on your desktop or mobile device. Aside from private messages you can also create collaborative boards around different projects or topics, which is helpful if you’re working with a larger team of people or on multiple projects with a single client at once.",
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
               "linkid": "slack"
+            },
+            {
+              "name": "Appear.in",
+              "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+              "description": "Appearin focuses on remote distrubted teams, so essentially build for GSE. It is build to work in your browser by creating a new chatroom what enables you to share your screen and do group conversations.",
+              "linkid": "appearin",
+              "backgroundlogo": "images/logos/appearin.png"
             },
             {
               "name": "Skype",
