@@ -51,8 +51,7 @@ masterninja = {
           "backgroundlogo": "images/logos/agilecockpit.png",
           "linkid": "agilecokpitdep"
         }]
-      }
-      ,
+      }      ,
       {
         "name": "Documentation",
         "linkid": "documentation",
@@ -97,16 +96,28 @@ masterninja = {
     ,
   {
     "name": "Communication",
-    "backgroundlogo": "images/logos/mywonderfulllogo.png",
-    "linkid": "test",
-    "description": "dim desc",
+    "linkid": "communicationtools",
+    "backgroundlogo": "images/logos/mywonderfulllogo.png",    
+    "description": "Communication is key in software engineering, but with globally distributed engineering it may very well be even more important, while it is also harder to maintain. In addition, this is not limited to the planned communication (such as the daily stand ups and sprint reflections). The well renowned 'Allen Curve' from the seventies (<a href='https://www.osti.gov/scitech/biblio/710021'>[6]</a>) describes that a gap between two people over 50 meter (or more) drastically reduces the chance of unplanned communicaton.",
     "subcategories": [
       {
         "name": "Sharing",
-        "backgroundlogo": "images/logos/mywonderfulllogo.png",
-        "linkid": "test",
-        "description": "subdesc",
+        "backgroundlogo": "images/logos/mywonderfulllogo.png",        
+        "linkid": "share",
+        "description": "Communication in teams can happen for several reasons, one of them is sharing code, designs and/or concepts. There are many tools that benefit communication and workflow, in this section a few are named that stand out. All these tools can help to virtually close the gap to increase unplanned communication. There are a few types of applications that work via a sharing concept, most of them focus on sharing concepts, pieces of code or design quickly to the development team, management and/or clients.	Combined with communication aspects like a bulletin board per project or instant note sharing per design screen helps engagement across multiple people that does not necessarily have to be close to each other. Another benefit some sharing applications bring, is the possibility to share your whole screen, this benefits developers that are far away from each other while they can still work via pair programming.",
         "tools": [
+          {
+            "name": "Appear.In",
+            "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+            "description": "Appearin focuses on remote distrubted teams, so essentially build for GSE. It is build to work in your browser by creating a new chatroom what enables you to share your screen and do group conversations.",
+            "linkid": "appearin"
+          },
+          {
+            "name": "BlueJeans",
+            "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+            "description": "BlueJeans is a cloud video conferencing platform, which enables your remote teams to video conference on any platform with ease. Seeing the other party when communicating can be a beneficial factor for bonding and expressing yourself, which is hard to do in GSE because of the distance between remote teams.",
+            "linkid": "bluejeans"
+          },
           {
             "name": "InVision",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
@@ -130,10 +141,11 @@ masterninja = {
           }]
       },
       {
-        "name": "Freely",
+        "name": "Free talk",
         "backgroundlogo": "images/logos/mywonderfulllogo.png",
-        "linkid": "test",
-        "description": "subdesc",
+        "linkid": "freely",
+        "description": "Aside from the communication solely based on work related stuff, it is important that employees also have tools that can be used for all kind of random talk. So the last section of communication is about free talk. This helps the creativity flow and can improve working relations. There are a lot of tools for this, think of instant messaging and social platforms.	We will discuss a few that stand out for office use and explain the popularity and why they are suited best for GSE.",
+
         "tools": [
           {
             "name": "Slack",
@@ -152,9 +164,9 @@ masterninja = {
       },
       {
         "name": "Todo's",
+        "linkid": "tasks",
         "backgroundlogo": "images/logos/mywonderfulllogo.png",
-        "linkid": "test",
-        "description": "subdesc",
+        "description": "To-do's can be seen as a subcategory of coordination, but we make a distinction between coordination tools for management purposes and coordination tools that heavily increase communication between developers. Tools that ease the work of developers are more likely to be used often by them. If these tools in turn also have social features, the chance for unplanned communication increases.	That is why the following tools are beneficial for not only communication but also project progress.",
         "tools": [
           {
             "name": "Asana",
@@ -162,6 +174,18 @@ masterninja = {
             "description": "A free project management tool designed to help teams track projects from start to finish. One of its best features is that it lets you see the overall progress of your project step by step, so your clients know exactly how long something will take without having to bug you about it.",
             "backgroundlogo": "images/logos/mywonderfulllogo.png",
             "linkid": "asana"
+          },
+          {
+            "name": "Basecamp",
+            "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 100],
+            "description": "Basecamp is a very popular web-based project management tool that helps multiple groups rally around a single project. Because the project is the focus, you can create a system where both you and the client are on the same page about various stages of the project.",
+            "linkid": "basecamp"
+          },
+          {
+            "name": "Trello",
+            "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 100],
+            "description": "Trello is much like Basecamp, however it focuses more on management then communication, it is still increasing the chance of unplanned communication because deveopers work in one organized place. Much like Basecamp the advantages lie in a centralized place for organizing communication and isssues.",
+            "linkid": "trello"            
           },
           {
             "name": "Wunderlist",
