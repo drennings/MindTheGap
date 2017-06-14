@@ -10,12 +10,11 @@ masterninja = {
       "subcategories": [
         {
           "name": "Sharing",
-          "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "share",
           "description": "Communication in teams can happen for several reasons, one of them is sharing code, designs and/or concepts. There are many tools that benefit communication and workflow, in this section a few are named that stand out. All these tools can help to virtually close the gap to increase unplanned communication. There are a few types of applications that work via a sharing concept, most of them focus on sharing concepts, pieces of code or design quickly to the development team, management and/or clients.	Combined with communication aspects like a bulletin board per project or instant note sharing per design screen helps engagement across multiple people that does not necessarily have to be close to each other. Another benefit some sharing applications bring, is the possibility to share your whole screen, this benefits developers that are far away from each other while they can still work via pair programming.",
           "tools": [
             {
-              "name": "Appear.In",
+              "name": "Appear.in",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "Appearin focuses on remote distrubted teams, so essentially build for GSE. It is build to work in your browser by creating a new chatroom what enables you to share your screen and do group conversations.",
               "linkid": "appearin"
@@ -52,7 +51,6 @@ masterninja = {
         {
           "name": "Todo's",
           "linkid": "tasks",
-          "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "description": "To-do's can be seen as a subcategory of coordination, but we make a distinction between coordination tools for management purposes and coordination tools that heavily increase communication between developers. Tools that ease the work of developers are more likely to be used often by them. If these tools in turn also have social features, the chance for unplanned communication increases.	That is why the following tools are beneficial for not only communication but also project progress.",
           "tools": [
             {
@@ -84,7 +82,6 @@ masterninja = {
         },
         {
           "name": "Free talk",
-          "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "freely",
           "description": "Aside from the communication solely based on work related stuff, it is important that employees also have tools that can be used for all kind of random talk. So the last section of communication is about free talk. This helps the creativity flow and can improve working relations. There are a lot of tools for this, think of instant messaging and social platforms.	We will discuss a few that stand out for office use and explain the popularity and why they are suited best for GSE.",
 
@@ -202,13 +199,11 @@ masterninja = {
 
     {
       "name": "Cultural",
-      "backgroundlogo": "images/logos/cd.png",
       "linkid": "cd",
       "description": "Cultural differences wides the gap between team members. By dealing with managing, staff and training in a right way these problems can be dealt with. These tools can help overcome cultural differences.",
       "subcategories": [
         {
           "name": "Managing",
-          "backgroundlogo": "images/logos/managing.jpg",
           "linkid": "managing",
           "description": "Managing a cultural diverse team is different and harder then managing a team with people of the same culture. This can lead to problems which can wide the gap. The following tools can help manage teams and project indepent of cultural differences.",
           "tools": [
@@ -264,7 +259,6 @@ masterninja = {
         },
         {
           "name": "Staff",
-          "backgroundlogo": "images/logos/staff.jpg",
           "linkid": "staff",
           "description": "Getting the right staff is essential when assembling a team. Making sure that employees fit the team and cultures will help the team move forward. The following tool can help find the right staff. ",
           "tools": [
@@ -278,7 +272,6 @@ masterninja = {
         },
         {
           "name": "Training",
-          "backgroundlogo": "images/logos/training.jpg",
           "linkid": "training",
           "description": "Training teams so they know how other people work and think will help benefit both the project and team. This can be done by meeting in person and workshop, but also online. The following tool can help people to learn together, indepent of culture.",
           "tools": [
@@ -320,7 +313,6 @@ masterninja = {
         },
         {
           "name": "Internal",
-          "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "test",
           "description": "Another challenge that can play a role in globally distributed software engineering is the internal bonding social capital of a team. If there is no internal trust, this will have serious impact on the quality of the software.",
           "tools": []
