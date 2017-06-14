@@ -32,6 +32,7 @@ body {
 }
 #desccontainer{
   background-repeat: no-repeat;
+  background-size: 50%;
     background-position: center; 
     min-height:600px;
 }

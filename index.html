@@ -12,32 +12,37 @@ title: Mind the Gap
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/sidenav.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	
+
 </head>
 
 <body>
 	<div id="mySidenav" class="sidenav">
 		<div id="innersidenav">
-			<div class="dim"><a  href="#skillmap">The graph</a></div>
-			</div>
-</div>
+			<div class="dim"><a href="#skillmap">The graph</a></div>
+		</div>
+	</div>
 	<div id="menubuttondiv" class="menubutton">
 		<i id="menubutton" onclick="openNav()" class="fa fa-bars fa-3x fa-align-center"></i>
-	</div>	
+	</div>
 	<div class="intro text-div">
-		"Global software development is not a phenomenon but a reality nowadays" <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.459.7894">[1]</a>.  
-        Hence, more and more companies are using (or at least considering) distributed software engineering as a means to develop software. 
-        On this website, we consider a global(ly distributed) software engineering (G(D)SE) to be a contractual relationship between a client
-		and vendor organization, where the client organization outsources parts of its development process. There are a number
-		of advantages to this approach of developing software, such as cost savings, reduced time to market and proximity to the market and customer <a href="https://link.springer.com/chapter/10.1007/978-3-540-79588-9_1">[2]</a>.
-		Unfortunately, these advantages do not come without drawbacks that are the result of the gap between developers, introduced by the distributed way of working. Based on renowned work in the area of GDSE (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>), we identify this gap alongside four directions: communication, coordination, cultural differences and team bonding.
-        On this website we will discuss these categories and divide them in subcategories which pose serious risks to the smooth execution of a distributed software engineering project. Per subcategory we serve the reader with solutions that make developers happy, namely: technology. 
-        In short, we will propose a collection of tools to actively mind the gap in your distributed software project.
-        <p></p>	
-        Speaking of tools, we created the following tool for you to explore solutions to challenges in GSE. 
-        You can read all of our suggestions in a linear manner by scrolling down. But feel free to (first) hover over the core dimensions, subcategories and tools for a short description. 
-        Clicking on them will take you directly to the details!
-		<p></p>	
+		"Global software development is not a phenomenon but a reality nowadays" <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.459.7894">[1]</a>.
+		Hence, more and more companies are using (or at least considering) distributed software engineering as a means to develop
+		software. On this website, we consider a global(ly distributed) software engineering (G(D)SE) to be a contractual relationship
+		between a client and vendor organization, where the client organization outsources parts of its development process. There
+		are a number of advantages to this approach of developing software, such as cost savings, reduced time to market and proximity
+		to the market and customer <a href="https://link.springer.com/chapter/10.1007/978-3-540-79588-9_1">[2]</a>. Unfortunately,
+		these advantages do not come without drawbacks that are the result of the gap between developers, introduced by the distributed
+		way of working. Based on renowned work in the area of GDSE (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>),
+		we identify this gap alongside four directions: communication, coordination, cultural differences and team bonding. On
+		this website we will discuss these categories and divide them in subcategories which pose serious risks to the smooth execution
+		of a distributed software engineering project. Per subcategory we serve the reader with solutions that make developers
+		happy, namely: technology. In short, we will propose a collection of tools to actively mind the gap in your distributed
+		software project.
+		<p></p>
+		Speaking of tools, we created the following tool for you to explore solutions to challenges in GSE. You can read all of our
+		suggestions in a linear manner by scrolling down. But feel free to (first) hover over the core dimensions, subcategories
+		and tools for a short description. Clicking on them will take you directly to the details!
+		<p></p>
 	</div>
 	<hr/>
 	<div id="skillmap">
@@ -61,57 +66,73 @@ title: Mind the Gap
 	<hr/>
 	<div class="difficulties text-div">
 		<h1>Four main difficulties in GSE</h1>
-		Almost two decades ago(!), Carmel described in his renowned book "Global Software Teams: Collaborating Across Borders and Time Zones" (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>) the five centrifugal forces of global software teams:
+		Almost two decades ago(!), Carmel described in his renowned book "Global Software Teams: Collaborating Across Borders and
+		Time Zones" (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>) the five centrifugal forces of global software
+		teams:
 		<ul>
 			<li>Geographical dispersion</li>
 			<li>Coordination breakdown</li>
 			<li>Loss of communication richness</li>
-			<li>Loss of teamness</li>            
+			<li>Loss of teamness</li>
 			<li>Cultural differences</li>
 		</ul>
-As you may have noticed, here only discuss four of these forces. We chose to do so since we think that there are no tools that directly address and therefore nicely fit the problem of geographical dispersion. Moreover, we see dispersion as a force that strengthens the other four centrifugal forces of GSE, for which we do present technology that can help developers to manage them.
-In this approach we also freely translated the forces as defined by Carmel in 1999 to: <b>coordination</b>, <b>communication</b>, <b>team bonding</b> and <b>cultural differences</b>. A more elaborate description of these forces, their subcategories and tools that may help developers to manage them is provided next.
-	
-        <center>
-				<img src="images/icons/dimensions.png">
+		As you may have noticed, here only discuss four of these forces. We chose to do so since we think that there are no tools
+		that directly address and therefore nicely fit the problem of geographical dispersion. Moreover, we see dispersion as a
+		force that strengthens the other four centrifugal forces of GSE, for which we do present technology that can help developers
+		to manage them. In this approach we also freely translated the forces as defined by Carmel in 1999 to: <b>coordination</b>,
+		<b>communication</b>, <b>team bonding</b> and <b>cultural differences</b>. A more elaborate description of these forces,
+		their subcategories and tools that may help developers to manage them is provided next.
+
+		<center>
+			<img src="images/icons/dimensions.png">
 		</center>
-    </div>
+	</div>
 	<hr/>
 	<div class="communication text-div">
 		<h1 id="communicationtools">Tools for communication</h1>
-		Communication is key in software engineering, but with globally distributed engineering it may very well be even more important, while it is also harder to maintain. 
-        In addition, this is not limited to the planned communication (such as the daily stand ups and sprint reflections). The well renowned 'Allen Curve' from the seventies (<a href="https://www.osti.gov/scitech/biblio/7100210">[6]</a>) describes that a gap between two people over 50 meter (or more) drastically reduces the chance of unplanned communicaton. 
-        
-        Luckily, there are a lot of tools that can support communication in a distributed setting. We divide these tools into three subcategories, which can all significantly contribute to closing the virtual
-		gap between multiple software teams. The three subcategories are:
+		Communication is key in software engineering, but with globally distributed engineering it may very well be even more important,
+		while it is also harder to maintain. In addition, this is not limited to the planned communication (such as the daily stand
+		ups and sprint reflections). The well renowned 'Allen Curve' from the seventies (<a href="https://www.osti.gov/scitech/biblio/7100210">[6]</a>)
+		describes that a gap between two people over 50 meter (or more) drastically reduces the chance of unplanned communicaton.
+		Luckily, there are a lot of tools that can support communication in a distributed setting. We divide these tools into three
+		subcategories, which can all significantly contribute to closing the virtual gap between multiple software teams. The three
+		subcategories are:
 		<ul>
 			<li>Share tools</li>
 			<li>Todo and progress tools</li>
 			<li>Free talk</li>
 		</ul>
 
-		Since we don't want to present you with a mere description of tools, we also provide argumentations of why these tools could be beneficial for your distributed project. The paper <a href="#communicationpaper">Communication tools for distributed software development teams</a> lists advantages for certain types of tools and their sensory modes (e.g. visual, audio).
-		For example, instant messaging tools can provide instant interaction at low cost, but also let you know who is available before you even start interacting with one another. Instant messaging allows you to touch upon the visual domain through visuals and raw text, but nowadays often covers file sharing (in a graphical context) in addition.
-		Taking into account these types of interaction and what helps these interactions become effective, we provide you with a list of tools that are of great benefit in GSE.
+		Since we don't want to present you with a mere description of tools, we also provide argumentations of why these tools could
+		be beneficial for your distributed project. The paper <a href="#communicationpaper">Communication tools for distributed software development teams</a>		lists advantages for certain types of tools and their sensory modes (e.g. visual, audio). For example, instant messaging
+		tools can provide instant interaction at low cost, but also let you know who is available before you even start interacting
+		with one another. Instant messaging allows you to touch upon the visual domain through visuals and raw text, but nowadays
+		often covers file sharing (in a graphical context) in addition. Taking into account these types of interaction and what
+		helps these interactions become effective, we provide you with a list of tools that are of great benefit in GSE.
 
 		<!-- TODO: use numbers and other sources to get a better story for the tools. -->
 		<div id="share">
 			<h2>Sharing</h2>
 			Communication in teams can happen for several reasons, one of them is sharing code, designs and/or concepts. There are many
-			tools that can support communication and workflow. In this section we name a few of those that stand out and can help to virtually
-			close the gap to increase unplanned communication.
-			There are a few types of applications that work via a sharing concept. Most of them focus on sharing concepts, pieces of code or a new design with the development team, management and/or clients in a quick manner.
-			Combined with communication aspects like a bulletin board per project or instant note sharing per design screen helps engagement across multiple people, even when they are not close to each other.
-			Another benefit brought forward by some sharing applications is the possibility to share your whole screen. This for instance allows developers that are far away from each other to still work via pair programming.
-			
+			tools that can support communication and workflow. In this section we name a few of those that stand out and can help
+			to virtually close the gap to increase unplanned communication. There are a few types of applications that work via a
+			sharing concept. Most of them focus on sharing concepts, pieces of code or a new design with the development team, management
+			and/or clients in a quick manner. Combined with communication aspects like a bulletin board per project or instant note
+			sharing per design screen helps engagement across multiple people, even when they are not close to each other. Another
+			benefit brought forward by some sharing applications is the possibility to share your whole screen. This for instance
+			allows developers that are far away from each other to still work via pair programming.
+
 
 			<h3 id="appearin">Appear.in</h3>
-			Appear.in focuses on remotely distrubted teams and is in essence build for GSE. You can use it right from your browser by creating a new chatroom that enables you to share your screen(s) and have group conversations.
-			<br/><br/>
-			What makes Appear.in great for GSE and closing the virtual gap is the simplicity of use: you can join whenever you want on your mobile/laptop or office PC by just entering the given chatroom address in your browser.
-			Naturally, you still need to have a cause to create a chatroom, but the simplicity to join somewhat closes the virtual gap between the remote teams. 
-			Tools that are always running will sometimes be overlooked, wich may very well lead to slower and less utilized communiation channels. On the other hand, when a new chatroom was created and you get invited, there is probably a cause and multiple people will join quickly.
-			This way communiation is improved and with all the features this specific chatroom brings, it is of great use in GSE.
+			Appear.in focuses on remotely distrubted teams and is in essence build for GSE. You can use it right from your browser by
+			creating a new chatroom that enables you to share your screen(s) and have group conversations.
+			<br/><br/> What makes Appear.in great for GSE and closing the virtual gap is the simplicity of use: you can join whenever
+			you want on your mobile/laptop or office PC by just entering the given chatroom address in your browser. Naturally, you
+			still need to have a cause to create a chatroom, but the simplicity to join somewhat closes the virtual gap between the
+			remote teams. Tools that are always running will sometimes be overlooked, wich may very well lead to slower and less utilized
+			communiation channels. On the other hand, when a new chatroom was created and you get invited, there is probably a cause
+			and multiple people will join quickly. This way communiation is improved and with all the features this specific chatroom
+			brings, it is of great use in GSE.
 			<br/><br/>
 			<a href="https://appear.in/" target="_blank">Try out Appear.In</a>
 			<center>
@@ -122,10 +143,10 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			ConceptShare is a communication tool especially designed for creative types. It helps you streamline the review and approval
 			process for any project and it allows for online proofing with workflow automation. With this tool you can work with clients
 			from one place without having to send a hundred emails back and forth.
-			<br/> <br/> ConceptShare can work well in global software engineering for multiple reasons. While the design
-			process is ongoing and new requirements are still being introduced, a lot of communication is needed. In this process,
-			sharing designs and documents and creating a steady workflow are of great benefit. Because ConceptShare makes you interact
-			in an efficient way and asks for updates when the product changes, interactions will happen on a more frequent basis.
+			<br/> <br/> ConceptShare can work well in global software engineering for multiple reasons. While the design process is
+			ongoing and new requirements are still being introduced, a lot of communication is needed. In this process, sharing designs
+			and documents and creating a steady workflow are of great benefit. Because ConceptShare makes you interact in an efficient
+			way and asks for updates when the product changes, interactions will happen on a more frequent basis.
 			<br/> <br/>
 			<a href="https://www.conceptshare.com/" target="_blank">Try out ConceptShare</a>
 			<br/>
@@ -137,7 +158,8 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			Clients can provide feedback and comments directly on the site and track progress in real-time by looking at your to-do
 			list.
 			<br/><br/> InVision can help in global system engineering in the design phase. InVision lets off-shore designers create
-			a full app in a mock-up way where you can click through the app. By adding to-do's while clicking through the app, you can communicate in an efficient way.
+			a full app in a mock-up way where you can click through the app. By adding to-do's while clicking through the app, you
+			can communicate in an efficient way.
 			<br/><br/>
 			<a href="https://www.invisionapp.com/" target="_blank">Try out InVision</a>
 			<br/>
@@ -146,9 +168,10 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			</center>
 
 			<h3 id="screenhero">Screen Hero</h3>
-			Screen hero is screen sharing software which works well in combination with Slack. Screen Hero allows members of the team to
-			share their screen in real time, and allows multiple cursors so you can actually pair program on someone else’s machine.
-			<br/><br/> With Screen Hero you can thus combine the power of inhouse programmers with off-shore programmers, both concerning pair programming and problem solving.
+			Screen hero is screen sharing software which works well in combination with Slack. Screen Hero allows members of the team
+			to share their screen in real time, and allows multiple cursors so you can actually pair program on someone else’s machine.
+			<br/><br/> With Screen Hero you can thus combine the power of inhouse programmers with off-shore programmers, both concerning
+			pair programming and problem solving.
 			<br/><br/>
 			<a href="https://www.screenhero.com/" target="_blank">Try out ScreenHero</a>
 			<br/>
@@ -157,11 +180,14 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			</center>
 
 			<h3 id="bluejeans">BlueJeans</h3>
-			BlueJeans is a cloud video conferencing platform, which enables your remote teams to video conference on any platform with ease. Seeing the other party when communicating can be a beneficial factor for bonding and expressing yourself, which is hard to do in GSE because of the distance between remote teams.
-			<br/><br/> 
-			In GSE communication is key, but many communiation tools rely on instant messaging or concept sharing, which are all good for their own purpose, but for meetings it can be essential to see the other party.
-			Expressing emotion for instance is very hard to do via text alone. When you are able to see the other person, you bond more, and can get your point across in more ways than only text. 
-			A conversation gets more natural With facial expressions or hand gestures, this will avoid misunderstandings and wrong assumptions.
+			BlueJeans is a cloud video conferencing platform, which enables your remote teams to video conference on any platform with
+			ease. Seeing the other party when communicating can be a beneficial factor for bonding and expressing yourself, which
+			is hard to do in GSE because of the distance between remote teams.
+			<br/><br/> In GSE communication is key, but many communiation tools rely on instant messaging or concept sharing, which
+			are all good for their own purpose, but for meetings it can be essential to see the other party. Expressing emotion for
+			instance is very hard to do via text alone. When you are able to see the other person, you bond more, and can get your
+			point across in more ways than only text. A conversation gets more natural With facial expressions or hand gestures, this
+			will avoid misunderstandings and wrong assumptions.
 			<br/><br/>
 			<a href="https://www.bluejeans.com/" target="_blank">Try out BlueJeans</a>
 			<br/>
@@ -174,379 +200,391 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 		</div>
 		<div id="tasks">
 			<h2>To-do's</h2>
-			To-do's can be seen as a subcategory of coordination, but we here make a distinction between coordination tools for management purposes (discussed in the coordination category) and coordination tools that heavily increase communication between developers (discussed here).
-			Tools that ease the work of developers are more likely to be used often by them. If these tools in turn also have social features, the chance for unplanned communication increases.
-			That is why the following tools are beneficial for not only communication but also project progress.
+			To-do's can be seen as a subcategory of coordination, but we here make a distinction between coordination tools for management
+			purposes (discussed in the coordination category) and coordination tools that heavily increase communication between developers
+			(discussed here). Tools that ease the work of developers are more likely to be used often by them. If these tools in turn
+			also have social features, the chance for unplanned communication increases. That is why the following tools are beneficial
+			for not only communication but also project progress.
 			<h3 id="asana">Asana</h3>
-				Asana is a free project management tool designed to help teams track projects from start to finish. One of its best features
-				is that it lets you see the overall progress of your project step by step, so your clients know exactly how long something
-				will take without having to bug you about it.
-				<br/><br/>
-				Asana is a great tool for globally distributed software engineering, for managers, developers and clients. With Asana you can plan your sprints, and every item on the sprint has its own message board.
-				Asana also asks for regular updates on the project-wide message board. This actually forces you to post something on the board, with a big chance that others will respond. 
-				The project-wide board is for managers and even clients to see what the progress is, but also for developers working on different parts of the software to see how everyone is progressing. 
-				This transforms the project into a much more living and social entity.
-				<br/><br/>
-				<a href="www.asana.com" target="_blank">Try out Asana</a>
-				<br/>
-				<center>
-					<img src="https://lh3.googleusercontent.com/1eZhXkhRMz_MtXxo4yGrn3ENkX1rVWI1kEt5E32sWtV2kVjgCYRSLLN8iKb-3A6QFCowp52Wz9o=s640-h400-e365">
-				</center>
-				
-			<h3 id="wunderlist">Wunderlist</h3>
-				Wunderlist is a to-do list tool that helps you plan your individual tasks, set notifications and reminders, and collaborate
-				with clients so they can see exactly what you’re up to and when you’re working. It is available on both desktop and mobile, so you can update it on the go. 
-                If you have clients who want to see the project laid out in	detail, this tool will definitely help.
-				<br/><br/>
-				Wunderlist has a lot in common with its direct competitor Asana and is thereby for exactly the same reasons a great addition to GSE. Which tool to use is up to your preference.
-				<br/><br/>
+			Asana is a free project management tool designed to help teams track projects from start to finish. One of its best features
+			is that it lets you see the overall progress of your project step by step, so your clients know exactly how long something
+			will take without having to bug you about it.
+			<br/><br/> Asana is a great tool for globally distributed software engineering, for managers, developers and clients.
+			With Asana you can plan your sprints, and every item on the sprint has its own message board. Asana also asks for regular
+			updates on the project-wide message board. This actually forces you to post something on the board, with a big chance
+			that others will respond. The project-wide board is for managers and even clients to see what the progress is, but also
+			for developers working on different parts of the software to see how everyone is progressing. This transforms the project
+			into a much more living and social entity.
+			<br/><br/>
+			<a href="www.asana.com" target="_blank">Try out Asana</a>
+			<br/>
+			<center>
+				<img src="https://lh3.googleusercontent.com/1eZhXkhRMz_MtXxo4yGrn3ENkX1rVWI1kEt5E32sWtV2kVjgCYRSLLN8iKb-3A6QFCowp52Wz9o=s640-h400-e365">
+			</center>
 
-				<a href="https://wunderlist.com/" target="_blank">Try out Wunderlist</a>
-				<br/>
-				<center>
-					<img src="http://www.elatewiki.org/images/Wunderlistpro.png">
-				</center>
+			<h3 id="wunderlist">Wunderlist</h3>
+			Wunderlist is a to-do list tool that helps you plan your individual tasks, set notifications and reminders, and collaborate
+			with clients so they can see exactly what you’re up to and when you’re working. It is available on both desktop and mobile,
+			so you can update it on the go. If you have clients who want to see the project laid out in detail, this tool will definitely
+			help.
+			<br/><br/> Wunderlist has a lot in common with its direct competitor Asana and is thereby for exactly the same reasons
+			a great addition to GSE. Which tool to use is up to your preference.
+			<br/><br/>
+
+			<a href="https://wunderlist.com/" target="_blank">Try out Wunderlist</a>
+			<br/>
+			<center>
+				<img src="http://www.elatewiki.org/images/Wunderlistpro.png">
+			</center>
 
 			<h3 id="basecamp">Basecamp</h3>
-				Basecamp is a very popular web-based project management tool that helps multiple groups rally around a single project. Because
-				the project is the focus, you can create a system where both you and the client are on the same page about various stages
-				of the project.
-                <br/><br/>
-				Basecamp focuses on everything in one place and cutting meetings. This essentially is decreasing the total amount of communication, but increasing the amount of effective communication. Because everything is in one place, it is ideal for GSE.
-				Everyone can see what is going on and organize their communication in the same place.
-				Group chatting, scheduling and sharing is all available in basecamp which increases the chance of communication for distributed teams thus helping decrease the virtual gap.
-				<br/><br/>
-				<a href="https://basecamp.com/" target="_blank">Try out Basecamp</a>
-				<br/>
-				<center>
-					<img src="https://3.basecamp-static.com/bcxhq/assets/general/device-callouts@2x-676c2d8c7de2fb8b7356a367f85c045277715cedb927a8099ad5c0571ebb0059.png">
-				</center>
+			Basecamp is a very popular web-based project management tool that helps multiple groups rally around a single project. Because
+			the project is the focus, you can create a system where both you and the client are on the same page about various stages
+			of the project.
+			<br/><br/> Basecamp focuses on everything in one place and cutting meetings. This essentially is decreasing the total
+			amount of communication, but increasing the amount of effective communication. Because everything is in one place, it
+			is ideal for GSE. Everyone can see what is going on and organize their communication in the same place. Group chatting,
+			scheduling and sharing is all available in basecamp which increases the chance of communication for distributed teams
+			thus helping decrease the virtual gap.
+			<br/><br/>
+			<a href="https://basecamp.com/" target="_blank">Try out Basecamp</a>
+			<br/>
+			<center>
+				<img src="https://3.basecamp-static.com/bcxhq/assets/general/device-callouts@2x-676c2d8c7de2fb8b7356a367f85c045277715cedb927a8099ad5c0571ebb0059.png">
+			</center>
 
 			<h3 id="trello">Trello</h3>
-				Trello is a planning tool in which all parts of the project can be listed.
-				This tool offers one location which everyone can access and can use to discuss
-				current dependencies and planning with regard to the project. In Trello, tasks can also 
-				be assigned to a person or a team which is especially useful for teams that 
-				are located around the world.
-				<br/><br/>
-				Trello is much like Basecamp, however it focuses more on management then communication, it is still increasing the chance of unplanned communication because deveopers work in one organized place.
-				Much like Basecamp the advantages lie in a centralized place for organizing communication and isssues.
-				<br/><br/>
-				<a href="www.trello.com" target="_blank">Try out Trello</a>
-				<br/>
-				<center>
-					<img src="https://mdn.mozillademos.org/files/10351/mdn_board.JPG">
-				</center>  
+			Trello is a planning tool in which all parts of the project can be listed. This tool offers one location which everyone can
+			access and can use to discuss current dependencies and planning with regard to the project. In Trello, tasks can also
+			be assigned to a person or a team which is especially useful for teams that are located around the world.
+			<br/><br/> Trello is much like Basecamp, however it focuses more on management then communication, it is still increasing
+			the chance of unplanned communication because deveopers work in one organized place. Much like Basecamp the advantages
+			lie in a centralized place for organizing communication and isssues.
+			<br/><br/>
+			<a href="www.trello.com" target="_blank">Try out Trello</a>
+			<br/>
+			<center>
+				<img src="https://mdn.mozillademos.org/files/10351/mdn_board.JPG">
+			</center>
 		</div>
 
 		<div id="freely">
 			<h2>Free talk</h2>
-			Aside from the communication solely based on work related stuff, it is important that employees also have tools that can be used for all kind of random talk.
-			Hence, the last section of communication is about free talk. This helps the creativity flow and can improve working relations. There are a lot of tools for this, think of instant messaging and social platforms.
+			Aside from the communication solely based on work related stuff, it is important that employees also have tools that can
+			be used for all kind of random talk. Hence, the last section of communication is about free talk. This helps the creativity
+			flow and can improve working relations. There are a lot of tools for this, think of instant messaging and social platforms.
 			We will discuss a few that stand out for office use and explain their popularity and why they are suited best for GSE.
 			<h3 id="slack">Slack</h3>
-				Slack is a popular communication tool and for good reason. It takes the best of email and live-chat features and combines
-				them into one app that you can use on your desktop or mobile device. Aside from private messages you can also create
-				collaborative boards around different projects or topics, which is helpful if you’re working with a larger team of people
-				or on multiple projects with a single client at once.
+			Slack is a popular communication tool and for good reason. It takes the best of email and live-chat features and combines
+			them into one app that you can use on your desktop or mobile device. Aside from private messages you can also create collaborative
+			boards around different projects or topics, which is helpful if you’re working with a larger team of people or on multiple
+			projects with a single client at once.
 
-				<br/><br/>
-				Slack may be the best messenger suited for GSE and free talk. Slack works by joining a slack group where all your employees/colleagues can be in. 
-				From there you can easily create separate channels with the people you need/want for any reason. Channels could be project-specific, but you can also create channels for Friday drinks and other random stuff.
-				The strength of Slack is then that everyone can reach each other in a very simple way. The simplicity is then the reason that the chance on unplanned communication increases.
-				<br/><br/>
-				<a href="www.slack.com" target="_blank">Try out Slack</a>
-				<br/>
-				<center>
-					<img src="https://www.masoutreach.frl/wp-content/uploads/2016/03/Slack-tool_masoutreach.png">
-				</center>
+			<br/><br/> Slack may be the best messenger suited for GSE and free talk. Slack works by joining a slack group where all
+			your employees/colleagues can be in. From there you can easily create separate channels with the people you need/want
+			for any reason. Channels could be project-specific, but you can also create channels for Friday drinks and other random
+			stuff. The strength of Slack is then that everyone can reach each other in a very simple way. The simplicity is then the
+			reason that the chance on unplanned communication increases.
+			<br/><br/>
+			<a href="www.slack.com" target="_blank">Try out Slack</a>
+			<br/>
+			<center>
+				<img src="https://www.masoutreach.frl/wp-content/uploads/2016/03/Slack-tool_masoutreach.png">
+			</center>
 			<h3 id="skype">Skype for business/Microsoft Teams</h3>
-                It is very likely that you have used Skype at least once and therefore know that such a tool is a must have when it comes to GSE, so we will not elaborate on that. However, it might be interesting to really look into the advanced features of skype, such as sharing files, screens or a digital whiteboard while calling. There are plenty of ways to use skype as a real GDSE supportive tool, rather than "just" sending your voice across the globe.
-				<br/><br/>
-                Microsoft Teams is bascially following up Skype for business and has more features like Slack and is becoming a direct competitor of the previously discussed tool. MS Teams is heavily gaining traction because Skype was already widely in businesses. Another advantage lies with the fact that bigger companies naturally are more likely to use Microsoft's software. Some also say that you can interact more quickly by using Microsoft Teams.
-				<br/><br/>
-				<a href="https://products.office.com/en-us/microsoft-teams/group-chat-software" target="_blank">Try out Microsoft teams</a>
-				<br/>
-				<center>
-					<img src="https://c.s-microsoft.com/en-us/CMSImages/Image_SkypeMeetings_713x428.png?version=ccd54ff8-c7b7-13df-7230-781fe9c456d0">
-				</center>
+			It is very likely that you have used Skype at least once and therefore know that such a tool is a must have when it comes
+			to GSE, so we will not elaborate on that. However, it might be interesting to really look into the advanced features of
+			skype, such as sharing files, screens or a digital whiteboard while calling. There are plenty of ways to use skype as
+			a real GDSE supportive tool, rather than "just" sending your voice across the globe.
+			<br/><br/> Microsoft Teams is bascially following up Skype for business and has more features like Slack and is becoming
+			a direct competitor of the previously discussed tool. MS Teams is heavily gaining traction because Skype was already widely
+			in businesses. Another advantage lies with the fact that bigger companies naturally are more likely to use Microsoft's
+			software. Some also say that you can interact more quickly by using Microsoft Teams.
+			<br/><br/>
+			<a href="https://products.office.com/en-us/microsoft-teams/group-chat-software" target="_blank">Try out Microsoft teams</a>
+			<br/>
+			<center>
+				<img src="https://c.s-microsoft.com/en-us/CMSImages/Image_SkypeMeetings_713x428.png?version=ccd54ff8-c7b7-13df-7230-781fe9c456d0">
+			</center>
 
 		</div>
 	</div>
 	<hr/>
 	<div class="coordination text-div">
 		<h1 id="coordination">Tools for Coordination</h1>
-			Coordination in software development teams can be divided into the following categories:
-			<ul>
-				<li> Centralized Structure</li>
-				<li> Early Identification of Dependencies</li>
-				<li> Documentation</li>
-				<li> Progress Analysis</li>
-			</ul>
-			The above categories all describe a domain where the coordination of a project becomes more difficult when the teams are
-			further away from each other. These are thus the domains in which improvement of coordination is needed in order to bring
-			teams closer together and make the whole developoment process go more smoothly. The coordination tools have a big overlap
-			with communication as communiction is in fact a coordination tool.
-			<h2 id="centralstruct">Centralized Structure</h2>
-			If the structure of the project is clear and decisions about the structure 
-			are centralized in one place then the communication about it is also clear. 
-			Everyone knows how the project is formed and that makes the communication 
-			and coordination about it more easy. Below are two software analytics tools 
-			that help in analysing projects by making the structure and statistics 
-			of the project more readily available. 
-			<h3 id="sonarqube">SonarQube</h3>
-			SonarQube is a software project analytics tool to which you can connect a 
-			git repository. SonarQube then analyses your project's structure and quality.
-			These analytics are available to everyone at any time.
-			<br/><br/>
-			<a href="www.sonarqube.org" target="_blank">Try out SonarQube</a>
-			<br/>
-			<center>
-				<img src="http://www.compuware.com/cpwr/2015/wp-content/uploads/2015/11/web-assets/jpg/sonarqube_screenshot-1024x672.jpg">
-			</center>            
-			<h3 id="codefactor">Codefactor</h3>
-			Codefactor is another software analytics tool which helps in analysing the 
-			code base of your project. The tool also easily connects to git and gives 
-			a clear overview of each branch available in the project. 
-            <br/><br/>
-			<a href="www.codefactor.io" target="_blank">Try out CodeFactor</a>
-			<br/>
-			<center>
-				<img src="https://ph-files.imgix.net/f150b2e4-2ee2-40a8-865b-f830691fcd19?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=456.6536964980545&h=360">
-			</center>            
-			<h2 id="identification_dependencies">Identification of Dependencies</h2>
-			For a global software development team it is important that remote teams 
-			are not working on dependent parts of the project. So it is necessary that 
-			these dependencies are figured out as early as possible. Below are project 
-			planning and team management tools that in combination with a software analytics tool can help
-			in identification in dependencies such that no two remote teams are working 
-			on dependent parts.
-			<h3 id="trello_coordination">Trello</h3>
-			Trello is the planning tool in which all parts of the project can be listed.
-			This tool offers one location which everyone can access and can use to discuss
-			current dependencies and planning about the project. In Trello, tasks can also 
-			be assigned to a person or a team which is especially useful for teams that 
-			are located around the world.
-            <br/><br/>
-			<a href="www.trello.com" target="_blank">Try out Trello</a>
-			<br/>
-			<center>
-				<img src="https://mdn.mozillademos.org/files/10351/mdn_board.JPG">
-			</center>            
-			<h3 id="githubdep">Github</h3>
-			Github is the main versioning tool for software projects. With this tool 
-			each team can add new work on their own branch. With this it becomes clear 
-			what features are being added. With Github the structure of the project can 
-			also be analysed to detect dependencies of different project parts. 
-			<br/><br/>
-			<a href="www.github.com" target="_blank">Try out GitHub</a>
-			<br/>
-			<center>
-				<img src="https://guides.github.com/introduction/getting-your-project-on-github/repository.png">
-			</center>        
-			<h3 id="agilecokpitdep">Agile Cockpit</h3>
-			Agile Cockpit is a project management application and offers tools for tasks
-			suck as backlog management, release planning but also a tool to organise the 
-			teams structure. This tool gives an overview of the project's active teams and 
-			their members. Easy management of remote development teams is crucial for 
-			a succesful project. This tool helps in coordinating tasks between teams when 
-			project dependencies are clear.
-						<br/><br/>
-			<a href="https://www.agilecockpit.com" target="_blank">Try out Agile Cockpit</a>
-			<br/>
-			<center>
-				<img src="https://www.agilecockpit.com/wp-content/uploads/2016/05/organization-structure-agile-scrum-tool.png">
-			</center>    
-			<h2 id="documentation">Documentation</h2>
-			For teams that do not run in to each other on the workfloor it is particularly
-			essential that the documentation of the project is up to date and clear. When 
-			a certain part of the project is unclear you could ask someone in person for 
-			extra clarification, but for remote teams this is impossible. Therefore it is important 
-			to have proper documentation to prevent these situations. Below are two tools 
-			that provide a good way to keep the documentation up to date.
-			<h3 id="githubwiki">Github Wiki</h3>
-			Github Wiki is a tool on Github which you can link to your project's repository.
-			In this tool you can create all sorts of pages on every subject you can think of.
-			These pages are automatically added to the sidebar in alphabetical order. 
-			The search bar makes for an even more accessible body of information. The 
-			best part is that anyone in your business can access these pages as well as make 
-			new ones.			
-            <br/><br/>
-			<a href="www.github.com" target="_blank">Try out GitHub</a>
-			<br/>
-			<center>
-				<img src="http://docs.geonode.org/en/master/_images/d3-wiki.png">
-			</center>            
-			<h3 id="readthedocs">ReadTheDocs</h3>
-			ReadTheDocs is a documentation tool similar to Github wiki pages. It also allows
-			for easy creation and searching of documentation, but it does not simply list 
-			all pages, pages can also be grouped and categorised. It lets the user 
-			browse the documentation more easily when they are unsure 
-			what exactly they are looking for.
-            <br/><br/>
-			<a href="www.readthedocs.org" target="_blank">Try out ReadTheDocs</a>
-			<br/>
-			<center>
-				<img src="http://docs.readthedocs.io/en/latest/_images/screen_mobile.png">
-			</center>            
-			<h2 id="proganalysis">Progress Analysis</h2>
-			The way the teams in a company are integrated with each other decides how 
-			internal relations between the teams are set. These relations determine 
-			what information and updates about the project a team needs from other teams.
-			<h3 id="githubana">Github</h3>
-			Github is the main versioning tool for software projects. On their website 
-			you can browse your repositories and comment on all parts of a project. You can 
-			also mention other people to involve them in the conversation if they need 
-			to hear what is being said. In addition to that users can turn on notifications 
-			for certain repositories to get all the updates they need.
-            <br/><br/>
-			<a href="www.github.com" target="_blank">Try out GitHub</a>
-			<br/>
-			<center>
-				<img src="https://www.broadleafcommerce.com/cmsstatic/Screen%20Shot%202013-08-28%20at%204.06.26%20PM.png">
-			</center> 
-			<h3 id="jiraana">JIRA</h3>
-			JIRA is an advanced project tracker that helps software development teams 
-			with issue and bug tracking. It also offers online scrum boards and agile 
-			reporting tools for sprints. These tools are very useful for tracking the 
-			project's progress for teams that are spread around the globe because 
-			they are accessible online. Remote teams can thus interact with each other 
-			more easily and in an effective way for the project.
-						<br/><br/>
-			<a href="https://www.atlassian.com/software/jira" target="_blank">Try out JIRA</a>
-			<br/>
-			<center>
-				<img src="https://jirasupport.files.wordpress.com/2015/09/jira72.jpg">
-			</center>
+		Coordination in software development teams can be divided into the following categories:
+		<ul>
+			<li> Centralized Structure</li>
+			<li> Early Identification of Dependencies</li>
+			<li> Documentation</li>
+			<li> Progress Analysis</li>
+		</ul>
+		The above categories all describe a domain where the coordination of a project becomes more difficult when the teams are
+		further away from each other. These are thus the domains in which improvement of coordination is needed in order to bring
+		teams closer together and make the whole developoment process go more smoothly. The coordination tools have a big overlap
+		with communication as communiction is in fact a coordination tool.
+		<h2 id="centralstruct">Centralized Structure</h2>
+		If the structure of the project is clear and decisions about the structure are centralized in one place then the communication
+		about it is also clear. Everyone knows how the project is formed and that makes the communication and coordination about
+		it more easy. Below are two software analytics tools that help in analysing projects by making the structure and statistics
+		of the project more readily available.
+		<h3 id="sonarqube">SonarQube</h3>
+		SonarQube is a software project analytics tool to which you can connect a git repository. SonarQube then analyses your project's
+		structure and quality. These analytics are available to everyone at any time.
+		<br/><br/>
+		<a href="www.sonarqube.org" target="_blank">Try out SonarQube</a>
+		<br/>
+		<center>
+			<img src="http://www.compuware.com/cpwr/2015/wp-content/uploads/2015/11/web-assets/jpg/sonarqube_screenshot-1024x672.jpg">
+		</center>
+		<h3 id="codefactor">Codefactor</h3>
+		Codefactor is another software analytics tool which helps in analysing the code base of your project. The tool also easily
+		connects to git and gives a clear overview of each branch available in the project.
+		<br/><br/>
+		<a href="www.codefactor.io" target="_blank">Try out CodeFactor</a>
+		<br/>
+		<center>
+			<img src="https://ph-files.imgix.net/f150b2e4-2ee2-40a8-865b-f830691fcd19?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=456.6536964980545&h=360">
+		</center>
+		<h2 id="identification_dependencies">Identification of Dependencies</h2>
+		For a global software development team it is important that remote teams are not working on dependent parts of the project.
+		So it is necessary that these dependencies are figured out as early as possible. Below are project planning and team management
+		tools that in combination with a software analytics tool can help in identification in dependencies such that no two remote
+		teams are working on dependent parts.
+		<h3 id="trello_coordination">Trello</h3>
+		Trello is the planning tool in which all parts of the project can be listed. This tool offers one location which everyone
+		can access and can use to discuss current dependencies and planning about the project. In Trello, tasks can also be assigned
+		to a person or a team which is especially useful for teams that are located around the world.
+		<br/><br/>
+		<a href="www.trello.com" target="_blank">Try out Trello</a>
+		<br/>
+		<center>
+			<img src="https://mdn.mozillademos.org/files/10351/mdn_board.JPG">
+		</center>
+		<h3 id="githubdep">Github</h3>
+		Github is the main versioning tool for software projects. With this tool each team can add new work on their own branch.
+		With this it becomes clear what features are being added. With Github the structure of the project can also be analysed
+		to detect dependencies of different project parts.
+		<br/><br/>
+		<a href="www.github.com" target="_blank">Try out GitHub</a>
+		<br/>
+		<center>
+			<img src="https://guides.github.com/introduction/getting-your-project-on-github/repository.png">
+		</center>
+		<h3 id="agilecokpitdep">Agile Cockpit</h3>
+		Agile Cockpit is a project management application and offers tools for tasks suck as backlog management, release planning
+		but also a tool to organise the teams structure. This tool gives an overview of the project's active teams and their members.
+		Easy management of remote development teams is crucial for a succesful project. This tool helps in coordinating tasks between
+		teams when project dependencies are clear.
+		<br/><br/>
+		<a href="https://www.agilecockpit.com" target="_blank">Try out Agile Cockpit</a>
+		<br/>
+		<center>
+			<img src="https://www.agilecockpit.com/wp-content/uploads/2016/05/organization-structure-agile-scrum-tool.png">
+		</center>
+		<h2 id="documentation">Documentation</h2>
+		For teams that do not run in to each other on the workfloor it is particularly essential that the documentation of the project
+		is up to date and clear. When a certain part of the project is unclear you could ask someone in person for extra clarification,
+		but for remote teams this is impossible. Therefore it is important to have proper documentation to prevent these situations.
+		Below are two tools that provide a good way to keep the documentation up to date.
+		<h3 id="githubwiki">Github Wiki</h3>
+		Github Wiki is a tool on Github which you can link to your project's repository. In this tool you can create all sorts of
+		pages on every subject you can think of. These pages are automatically added to the sidebar in alphabetical order. The
+		search bar makes for an even more accessible body of information. The best part is that anyone in your business can access
+		these pages as well as make new ones.
+		<br/><br/>
+		<a href="www.github.com" target="_blank">Try out GitHub</a>
+		<br/>
+		<center>
+			<img src="http://docs.geonode.org/en/master/_images/d3-wiki.png">
+		</center>
+		<h3 id="readthedocs">ReadTheDocs</h3>
+		ReadTheDocs is a documentation tool similar to Github wiki pages. It also allows for easy creation and searching of documentation,
+		but it does not simply list all pages, pages can also be grouped and categorised. It lets the user browse the documentation
+		more easily when they are unsure what exactly they are looking for.
+		<br/><br/>
+		<a href="www.readthedocs.org" target="_blank">Try out ReadTheDocs</a>
+		<br/>
+		<center>
+			<img src="http://docs.readthedocs.io/en/latest/_images/screen_mobile.png">
+		</center>
+		<h2 id="proganalysis">Progress Analysis</h2>
+		The way the teams in a company are integrated with each other decides how internal relations between the teams are set. These
+		relations determine what information and updates about the project a team needs from other teams.
+		<h3 id="githubana">Github</h3>
+		Github is the main versioning tool for software projects. On their website you can browse your repositories and comment on
+		all parts of a project. You can also mention other people to involve them in the conversation if they need to hear what
+		is being said. In addition to that users can turn on notifications for certain repositories to get all the updates they
+		need.
+		<br/><br/>
+		<a href="www.github.com" target="_blank">Try out GitHub</a>
+		<br/>
+		<center>
+			<img src="https://www.broadleafcommerce.com/cmsstatic/Screen%20Shot%202013-08-28%20at%204.06.26%20PM.png">
+		</center>
+		<h3 id="jiraana">JIRA</h3>
+		JIRA is an advanced project tracker that helps software development teams with issue and bug tracking. It also offers online
+		scrum boards and agile reporting tools for sprints. These tools are very useful for tracking the project's progress for
+		teams that are spread around the globe because they are accessible online. Remote teams can thus interact with each other
+		more easily and in an effective way for the project.
+		<br/><br/>
+		<a href="https://www.atlassian.com/software/jira" target="_blank">Try out JIRA</a>
+		<br/>
+		<center>
+			<img src="https://jirasupport.files.wordpress.com/2015/09/jira72.jpg">
+		</center>
 	</div>
 	<hr/>
 
 	<div class="cultural text-div" id="cd">
 		<h1>Tools for cultural differences</h1>
-			Another problem that causes a gap between members of a global distributed software engineering project is culture. Using global
-			distributed software engineering often means working with people all over the world, people that can have different cultures.
-			These different cultures can sometimes fit well together without effort, but can sometimes cause problems for people working together. In order to
-			bring down the gap between team members, cultural differences must be dealt with. However, it is important to note that there are a few pieces of technology that really adhere to this.
-            We here discuss some of those, but more elaborately focus on the steps to take when managing cultural differences. The tools we propose are thus a means to help you do so.
-			<h2 id="managing">Managing:</h2>
-			Managing a culturally diverse team is different from managing a team consisting of members with the same cultural background.
-			To help manage a multi-cultural team there are three different aspects that can help according to <a href="http://dl.acm.org/citation.cfm?id=975818">[4]</a>:
-			<ul>
-				<li><b>Systems to harmonize between outsourcer and supplier</b></li>
-				The first goal can be achieved by using technology and coordination/control systems so members of the team can be kept up to
-				date of the process of the project. Universal tools that are understood by everyone in the field independent of culture can help accomplish that.
-				<li><b>Understand differences in norms and values</b></li>
-				The second point is about defining the hierarchy/power between the members and the companies. State how different people
-				practice business differently and define which aspects should be included in the project and which should not.
-				<li><b>Encourage 'negotiated culture' of cross-cultural teams developing compromise 'working culture'</b></li>
-				The last point concerns the exchange of mechanisms between members, so that members can learn from each other and try create
-				custom mechanisms for the current team that work for all the members.
-			</ul>
+		Another problem that causes a gap between members of a global distributed software engineering project is culture. Using
+		global distributed software engineering often means working with people all over the world, people that can have different
+		cultures. These different cultures can sometimes fit well together without effort, but can sometimes cause problems for
+		people working together. In order to bring down the gap between team members, cultural differences must be dealt with.
+		However, it is important to note that there are a few pieces of technology that really adhere to this. We here discuss
+		some of those, but more elaborately focus on the steps to take when managing cultural differences. The tools we propose
+		are thus a means to help you do so.
+		<h2 id="managing">Managing:</h2>
+		Managing a culturally diverse team is different from managing a team consisting of members with the same cultural background.
+		To help manage a multi-cultural team there are three different aspects that can help according to <a href="http://dl.acm.org/citation.cfm?id=975818">[4]</a>:
+		<ul>
+			<li><b>Systems to harmonize between outsourcer and supplier</b></li>
+			The first goal can be achieved by using technology and coordination/control systems so members of the team can be kept up
+			to date of the process of the project. Universal tools that are understood by everyone in the field independent of culture
+			can help accomplish that.
+			<li><b>Understand differences in norms and values</b></li>
+			The second point is about defining the hierarchy/power between the members and the companies. State how different people
+			practice business differently and define which aspects should be included in the project and which should not.
+			<li><b>Encourage 'negotiated culture' of cross-cultural teams developing compromise 'working culture'</b></li>
+			The last point concerns the exchange of mechanisms between members, so that members can learn from each other and try create
+			custom mechanisms for the current team that work for all the members.
+		</ul>
 
-            We believe the following tools can help to this end:
-            <ul>
-             <li id="globesmart"><a target="_blank" href="http://www.aperianglobal.com/learning-solutions/online-learning-tools/globesmart/">Globesmart</a> is a tool that helps manage a culturally diverse team. The tool provides information on managing the team and how to do assessments. </li>
-			 <li id="git"><a target="_blank" href="https://git-scm.com/">Git</a> helps with version control and mananging projects, independent of any culture.</li>
-			 <li id="github"><a target="_blank" href="https://github.com/">GitHub</a> is a version control platform tool, that is a standard in the software engineering industry. Thus this tool can be used to manage files, independent of culture. </li>
-			 <li id="trellocd"><a target="_blank" href="https://trello.com/">Trello</a> can help provide a general overview of the progress of the project. It can help planning with SCRUM and Agile development. </li>
-			 <li id="jira"><a target="_blank" href="https://www.atlassian.com/software/jira">JIRA</a> can be used to manage projects in an easy to understand way, independent of any culture. </li>
-			 <li id="slackcd">In order to communicate for exchanging experience and methods between team members of different cultures, <a target="_blank" href="https://slack.com/">Slack</a> can be used. Slack can help with both sending files, using bots, and chat. </li>
-			 <li id="skypecd"><a target="_blank" href="https://www.skype.com/">Skype</a> can be used to have a direct communication line for team members to exchange methods and experience. </li>
-            </ul>
-            
-            <center>
-				<img src="http://www.aperianglobal.com/content/uploads/2015/05/GlobeSmartCountryContent.png">
-			</center>
+		We believe the following tools can help to this end:
+		<ul>
+			<li id="globesmart"><a target="_blank" href="http://www.aperianglobal.com/learning-solutions/online-learning-tools/globesmart/">Globesmart</a>				is a tool that helps manage a culturally diverse team. The tool provides information on managing the team and how to
+				do assessments. </li>
+			<li id="git"><a target="_blank" href="https://git-scm.com/">Git</a> helps with version control and mananging projects, independent
+				of any culture.</li>
+			<li id="github"><a target="_blank" href="https://github.com/">GitHub</a> is a version control platform tool, that is a standard in the
+				software engineering industry. Thus this tool can be used to manage files, independent of culture. </li>
+			<li id="trellocd"><a target="_blank" href="https://trello.com/">Trello</a> can help provide a general overview of the progress of the project.
+				It can help planning with SCRUM and Agile development. </li>
+			<li id="jira"><a target="_blank" href="https://www.atlassian.com/software/jira">JIRA</a> can be used to manage projects in an easy to
+				understand way, independent of any culture. </li>
+			<li id="slackcd">In order to communicate for exchanging experience and methods between team members of different cultures, <a target="_blank"
+				 href="https://slack.com/">Slack</a> can be used. Slack can help with both sending files, using bots, and chat. </li>
+			<li id="skypecd"><a target="_blank" href="https://www.skype.com/">Skype</a> can be used to have a direct communication line for team members
+				to exchange methods and experience. </li>
+		</ul>
 
-            
-			<h2 id="staff">Staff:</h2>
-			Choosing the right staff is another important aspect for overcoming cultural differences. <a href="http://dl.acm.org/citation.cfm?id=975818">[4]</a> defines the following three points
-			related to choosing the right staff:
-			<ul>
-				<li><b>Recognize limits to cultural adaptation</b></li>
-				The first point states that there are limits to adaption of culture. So foreigners cannot become locals and vice versa. Don’t
-				try to change people completely so that only one culture exists in the team.
-				<li><b>Use 'cultural bridging' staff</b></li>
-				The second point states that there should be an effort to have people in the team that are familiar with both cultures in the team. These people can help
-				bridge the differences between the team members with different cultures.
-				<li><b>Use locally-relevant recruitment and retention incentives</b></li>
-				The last point is about the different salary and status/expertise acquisition. Make sure that these are according to the
-				standards of the different culture, but are not too different in the team.
-			</ul>
-            
-            We believe the following tools can help to this end:
-            <ul>
-                <li id="linkedin"><a target="_blank" href="https://www.linkedin.com/">Linkedin</a> is a tool that can provide the right staff for the team. It can also be used to search for developers who are multi-cultural.
-            </ul>
-            
-            <center>
-				<img src="https://i.ytimg.com/vi/dOHbhn4rZYc/maxresdefault.jpg">
-			</center>
-            
-			<h2 id="training">Training:</h2>
-			The last aspect is training. The team needs to be trained so they learn how to communicate and work together with the different
-			team members. Three aspects can be looked into when considering training:
-			<ul>
-				<li><b>Give pro-posting cultural training for supplier employees working in outsourcer companies (supplier)</b></li>
-				The first point is about learning the language and cultural practices, norms and values. This way team members know how different
-				people have different views on various aspects.
-				<li><b>Develop systematic on-the-job cross-cultural training</b></li>
-				The second point is used to reflect on ongoing experience and share knowledge with colleagues, so that the team members can
-				learn from each other and how they experienced and handle curtain (technical) situations.
-				<li><b>Recognize that training needs are two-way (outsourcer)</b></li>
-				The third point makes sure that not only the outsourced part of the team is trained, but the local team should be trained
-				to work with different members as well. This way the local team can get familiar with the outsourced team members so they
-				know what drives them and how to best communicate and work together with them.
-			</ul>
+		<center>
+			<img src="http://www.aperianglobal.com/content/uploads/2015/05/GlobeSmartCountryContent.png">
+		</center>
 
-            We believe the following tools can help to this end:
-            <ul>
-                <li id="duolingo"><a target="_blank" href="https://duolingo.com">Duolingo</a> is a tool that can help members of the team to learn languages spoken by other members of the team in an easy and fun way. This can help understand different team members better.
-            </ul>
-                        
-            <center>
-				<img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge/public/field/image/2014/11/duolingo-scn-1.jpg?itok=gIIlv2jU">
-			</center>
-			
-			Summarizing, in order to close the gap between different team members, cultural differences must be dealt with. By looking at managing, staff and training a diverse team can become easy to work with and should be efficient when doing globally distributed software engineering.
+
+		<h2 id="staff">Staff:</h2>
+		Choosing the right staff is another important aspect for overcoming cultural differences. <a href="http://dl.acm.org/citation.cfm?id=975818">[4]</a>		defines the following three points related to choosing the right staff:
+		<ul>
+			<li><b>Recognize limits to cultural adaptation</b></li>
+			The first point states that there are limits to adaption of culture. So foreigners cannot become locals and vice versa. Don’t
+			try to change people completely so that only one culture exists in the team.
+			<li><b>Use 'cultural bridging' staff</b></li>
+			The second point states that there should be an effort to have people in the team that are familiar with both cultures in
+			the team. These people can help bridge the differences between the team members with different cultures.
+			<li><b>Use locally-relevant recruitment and retention incentives</b></li>
+			The last point is about the different salary and status/expertise acquisition. Make sure that these are according to the
+			standards of the different culture, but are not too different in the team.
+		</ul>
+
+		We believe the following tools can help to this end:
+		<ul>
+			<li id="linkedin"><a target="_blank" href="https://www.linkedin.com/">Linkedin</a> is a tool that can provide the right staff for the team.
+				It can also be used to search for developers who are multi-cultural.
+		</ul>
+
+		<center>
+			<img src="https://i.ytimg.com/vi/dOHbhn4rZYc/maxresdefault.jpg">
+		</center>
+
+		<h2 id="training">Training:</h2>
+		The last aspect is training. The team needs to be trained so they learn how to communicate and work together with the different
+		team members. Three aspects can be looked into when considering training:
+		<ul>
+			<li><b>Give pro-posting cultural training for supplier employees working in outsourcer companies (supplier)</b></li>
+			The first point is about learning the language and cultural practices, norms and values. This way team members know how different
+			people have different views on various aspects.
+			<li><b>Develop systematic on-the-job cross-cultural training</b></li>
+			The second point is used to reflect on ongoing experience and share knowledge with colleagues, so that the team members can
+			learn from each other and how they experienced and handle curtain (technical) situations.
+			<li><b>Recognize that training needs are two-way (outsourcer)</b></li>
+			The third point makes sure that not only the outsourced part of the team is trained, but the local team should be trained
+			to work with different members as well. This way the local team can get familiar with the outsourced team members so they
+			know what drives them and how to best communicate and work together with them.
+		</ul>
+
+		We believe the following tools can help to this end:
+		<ul>
+			<li id="duolingo"><a target="_blank" href="https://duolingo.com">Duolingo</a> is a tool that can help members of the team to learn languages
+				spoken by other members of the team in an easy and fun way. This can help understand different team members better.
+		</ul>
+
+		<center>
+			<img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge/public/field/image/2014/11/duolingo-scn-1.jpg?itok=gIIlv2jU">
+		</center>
+
+		Summarizing, in order to close the gap between different team members, cultural differences must be dealt with. By looking
+		at managing, staff and training a diverse team can become easy to work with and should be efficient when doing globally
+		distributed software engineering.
 	</div>
 	<hr/>
 	<div class="team text-div">
 		<h1 id="teambonding">Tools for team bonding</h1>
-		One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally. 
+		One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong
+		social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally.
 		Sue Newell, Carole Tansley and Jimmy Huang define two kinds of social capital, described in <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8551.2004.00405.x/epdf">[5]</a>:
-		External bridging social capital, and internal bonding social capital. 
-			<h2 id="extbonding"> External bridging social capital</h2>
-				External bridging social capital tools are tools that increase a feeling of 'teamness' between different teams that are working on different locations/projects.
-				An often observed occurrance is that while internal trust and cohesion of the different teams are fine, there is little trust between teams on different locations. 
-				Many of the tools described before are increase this bonding and trust.
-				<h3 id="ariadne">Ariadne</h3>
-					Ariadne was initiated in 1996 by the European Commission's telematics for education and training program. Since then, an infrastructure has been developed 
-					in Belgium and Switzerland for the production of reusable learning content, including distributed storage and discovery, as well as its exploitation in 
-					structured courses. The core of this infrastructure is a distributed library of digital, reusable educational components called the Knowledge Pool System (KPS) 
-					now actively used in both academic and corporate contexts.
-					<center>
-					<img src="https://pbs.twimg.com/profile_images/1088782702/ariadne_i_is_for_information_square.png">
-				</center>
-                
-			<h2 id="intbonding"> Internal bonding social capital</h2>
-				Another problem that can play a role in globally distributed software engineering is the internal bonding social capital of a team. If there is no internal trust, 
-				this will have serious impact on the quality of the software. 
-				<i>Note: One interesting thing is that there seem to be few tools on this topic. This section is a work-in-progress.</i>
+		External bridging social capital, and internal bonding social capital.
+		<h2 id="extbonding"> External bridging social capital</h2>
+		External bridging social capital tools are tools that increase a feeling of 'teamness' between different teams that are working
+		on different locations/projects. An often observed occurrance is that while internal trust and cohesion of the different
+		teams are fine, there is little trust between teams on different locations. Many of the tools described before are increase
+		this bonding and trust.
+		<h3 id="ariadne">Ariadne</h3>
+		Ariadne was initiated in 1996 by the European Commission's telematics for education and training program. Since then, an
+		infrastructure has been developed in Belgium and Switzerland for the production of reusable learning content, including
+		distributed storage and discovery, as well as its exploitation in structured courses. The core of this infrastructure is
+		a distributed library of digital, reusable educational components called the Knowledge Pool System (KPS) now actively used
+		in both academic and corporate contexts.
+		<center>
+			<img src="https://pbs.twimg.com/profile_images/1088782702/ariadne_i_is_for_information_square.png">
+		</center>
+
+		<h2 id="intbonding"> Internal bonding social capital</h2>
+		Another problem that can play a role in globally distributed software engineering is the internal bonding social capital
+		of a team. If there is no internal trust, this will have serious impact on the quality of the software.
+		<i>Note: One interesting thing is that there seem to be few tools on this topic. This section is a work-in-progress.</i>
 	</div>
-    <hr/>
-    <div class="team text-div">
+	<hr/>
+	<div class="team text-div">
 		<div class="library">
 			<h2>References:</h2>
-					<ol>
-						<li>Šmite, Darja, and Juris Borzovs. "Managing uncertainty in globally distributed software development projects." University of Latvia, Computer Science and Information Technologies 733 (2008): 9-23.</li>
-				<li>Ågerfalk, Pär J., et al. "Benefits of global software development: the known and unknown." International Conference on Software Process. Springer Berlin Heidelberg, 2008.</li>
+			<ol>
+				<li>Šmite, Darja, and Juris Borzovs. "Managing uncertainty in globally distributed software development projects." University
+					of Latvia, Computer Science and Information Technologies 733 (2008): 9-23.</li>
+				<li>Ågerfalk, Pär J., et al. "Benefits of global software development: the known and unknown." International Conference on
+					Software Process. Springer Berlin Heidelberg, 2008.</li>
 				<li>Carmel, Erran. Global software teams: collaborating across borders and time zones. Prentice Hall PTR, 1999.</li>
-				<li>Krishna, Srinivas, Sundeep Sahay, and Geoff Walsham. "Managing cross-cultural issues in global software outsourcing." Communications of the ACM 47.4 (2004): 62-66.</li>
-						<li>Sue Newell, Carole Tansley and Jimmy Huang. "Social Capital and Knowledge Integration in an ERP Project Team: The Importance of Bridging AND Bonding" British Journal of Management, Vol. 15, S43–S57 (2004)</li>
-				<li>Allen, Thomas J. "Managing the flow of technology: technology transfer and the dissemination of technological information within the R and D organization." (1977).</li>
-				<li id="communicationpaper">Thissen, M. R., Page, J. M., Bharathi, M. C., & Austin, T. L. (2007, April). Communication tools for distributed software development teams. In Proceedings of the 2007 ACM SIGMIS CPR conference on Computer personnel research: The global information technology workforce (pp. 28-35). ACM.</li>
-				</ol>
+				<li>Krishna, Srinivas, Sundeep Sahay, and Geoff Walsham. "Managing cross-cultural issues in global software outsourcing."
+					Communications of the ACM 47.4 (2004): 62-66.</li>
+				<li>Sue Newell, Carole Tansley and Jimmy Huang. "Social Capital and Knowledge Integration in an ERP Project Team: The Importance
+					of Bridging AND Bonding" British Journal of Management, Vol. 15, S43–S57 (2004)</li>
+				<li>Allen, Thomas J. "Managing the flow of technology: technology transfer and the dissemination of technological information
+					within the R and D organization." (1977).</li>
+				<li id="communicationpaper">Thissen, M. R., Page, J. M., Bharathi, M. C., & Austin, T. L. (2007, April). Communication tools for distributed software
+					development teams. In Proceedings of the 2007 ACM SIGMIS CPR conference on Computer personnel research: The global information
+					technology workforce (pp. 28-35). ACM.</li>
+			</ol>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/masterninja.js"></script>
@@ -554,7 +592,7 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 	<script type="text/javascript" src="js/skillsdata.js"></script>
 	<script type="text/javascript" src="js/skill.js"></script>
 	<script type="text/javascript" src="js/sidenav.js"></script>
-	
+
 	<script type="text/javascript">
 		// Hack to make this example display correctly in an iframe on bl.ocks.org
       	//d3.select(self.frameElement).style("height", "700px");
