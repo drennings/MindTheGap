@@ -138,7 +138,7 @@ masterninja = {
           "tools": [{
             "name": "Trello",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Trello is an online project manegement application for SCRUM and Agile. It offers easy task management with project boards and cards for individual tasks which can be commented on and be assigned to team members.",
+            "description": "Trello is an online project management application for SCRUM and Agile. It offers easy task management with project boards and cards for individual tasks which can be commented on and be assigned to team members.",
             "backgroundlogo": "images/logos/trello.png",
             "linkid": "trello_coordination"
           },
@@ -309,6 +309,13 @@ masterninja = {
               "description": "A tool for fostering external social capital through a digital library of knowledge called a Knowledge Pool System (KPS).",
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
               "linkid": "Ariadne"
+            },
+			{
+              "name": "SocialCDE",
+              "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+              "description": "SocialCDE is an extension of Collaborative Development Enviroments to aggregate teammates’ content from social software into the developer’s workspace.",
+              "backgroundlogo": "images/logos/mywonderfulllogo.png",
+              "linkid": "SocialCDE"
             }]
         },
         {
@@ -316,14 +323,7 @@ masterninja = {
           "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "test",
           "description": "Another challenge that can play a role in globally distributed software engineering is the internal bonding social capital of a team. If there is no internal trust, this will have serious impact on the quality of the software.",
-          "tools": [
-            {
-              "name": "WIP",
-              "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-              "description": "This is a work in progress.",
-              "backgroundlogo": "images/logos/mywonderfulllogo.png",
-              "linkid": "WIP"
-            }]
+          "tools": []
         }]
     }
   ]
