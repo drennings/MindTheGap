@@ -11,7 +11,7 @@ function openNav() {
 }
 
 function initMenu() {
-      var menu = $("#mySidenav")[0];
+      var menu = $("#innersidenav")[0];
       console.log(menu);
       var dims = JSON.parse(JSON.stringify(masterninja));
       dims = dims.dimensions;
@@ -70,12 +70,14 @@ function onScroll(event) {
       $('#mySidenav a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                  $('#menu-center ul li a').removeClass("active");
-                  currLink.addClass("active");
-            }
-            else {
-                  currLink.removeClass("active");
+            if (refElement.position() !== undefined) {
+                  if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('#menu-center ul li a').removeClass("active");
+                        currLink.addClass("active");
+                  }
+                  else {
+                        currLink.removeClass("active");
+                  }
             }
       });
 }
