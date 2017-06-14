@@ -198,90 +198,91 @@ masterninja = {
     ,
   {
     "name": "Cultural",
-    "linkid": "test",
-    "description": "dim desc",
+    "backgroundlogo": "images/logos/cd.png",
+    "linkid": "cd",
+    "description": "Cultural differences wides the gap between team members. By dealing with managing, staff and training in a right way these problems can be dealt with. These tools can help overcome cultural differences.",
     "subcategories": [
       {
         "name": "Managing",
-        "backgroundlogo": "images/logos/mywonderfulllogo.png",
-        "linkid": "test",
-        "description": "subdesc",
+        "backgroundlogo": "images/logos/managing.jpg",
+        "linkid": "managing",
+        "description": "Managing a cultural diverse team is different and harder then managing a team with people of the same culture. This can lead to problems which can wide the gap. The following tools can help manage teams and project indepent of cultural differences.",
         "tools": [
           {
             "name": "GlobeSmart",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Managing tool for cultural teams",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
+            "description": "Managing tool for cultural teams and doing business with people from different countries",
+            "backgroundlogo": "images/logos/globesmart.png",
             "linkid": "globesmart"
           },
           {
             "name": "Git",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Version control tool",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
+            "description": "A version control system for tracking changes in computer files and coordinating work on those files among multiple people.",
+            "backgroundlogo": "images/logos/git.png",
             "linkid": "git"
           },
           {
             "name": "GitHub",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Version control platform tool",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
+            "description": "A web-based Git or version control repository and Internet hosting service.",
+            "backgroundlogo": "images/logos/github.png",
             "linkid": "github"
           },
           {
             "name": "Trello",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Project mangaging tool for SCRUM & Agile",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
-            "linkid": "trello"
+            "description": "A web-based project management application.",
+            "backgroundlogo": "images/logos/trello.png",
+            "linkid": "trellocd"
           },
           {
             "name": "Jira",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Project mangaging tool for Agile",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
+            "description": "A proprietary issue tracking product, which provides bug tracking, issue tracking, and project management functions.",
+            "backgroundlogo": "images/logos/jira.png",
             "linkid": "jira"
           },
           {
             "name": "Slack",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Chat tool",
+            "description": "A cloud-based set of team collaboration tools and services, with a extensive chat function as main tool.",
             "backgroundlogo": "images/logos/mywonderfulllogo.png",
-            "linkid": "slack"
+            "linkid": "slackcd"
           },
           {
             "name": "Skype",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Videocall tool",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
-            "linkid": "skype"
+            "description": "An instant messaging app that provides online text message and video chat services.",
+            "backgroundlogo": "images/logos/skype.png",
+            "linkid": "skypecd"
           }]
       },
       {
         "name": "Staff",
-        "backgroundlogo": "images/logos/mywonderfulllogo.png",
-        "linkid": "test",
-        "description": "subdesc",
+        "backgroundlogo": "images/logos/staff.jpg",
+        "linkid": "staff",
+        "description": "Getting the right staff is essential when assembling a team. Making sure that employees fit the team and cultures will help the team move forward. The following tool can help find the right staff. ",
         "tools": [
           {
             "name": "Linkedin",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Business- and employment-oriented social networking service",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
+            "description": "A business- and employment-oriented social networking service that operates via websites and mobile apps.",
+            "backgroundlogo": "images/logos/linkedin.png",
             "linkid": "linkedin"
           }]
       },
       {
         "name": "Training",
-        "backgroundlogo": "images/logos/mywonderfulllogo.png",
-        "linkid": "test",
-        "description": "subdesc",
+        "backgroundlogo": "images/logos/training.jpg",
+        "linkid": "training",
+        "description": "Training teams so they know how other people work and think will help benefit both the project and team. This can be done by meeting in person and workshop, but also online. The following tool can help people to learn together, indepent of culture.",
         "tools": [
           {
             "name": "duolingo",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Language learning tool",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
+            "description": "A freemium language-learning platform that includes a language-learning website and app, as well as a digital language proficiency assessment exam.",
+            "backgroundlogo": "images/logos/duolingo.png",
             "linkid": "duolingo"
           }]
       }]
