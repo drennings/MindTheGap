@@ -3,7 +3,6 @@ layout: default
 title: Mind the Gap 
 ---
 
-
 <head>
 	<meta charset="utf-8">
 	<title>Mind the Gap</title>
@@ -11,9 +10,17 @@ title: Mind the Gap
 	<link rel="stylesheet" type="text/css" href="css/skill.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
 </head>
 
 <body>
+	<div id="mySidenav" class="sidenav">
+</div>
+	<div id="menubuttondiv" class="menubutton">
+		<i id="menubutton" onclick="openNav()" class="fa fa-bars fa-3x fa-align-center"></i>
+	</div>	
 	<div class="intro text-div">
 		"Global software development is not a phenomenon but a reality nowadays" <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.459.7894">[1]</a>.  
         Hence, more and more companies are using (or at least considering) distributed software engineering as a means to develop software. 
@@ -34,10 +41,10 @@ title: Mind the Gap
 		<div class="skills-wrapper">
 			<div class="skills-sunburst"></div>
 
-			<div class="container">
+			<div id="desccontainer" class="container">
 				<div id="skills-chart-breadcrumb"></div>
 				<a id="titlelink" href="">
-					<h1 id="title">Hove the graph</h1>
+					<h1 id="title">Hover the graph</h1>
 				</a>
 				<div id="smalltext">
 					Hover the graph to find out what kind of tools we propose to deal with the different GDSE challenges.
@@ -117,7 +124,7 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			<a href="https://www.conceptshare.com/" target="_blank">Try out ConceptShare</a>
 			<br/>
 			<center>
-				<img src="https://static1.squarespace.com/static/55633148e4b0c18afa44ec31/t/56dde9292eeb81e1bfd12dba/1457383739221/SNAP.png?format=500w">
+				<img src="https://i.ytimg.com/vi/DK87xrQLbXY/maxresdefault.jpg">
 			</center>
 			<h3 id="invision">InVision</h3>
 			InVision is a web-based (and mobile) app that lets designers/developers turn their work into active prototypes with animations.
@@ -142,7 +149,7 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			<a href="https://www.screenhero.com/" target="_blank">Try out ScreenHero</a>
 			<br/>
 			<center>
-				<img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/06/146651093402-screenhero.jpg">
+				<img src="https://filesbear.com/mac/pics/460/screenhero-2.jpg">
 			</center>
 
 			<h3 id="bluejeans">BlueJeans</h3>
@@ -306,14 +313,14 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			<center>
 				<img src="https://ph-files.imgix.net/f150b2e4-2ee2-40a8-865b-f830691fcd19?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=456.6536964980545&h=360">
 			</center>            
-			<h2>Identification of Dependencies</h2>
+			<h2 id="identification_dependencies">Identification of Dependencies</h2>
 			For a global software development team it is important that remote teams 
 			are not working on dependent parts of the project. So it is necessary that 
 			these dependencies are figured out as early as possible. Below are project 
-			planning tools that in combination with a software analytics tool can help
+			planning and team management tools that in combination with a software analytics tool can help
 			in identification in dependencies such that no two remote teams are working 
 			on dependent parts.
-			<h3 id="trello">Trello</h3>
+			<h3 id="trello_coordination">Trello</h3>
 			Trello is the planning tool in which all parts of the project can be listed.
 			This tool offers one location which everyone can access and can use to discuss
 			current dependencies and planning about the project. In Trello, tasks can also 
@@ -335,7 +342,20 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			<br/>
 			<center>
 				<img src="https://guides.github.com/introduction/getting-your-project-on-github/repository.png">
-			</center>            
+			</center>        
+			<h3 id="agilecokpitdep">Agile Cockpit</h3>
+			Agile Cockpit is a project management application and offers tools for tasks
+			suck as backlog management, release planning but also a tool to organise the 
+			teams structure. This tool gives an overview of the project's active teams and 
+			their members. Easy management of remote development teams is crucial for 
+			a succesful project. This tool helps in coordinating tasks between teams when 
+			project dependencies are clear.
+						<br/><br/>
+			<a href="https://www.agilecockpit.com" target="_blank">Try out Agile Cockpit</a>
+			<br/>
+			<center>
+				<img src="https://www.agilecockpit.com/wp-content/uploads/2016/05/organization-structure-agile-scrum-tool.png">
+			</center>    
 			<h2 id="documentation">Documentation</h2>
 			For teams that do not run in to each other on the workfloor it is particularly
 			essential that the documentation of the project is up to date and clear. When 
@@ -343,7 +363,7 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			extra clarification, but for remote teams this is impossible. Therefore it is important 
 			to have proper documentation to prevent these situations. Below are two tools 
 			that provide a good way to keep the documentation up to date.
-			<h3>Github Wiki</h3>
+			<h3 id="githubwiki">Github Wiki</h3>
 			Github Wiki is a tool on Github which you can link to your project's repository.
 			In this tool you can create all sorts of pages on every subject you can think of.
 			These pages are automatically added to the sidebar in alphabetical order. 
@@ -384,14 +404,19 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 			<center>
 				<img src="https://www.broadleafcommerce.com/cmsstatic/Screen%20Shot%202013-08-28%20at%204.06.26%20PM.png">
 			</center> 
-			<h3 id="palantir">Palantir</h3>
-			Palantir is a software development conflict detection tool that detects 
-			conflicts in parallel changes to a large code base. When remote teams work 
-			separately and they don't meet each other when walking around in the office 
-			this conflicting work might go unnoticed for a while and results in double 
-			work being done for nothing. This tool detects changes to the project and 
-			notifies the teams of any potential conflicts.
-
+			<h3 id="jiraana">JIRA</h3>
+			JIRA is an advanced project tracker that helps software development teams 
+			with issue and bug tracking. It also offers online scrum boards and agile 
+			reporting tools for sprints. These tools are very useful for tracking the 
+			project's progress for teams that are spread around the globe because 
+			they are accessible online. Remote teams can thus interact with each other 
+			more easily and in an effective way for the project.
+						<br/><br/>
+			<a href="https://www.atlassian.com/software/jira" target="_blank">Try out JIRA</a>
+			<br/>
+			<center>
+				<img src="https://jirasupport.files.wordpress.com/2015/09/jira72.jpg">
+			</center>
 	</div>
 	<hr/>
 
@@ -523,10 +548,12 @@ In this approach we also freely translated the forces as defined by Carmel in 19
 				</ol>
 		</div>
 	</div>
-	<script type="text/javascript" src="masterninja.js"></script>
+	<script type="text/javascript" src="js/masterninja.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="skillsdata.js"></script>
-	<script type="text/javascript" src="skill.js"></script>
+	<script type="text/javascript" src="js/skillsdata.js"></script>
+	<script type="text/javascript" src="js/skill.js"></script>
+	<script type="text/javascript" src="js/sidenav.js"></script>
+	
 	<script type="text/javascript">
 		// Hack to make this example display correctly in an iframe on bl.ocks.org
       	//d3.select(self.frameElement).style("height", "700px");

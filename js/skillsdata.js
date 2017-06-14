@@ -9,7 +9,6 @@ function convertExample(json, temp) {
         if (curProp.subcategories !== undefined) {
           temp.Skills[curProp.name] = {};
           for (var i = 0; i < curProp.subcategories.length; i++) {
-            console.log("subcatgegories", curProp.subcategories[i]);
             temp.Skills[curProp.name][curProp.subcategories[i].name] = {}
             convertExample(curProp.subcategories[i], temp.Skills[curProp.name][curProp.subcategories[i].name]);
           }
