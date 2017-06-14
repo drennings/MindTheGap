@@ -4,8 +4,7 @@ var masterninja;
 masterninja = {
   "dimensions": [{
     "name": "Coordination",
-    "linkid": "coordination",
-    "backgroundlogo": "images/icons/coordination.png",  
+    "linkid": "coordination", 
     "description": "Coordination between software developing teams is crucial for a project's success. In global software development coordination is more difficult because of the distance. Bringing teams closer together with project management tools increases the ease of coordination.",
     "subcategories": [
       {
@@ -97,8 +96,7 @@ masterninja = {
     ,
   {
     "name": "Communication",
-    "linkid": "communicationtools",
-    "backgroundlogo": "images/icons/communication.png",    
+    "linkid": "communicationtools",  
     "description": "Communication is key in software engineering, but with globally distributed engineering it may very well be even more important, while it is also harder to maintain. In addition, this is not limited to the planned communication (such as the daily stand ups and sprint reflections). The well renowned 'Allen Curve' from the seventies (<a href='https://www.osti.gov/scitech/biblio/710021'>[6]</a>) describes that a gap between two people over 50 meter (or more) drastically reduces the chance of unplanned communicaton.",
     "subcategories": [
       {
@@ -200,7 +198,6 @@ masterninja = {
     ,
   {
     "name": "Cultural",
-    "backgroundlogo": "images/icons/cultural.png",
     "linkid": "test",
     "description": "dim desc",
     "subcategories": [
@@ -292,7 +289,6 @@ masterninja = {
     ,
   {
     "name": "Team bonding",
-    "backgroundlogo": "images/icons/team.png",
     "linkid": "test",
     "description": "dim desc",
     "subcategories": [
