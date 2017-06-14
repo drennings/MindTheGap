@@ -4,7 +4,7 @@ var masterninja;
 masterninja = {
   "dimensions": [{
     "name": "Coordination",
-    "linkid": "coordination",\
+    "linkid": "coordination",
     "backgroundlogo": "images/icons/coordination.png",  
     "description": "Coordination between software developing teams is crucial for a project's success. In global software development coordination is more difficult because of the distance. Bringing teams closer together with project management tools increases the ease of coordination.",
     "subcategories": [
