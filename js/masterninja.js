@@ -295,7 +295,7 @@ masterninja = {
     {
       "name": "Team bonding",
       "linkid": "test",
-      "description": "One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally. Sue Newell, Carole Tansley and Jimmy Huang define two kinds of social capital, described in <a href='http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8551.2004.00405.x/epdf'>[5]</a>: External bridging social capital, and internal bonding social capital."
+      "description": "One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally. Sue Newell, Carole Tansley and Jimmy Huang define two kinds of social capital, described in <a href='http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8551.2004.00405.x/epdf'>[5]</a>: External bridging social capital, and internal bonding social capital.",
       "subcategories": [
         {
           "name": "External",
