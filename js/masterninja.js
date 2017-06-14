@@ -2,99 +2,8 @@ var masterninja;
 
 
 masterninja = {
-  "dimensions": [{
-    "name": "Coordination",
-    "linkid": "coordination", 
-    "description": "Coordination between software developing teams is crucial for a project's success. In global software development coordination is more difficult because of the distance. Bringing teams closer together with project management tools increases the ease of coordination.",
-    "subcategories": [
-      {
-        "name": "Structure",
-        "linkid": "centralstruct",
-        "description": "When teams know what to do they can work independently. Having a centralized project structure makes it clear for everyone involved how the project takes shape and this makes communication about it more easy.",
-        "tools": [{
-          "name": "SonarQube",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "SonarQube is an open source platform for continuous inspection of code quality. It offers analysis of project structure, bugs, vulnerabilities and code smells.",
-          "backgroundlogo": "images/logos/sonarqube.png",
-          "linkid": "sonarqube"
-        },
-        {
-          "name": "Codefactor",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "Codefactor is an automated static analysis tool for software projects. It has seamless integration with github and analyses every part of a sofware project.",
-          "backgroundlogo": "images/logos/codefactor.png",
-          "linkid": "codefactor"
-        }]
-      },
-      {
-        "name": "Dependencies",
-        "linkid": "identification_dependencies",
-        "description": "Identifying dependencies in a project is important for task division between teams. Especially when working with teams spread around the globe it is important that two remote teams are not working on dependent parts of the project.",
-        "tools": [{
-          "name": "Trello",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "Trello is an online project manegement application for SCRUM and Agile. It offers easy task management with project boards and cards for individual tasks which can be commented on and be assigned to team members.",
-          "backgroundlogo": "images/logos/trello.png",
-          "linkid": "trello_coordination"
-        },
-        {
-          "name": "Github",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "Github is a version control tool for software projects. Github makes management of software clear and accesible.",
-          "backgroundlogo": "images/logos/github.png",
-          "linkid": "githubdep"
-        },
-        {
-          "name": "Agile Cockpit",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "Agile Cockpit is a project management platform and offers features for team, project and portfolio management.",
-          "backgroundlogo": "images/logos/agilecockpit.png",
-          "linkid": "agilecokpitdep"
-        }]
-      }      ,
-      {
-        "name": "Documentation",
-        "linkid": "documentation",
-        "description": "Having a proper documentation is important for all succesful software projects. For globally distributed development however proper documentation is important as remote teams are not always able to communicate about the project directly. Being able to read about all the parts of a project is very important for understanding it before you can continue developing it.",
-        "tools": [{
-
-          "name": "Github Wiki",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "Github Wiki is a project documentation management tool. This tool makes it easy to create very clear project documentation.",
-          "backgroundlogo": "images/logos/github.png",
-          "linkid": "githubwiki"
-        },
-        {
-          "name": "ReadTheDocs",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "ReadTheDocs is a project documentation manegement tool. They offer hosting of your project's documentation and a clear and structured way of presenting the documentation.",
-          "backgroundlogo": "images/readthedocs.png",
-          "linkid": "readthedocs"
-        }]
-      },
-      {
-        "name": "Progress",
-        "linkid": "proganalysis",
-        "description": "Keeping track of the progress of the project is useful for deciding what to implement next. With remote teams tracking the progress becomes more difficult. Online progress analysis tools can help in making this process easy.",
-        "tools": [{
-
-          "name": "Github",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "Github is a version control tool for software projects. Github makes management of software clear and accesible.",
-          "backgroundlogo": "images/logos/github.png",
-          "linkid": "githubana"
-        },
-        {
-          "name": "JIRA",
-          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-          "description": "JIRA Software offers flexible issue and project tracking with agile tooling for software teams.",
-          "backgroundlogo": "images/logos/mywonderfulllogo.png",
-          "linkid": "jiraana"
-        }]
-      }]
-  }
-    ,
-  {
+  "dimensions": [
+    {
     "name": "Communication",
     "linkid": "communicationtools",  
     "description": "Communication is key in software engineering, but with globally distributed engineering it may very well be even more important, while it is also harder to maintain. In addition, this is not limited to the planned communication (such as the daily stand ups and sprint reflections). The well renowned 'Allen Curve' from the seventies (<a href='https://www.osti.gov/scitech/biblio/710021'>[6]</a>) describes that a gap between two people over 50 meter (or more) drastically reduces the chance of unplanned communicaton.",
@@ -196,6 +105,99 @@ masterninja = {
       }]
   }
     ,
+    {
+    "name": "Coordination",
+    "linkid": "coordination", 
+    "description": "Coordination between software developing teams is crucial for a project's success. In global software development coordination is more difficult because of the distance. Bringing teams closer together with project management tools increases the ease of coordination.",
+    "subcategories": [
+      {
+        "name": "Structure",
+        "linkid": "centralstruct",
+        "description": "When teams know what to do they can work independently. Having a centralized project structure makes it clear for everyone involved how the project takes shape and this makes communication about it more easy.",
+        "tools": [{
+          "name": "SonarQube",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "SonarQube is an open source platform for continuous inspection of code quality. It offers analysis of project structure, bugs, vulnerabilities and code smells.",
+          "backgroundlogo": "images/logos/sonarqube.png",
+          "linkid": "sonarqube"
+        },
+        {
+          "name": "Codefactor",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "Codefactor is an automated static analysis tool for software projects. It has seamless integration with github and analyses every part of a sofware project.",
+          "backgroundlogo": "images/logos/codefactor.png",
+          "linkid": "codefactor"
+        }]
+      },
+      {
+        "name": "Dependencies",
+        "linkid": "identification_dependencies",
+        "description": "Identifying dependencies in a project is important for task division between teams. Especially when working with teams spread around the globe it is important that two remote teams are not working on dependent parts of the project.",
+        "tools": [{
+          "name": "Trello",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "Trello is an online project manegement application for SCRUM and Agile. It offers easy task management with project boards and cards for individual tasks which can be commented on and be assigned to team members.",
+          "backgroundlogo": "images/logos/trello.png",
+          "linkid": "trello_coordination"
+        },
+        {
+          "name": "Github",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "Github is a version control tool for software projects. Github makes management of software clear and accesible.",
+          "backgroundlogo": "images/logos/github.png",
+          "linkid": "githubdep"
+        },
+        {
+          "name": "Agile Cockpit",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "Agile Cockpit is a project management platform and offers features for team, project and portfolio management.",
+          "backgroundlogo": "images/logos/agilecockpit.png",
+          "linkid": "agilecokpitdep"
+        }]
+      }      ,
+      {
+        "name": "Documentation",
+        "linkid": "documentation",
+        "description": "Having a proper documentation is important for all succesful software projects. For globally distributed development however proper documentation is important as remote teams are not always able to communicate about the project directly. Being able to read about all the parts of a project is very important for understanding it before you can continue developing it.",
+        "tools": [{
+
+          "name": "Github Wiki",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "Github Wiki is a project documentation management tool. This tool makes it easy to create very clear project documentation.",
+          "backgroundlogo": "images/logos/github.png",
+          "linkid": "githubwiki"
+        },
+        {
+          "name": "ReadTheDocs",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "ReadTheDocs is a project documentation manegement tool. They offer hosting of your project's documentation and a clear and structured way of presenting the documentation.",
+          "backgroundlogo": "images/readthedocs.png",
+          "linkid": "readthedocs"
+        }]
+      },
+      {
+        "name": "Progress",
+        "linkid": "proganalysis",
+        "description": "Keeping track of the progress of the project is useful for deciding what to implement next. With remote teams tracking the progress becomes more difficult. Online progress analysis tools can help in making this process easy.",
+        "tools": [{
+
+          "name": "Github",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "Github is a version control tool for software projects. Github makes management of software clear and accesible.",
+          "backgroundlogo": "images/logos/github.png",
+          "linkid": "githubana"
+        },
+        {
+          "name": "JIRA",
+          "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+          "description": "JIRA Software offers flexible issue and project tracking with agile tooling for software teams.",
+          "backgroundlogo": "images/logos/mywonderfulllogo.png",
+          "linkid": "jiraana"
+        }]
+      }]
+  }
+    ,
+  
   {
     "name": "Cultural",
     "backgroundlogo": "images/logos/cd.png",
