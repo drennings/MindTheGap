@@ -138,7 +138,7 @@ masterninja = {
           "tools": [{
             "name": "Trello",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Trello is an online project manegement application for SCRUM and Agile. It offers easy task management with project boards and cards for individual tasks which can be commented on and be assigned to team members.",
+            "description": "Trello is an online project management application for SCRUM and Agile. It offers easy task management with project boards and cards for individual tasks which can be commented on and be assigned to team members.",
             "backgroundlogo": "images/logos/trello.png",
             "linkid": "trello_coordination"
           },
@@ -295,13 +295,13 @@ masterninja = {
     {
       "name": "Team bonding",
       "linkid": "test",
-      "description": "dim desc",
+      "description": "One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally. Sue Newell, Carole Tansley and Jimmy Huang define two kinds of social capital, described in <a href='http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8551.2004.00405.x/epdf'>[5]</a>: External bridging social capital, and internal bonding social capital."
       "subcategories": [
         {
           "name": "External",
           "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "test",
-          "description": "subdesc",
+          "description": "External bridging social capital tools are tools that increase a feeling of 'teamness' between different teams that are working on different locations/projects. An often observed occurrance is that while internal trust and cohesion of the different teams are fine, there is little trust between teams on different locations. Many of the tools described before are increase this bonding and trust.",
           "tools": [
             {
               "name": "Ariadne",
@@ -309,21 +309,21 @@ masterninja = {
               "description": "A tool for fostering external social capital through a digital library of knowledge called a Knowledge Pool System (KPS).",
               "backgroundlogo": "images/logos/mywonderfulllogo.png",
               "linkid": "Ariadne"
+            },
+			{
+              "name": "SocialCDE",
+              "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
+              "description": "SocialCDE is an extension of Collaborative Development Enviroments to aggregate teammates’ content from social software into the developer’s workspace.",
+              "backgroundlogo": "images/logos/mywonderfulllogo.png",
+              "linkid": "SocialCDE"
             }]
         },
         {
           "name": "Internal",
           "backgroundlogo": "images/logos/mywonderfulllogo.png",
           "linkid": "test",
-          "description": "subdesc",
-          "tools": [
-            {
-              "name": "WIP",
-              "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-              "description": "This is a work in progress.",
-              "backgroundlogo": "images/logos/mywonderfulllogo.png",
-              "linkid": "WIP"
-            }]
+          "description": "Another challenge that can play a role in globally distributed software engineering is the internal bonding social capital of a team. If there is no internal trust, this will have serious impact on the quality of the software.",
+          "tools": []
         }]
     }
   ]
