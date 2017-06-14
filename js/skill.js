@@ -10,40 +10,40 @@ function initchart() {
 }
 
 function mouseclick(data) {
-     var title = data.key;
-        var depth = data.depth;
-        var dims = masterninjadata.dimensions;
-        if (depth === 1) {
-            for (var i = 0; i < dims.length; i++) {
-                if (dims[i].name === title) {
-                    goToLink(dims[i]);
+    var title = data.key;
+    var depth = data.depth;
+    var dims = masterninjadata.dimensions;
+    if (depth === 1) {
+        for (var i = 0; i < dims.length; i++) {
+            if (dims[i].name === title) {
+                goToLink(dims[i]);
+            }
+        }
+    } else if (depth === 2) {
+        for (var i = 0; i < dims.length; i++) {
+            var curSubs = dims[i].subcategories;
+            for (var j = 0; j < curSubs.length; j++) {
+                if (curSubs[j].name === title) {
+                    goToLink(curSubs[j]);
                 }
             }
-        } else if (depth === 2) {
-            for (var i = 0; i < dims.length; i++) {
-                var curSubs = dims[i].subcategories;
-                for(var j = 0; j < curSubs.length; j++){
-                    if(curSubs[j].name === title){
-                        goToLink(curSubs[j]);
-                    }
-                }
-            }
-        } else {
-             for (var i = 0; i < dims.length; i++) {
-                var curSubs = dims[i].subcategories;
-                for(var j = 0; j < curSubs.length; j++){
-                    var curTools = curSubs[j].tools;
-                    for(var k = 0; k < curTools.length; k++){
-                        if(curTools[k].name === title){
-                            goToLink(curTools[k]);
-                        }
+        }
+    } else {
+        for (var i = 0; i < dims.length; i++) {
+            var curSubs = dims[i].subcategories;
+            for (var j = 0; j < curSubs.length; j++) {
+                var curTools = curSubs[j].tools;
+                for (var k = 0; k < curTools.length; k++) {
+                    if (curTools[k].name === title) {
+                        goToLink(curTools[k]);
                     }
                 }
             }
         }
+    }
 }
 
-function goToLink(value){
+function goToLink(value) {
     window.location.replace('https://drennings.github.io/MindTheGap/#' + value.linkid);
 }
 
@@ -202,19 +202,19 @@ var chart = function (d3) {
         } else if (depth === 2) {
             for (var i = 0; i < dims.length; i++) {
                 var curSubs = dims[i].subcategories;
-                for(var j = 0; j < curSubs.length; j++){
-                    if(curSubs[j].name === title){
+                for (var j = 0; j < curSubs.length; j++) {
+                    if (curSubs[j].name === title) {
                         setExplanation(curSubs[j]);
                     }
                 }
             }
         } else {
-             for (var i = 0; i < dims.length; i++) {
+            for (var i = 0; i < dims.length; i++) {
                 var curSubs = dims[i].subcategories;
-                for(var j = 0; j < curSubs.length; j++){
+                for (var j = 0; j < curSubs.length; j++) {
                     var curTools = curSubs[j].tools;
-                    for(var k = 0; k < curTools.length; k++){
-                        if(curTools[k].name === title){
+                    for (var k = 0; k < curTools.length; k++) {
+                        if (curTools[k].name === title) {
                             setExplanation(curTools[k]);
                         }
                     }
@@ -228,7 +228,11 @@ var chart = function (d3) {
             $("#title")[0].innerHTML = value.name;
             $("#titlelink")[0].href = "#" + value.linkid;
             $("#buttonlink")[0].href = "#" + value.linkid;
-            $("#desccontainer")[0].style.backgroundImage = "url('"+value.backgroundlogo+"')"
+            if (value.backgroundlogo !== undefined) {
+                $("#desccontainer")[0].style.backgroundImage = "url('" + value.backgroundlogo + "')";
+            } else {
+                console.log("could not find logo for ", value.name);
+            }
         }
     }
     function refreshChart(data) {

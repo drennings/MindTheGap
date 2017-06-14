@@ -173,7 +173,7 @@ masterninja = {
             "name": "ReadTheDocs",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
             "description": "ReadTheDocs is a project documentation manegement tool. They offer hosting of your project's documentation and a clear and structured way of presenting the documentation.",
-            "backgroundlogo": "images/readthedocs.png",
+            "backgroundlogo": "images/logos/readthedocs.png",
             "linkid": "readthedocs"
           }]
         },
