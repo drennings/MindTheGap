@@ -169,7 +169,7 @@ masterninja = {
           "description": "Having a proper documentation is important for all succesful software projects. For globally distributed development however proper documentation is important as remote teams are not always able to communicate about the project directly. Being able to read about all the parts of a project is very important for understanding it before you can continue developing it.",
           "tools": [{
 
-            "name": "Github Wiki",
+            "name": "GitHub Wiki",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
             "description": "Github Wiki is a project documentation management tool. This tool makes it easy to create very clear project documentation.",
             "backgroundlogo": "images/logos/github.png",
@@ -189,9 +189,9 @@ masterninja = {
           "description": "Keeping track of the progress of the project is useful for deciding what to implement next. With remote teams tracking the progress becomes more difficult. Online progress analysis tools can help in making this process easy.",
           "tools": [{
 
-            "name": "Github",
+            "name": "GitHub",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Github is a version control tool for software projects. Github makes management of software clear and accesible.",
+            "description": "A web-based Git or version control repository and Internet hosting service.",
             "backgroundlogo": "images/logos/github.png",
             "linkid": "githubana"
           },
