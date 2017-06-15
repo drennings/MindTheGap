@@ -149,9 +149,9 @@ masterninja = {
             "linkid": "trello_coordination"
           },
           {
-            "name": "Github",
+            "name": "GitHub",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "Github is a version control tool for software projects. Github makes management of software clear and accesible.",
+            "description": "A web-based Git or version control repository and Internet hosting service.",
             "backgroundlogo": "images/logos/github.png",
             "linkid": "githubdep"
           },
