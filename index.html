@@ -2,6 +2,7 @@
 layout: default 
 title: Mind the Gap 
 ---
+
 <head>
 	<meta charset="utf-8">
 	<title>Mind the Gap</title>
@@ -329,128 +330,156 @@ title: Mind the Gap
 	</div>
 	<hr/>
 	<div class="coordination text-div">
-		<h1 id="coordination">Tools for Coordination</h1>
-		Coordination in software development teams can be divided into the following categories:
-		<ul>
-			<li> Centralized Structure</li>
-			<li> Early Identification of Dependencies</li>
-			<li> Documentation</li>
-			<li> Progress Analysis</li>
-		</ul>
-		The above categories all describe a domain where the coordination of a project becomes more difficult when the teams are
-		further away from each other. These are thus the domains in which improvement of coordination is needed in order to bring
-		teams closer together and make the whole developoment process go more smoothly. The coordination tools have a big overlap
-		with communication as communiction is in fact a coordination tool.
-		<h2 id="centralstruct">Centralized Structure</h2>
-		If the structure of the project is clear and decisions about the structure are centralized in one place then the communication
-		about it is also clear. Everyone knows how the project is formed and that makes the communication and coordination about
-		it more easy. Below are two software analytics tools that help in analysing projects by making the structure and statistics
-		of the project more readily available.
-		<h3 id="sonarqube">SonarQube</h3>
-		SonarQube is a software project analytics tool to which you can connect a git repository. SonarQube then analyses your project's
-		structure and quality. These analytics are available to everyone at any time.
-		<br/><br/>
-		<a href="www.sonarqube.org" target="_blank">Try out SonarQube</a>
-		<br/>
-		<center>
-			<img src="http://www.compuware.com/cpwr/2015/wp-content/uploads/2015/11/web-assets/jpg/sonarqube_screenshot-1024x672.jpg">
-		</center>
-		<h3 id="codefactor">Codefactor</h3>
-		Codefactor is another software analytics tool which helps in analysing the code base of your project. The tool also easily
-		connects to git and gives a clear overview of each branch available in the project.
-		<br/><br/>
-		<a href="www.codefactor.io" target="_blank">Try out CodeFactor</a>
-		<br/>
-		<center>
-			<img src="https://ph-files.imgix.net/f150b2e4-2ee2-40a8-865b-f830691fcd19?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=456.6536964980545&h=360">
-		</center>
-		<h2 id="identification_dependencies">Identification of Dependencies</h2>
-		For a global software development team it is important that remote teams are not working on dependent parts of the project.
-		So it is necessary that these dependencies are figured out as early as possible. Below are project planning and team management
-		tools that in combination with a software analytics tool can help in identification in dependencies such that no two remote
-		teams are working on dependent parts.
-		<h3 id="trello_coordination">Trello</h3>
-		Trello is the planning tool in which all parts of the project can be listed. This tool offers one location which everyone
-		can access and can use to discuss current dependencies and planning about the project. In Trello, tasks can also be assigned
-		to a person or a team which is especially useful for teams that are located around the world.
-		<br/><br/>
-		<a href="www.trello.com" target="_blank">Try out Trello</a>
-		<br/>
-		<center>
-			<img src="https://mdn.mozillademos.org/files/10351/mdn_board.JPG">
-		</center>
-		<h3 id="githubdep">Github</h3>
-		Github is the main versioning tool for software projects. With this tool each team can add new work on their own branch.
-		With this it becomes clear what features are being added. With Github the structure of the project can also be analysed
-		to detect dependencies of different project parts.
-		<br/><br/>
-		<a href="www.github.com" target="_blank">Try out GitHub</a>
-		<br/>
-		<center>
-			<img src="https://guides.github.com/introduction/getting-your-project-on-github/repository.png">
-		</center>
-		<h3 id="agilecokpitdep">Agile Cockpit</h3>
-		Agile Cockpit is a project management application and offers tools for tasks suck as backlog management, release planning
-		but also a tool to organise the teams structure. This tool gives an overview of the project's active teams and their members.
-		Easy management of remote development teams is crucial for a succesful project. This tool helps in coordinating tasks between
-		teams when project dependencies are clear.
-		<br/><br/>
-		<a href="https://www.agilecockpit.com" target="_blank">Try out Agile Cockpit</a>
-		<br/>
-		<center>
-			<img src="https://www.agilecockpit.com/wp-content/uploads/2016/05/organization-structure-agile-scrum-tool.png">
-		</center>
-		<h2 id="documentation">Documentation</h2>
-		For teams that do not run in to each other on the workfloor it is particularly essential that the documentation of the project
-		is up to date and clear. When a certain part of the project is unclear you could ask someone in person for extra clarification,
-		but for remote teams this is impossible. Therefore it is important to have proper documentation to prevent these situations.
-		Below are two tools that provide a good way to keep the documentation up to date.
-		<h3 id="githubwiki">Github Wiki</h3>
-		Github Wiki is a tool on Github which you can link to your project's repository. In this tool you can create all sorts of
-		pages on every subject you can think of. These pages are automatically added to the sidebar in alphabetical order. The
-		search bar makes for an even more accessible body of information. The best part is that anyone in your business can access
-		these pages as well as make new ones.
-		<br/><br/>
-		<a href="www.github.com" target="_blank">Try out GitHub</a>
-		<br/>
-		<center>
-			<img src="http://docs.geonode.org/en/master/_images/d3-wiki.png">
-		</center>
-		<h3 id="readthedocs">ReadTheDocs</h3>
-		ReadTheDocs is a documentation tool similar to Github wiki pages. It also allows for easy creation and searching of documentation,
-		but it does not simply list all pages, pages can also be grouped and categorised. It lets the user browse the documentation
-		more easily when they are unsure what exactly they are looking for.
-		<br/><br/>
-		<a href="www.readthedocs.org" target="_blank">Try out ReadTheDocs</a>
-		<br/>
-		<center>
-			<img src="http://docs.readthedocs.io/en/latest/_images/screen_mobile.png">
-		</center>
-		<h2 id="proganalysis">Progress Analysis</h2>
-		The way the teams in a company are integrated with each other decides how internal relations between the teams are set. These
-		relations determine what information and updates about the project a team needs from other teams.
-		<h3 id="githubana">Github</h3>
-		Github is the main versioning tool for software projects. On their website you can browse your repositories and comment on
-		all parts of a project. You can also mention other people to involve them in the conversation if they need to hear what
-		is being said. In addition to that users can turn on notifications for certain repositories to get all the updates they
-		need.
-		<br/><br/>
-		<a href="www.github.com" target="_blank">Try out GitHub</a>
-		<br/>
-		<center>
-			<img src="https://www.broadleafcommerce.com/cmsstatic/Screen%20Shot%202013-08-28%20at%204.06.26%20PM.png">
-		</center>
-		<h3 id="jiraana">JIRA</h3>
-		JIRA is an advanced project tracker that helps software development teams with issue and bug tracking. It also offers online
-		scrum boards and agile reporting tools for sprints. These tools are very useful for tracking the project's progress for
-		teams that are spread around the globe because they are accessible online. Remote teams can thus interact with each other
-		more easily and in an effective way for the project.
-		<br/><br/>
-		<a href="https://www.atlassian.com/software/jira" target="_blank">Try out JIRA</a>
-		<br/>
-		<center>
-			<img src="https://jirasupport.files.wordpress.com/2015/09/jira72.jpg">
-		</center>
+		<div id="coordination">
+			<h1>Tools for Coordination</h1>
+			Coordination in software development teams can be divided into the following categories:
+			<ul>
+				<li> Centralized Structure</li>
+				<li> Early Identification of Dependencies</li>
+				<li> Documentation</li>
+				<li> Progress Analysis</li>
+			</ul>
+			The above categories all describe a domain where the coordination of a project becomes more difficult when the teams are
+			further away from each other. These are thus the domains in which improvement of coordination is needed in order to bring
+			teams closer together and make the whole developoment process go more smoothly. The coordination tools have a big overlap
+			with communication as communiction is in fact a coordination tool.
+		</div>
+		<div id="centralstruct">
+			<h2 id="centralstruct">Centralized Structure</h2>
+			If the structure of the project is clear and decisions about the structure are centralized in one place then the communication
+			about it is also clear. Everyone knows how the project is formed and that makes the communication and coordination about
+			it more easy. Below are two software analytics tools that help in analysing projects by making the structure and statistics
+			of the project more readily available.
+		</div>
+		<div id="sonarqube">
+			<h3 id="sonarqube">SonarQube</h3>
+			SonarQube is a software project analytics tool to which you can connect a git repository. SonarQube then analyses your project's
+			structure and quality. These analytics are available to everyone at any time.
+			<br/><br/>
+			<a href="www.sonarqube.org" target="_blank">Try out SonarQube</a>
+			<br/>
+			<center>
+				<img src="http://www.compuware.com/cpwr/2015/wp-content/uploads/2015/11/web-assets/jpg/sonarqube_screenshot-1024x672.jpg">
+			</center>
+		</div>
+		<div id="codefactor">
+			<h3 id="codefactor">Codefactor</h3>
+			Codefactor is another software analytics tool which helps in analysing the code base of your project. The tool also easily
+			connects to git and gives a clear overview of each branch available in the project.
+			<br/><br/>
+			<a href="www.codefactor.io" target="_blank">Try out CodeFactor</a>
+			<br/>
+			<center>
+				<img src="https://ph-files.imgix.net/f150b2e4-2ee2-40a8-865b-f830691fcd19?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=456.6536964980545&h=360">
+			</center>
+		</div>
+		<div id="identification_dependencies">
+			<h2>Identification of Dependencies</h2>
+			For a global software development team it is important that remote teams are not working on dependent parts of the project.
+			So it is necessary that these dependencies are figured out as early as possible. Below are project planning and team management
+			tools that in combination with a software analytics tool can help in identification in dependencies such that no two remote
+			teams are working on dependent parts.
+		</div>
+		<div id="trello_coordination">
+			<h3>Trello</h3>
+			Trello is the planning tool in which all parts of the project can be listed. This tool offers one location which everyone
+			can access and can use to discuss current dependencies and planning about the project. In Trello, tasks can also be assigned
+			to a person or a team which is especially useful for teams that are located around the world.
+			<br/><br/>
+			<a href="www.trello.com" target="_blank">Try out Trello</a>
+			<br/>
+			<center>
+				<img src="https://mdn.mozillademos.org/files/10351/mdn_board.JPG">
+			</center>
+		</div>
+		<div id="githubdep">
+			<h3>Github</h3>
+			Github is the main versioning tool for software projects. With this tool each team can add new work on their own branch.
+			With this it becomes clear what features are being added. With Github the structure of the project can also be analysed
+			to detect dependencies of different project parts.
+			<br/><br/>
+			<a href="www.github.com" target="_blank">Try out GitHub</a>
+			<br/>
+			<center>
+				<img src="https://guides.github.com/introduction/getting-your-project-on-github/repository.png">
+			</center>
+		</div>
+		<div id="agilecokpitdep">
+			<h3>Agile Cockpit</h3>
+			Agile Cockpit is a project management application and offers tools for tasks suck as backlog management, release planning
+			but also a tool to organise the teams structure. This tool gives an overview of the project's active teams and their members.
+			Easy management of remote development teams is crucial for a succesful project. This tool helps in coordinating tasks
+			between teams when project dependencies are clear.
+			<br/><br/>
+			<a href="https://www.agilecockpit.com" target="_blank">Try out Agile Cockpit</a>
+			<br/>
+			<center>
+				<img src="https://www.agilecockpit.com/wp-content/uploads/2016/05/organization-structure-agile-scrum-tool.png">
+			</center>
+		</div>
+		<div id="documentation">
+			<h2>Documentation</h2>
+			For teams that do not run in to each other on the workfloor it is particularly essential that the documentation of the project
+			is up to date and clear. When a certain part of the project is unclear you could ask someone in person for extra clarification,
+			but for remote teams this is impossible. Therefore it is important to have proper documentation to prevent these situations.
+			Below are two tools that provide a good way to keep the documentation up to date.
+		</div>
+		<div id="githubwiki">
+			<h3>Github Wiki</h3>
+			Github Wiki is a tool on Github which you can link to your project's repository. In this tool you can create all sorts of
+			pages on every subject you can think of. These pages are automatically added to the sidebar in alphabetical order. The
+			search bar makes for an even more accessible body of information. The best part is that anyone in your business can access
+			these pages as well as make new ones.
+			<br/><br/>
+			<a href="www.github.com" target="_blank">Try out GitHub</a>
+			<br/>
+			<center>
+				<img src="http://docs.geonode.org/en/master/_images/d3-wiki.png">
+			</center>
+		</div>
+		<div id="readthedocs">
+			<h3>ReadTheDocs</h3>
+			ReadTheDocs is a documentation tool similar to Github wiki pages. It also allows for easy creation and searching of documentation,
+			but it does not simply list all pages, pages can also be grouped and categorised. It lets the user browse the documentation
+			more easily when they are unsure what exactly they are looking for.
+			<br/><br/>
+			<a href="www.readthedocs.org" target="_blank">Try out ReadTheDocs</a>
+			<br/>
+			<center>
+				<img src="http://docs.readthedocs.io/en/latest/_images/screen_mobile.png">
+			</center>
+		</div>
+		<div id="proganalysis">
+			<h2>Progress Analysis</h2>
+			The way the teams in a company are integrated with each other decides how internal relations between the teams are set. These
+			relations determine what information and updates about the project a team needs from other teams.
+		</div>
+		<div id="githubana">
+			<h3>Github</h3>
+			Github is the main versioning tool for software projects. On their website you can browse your repositories and comment on
+			all parts of a project. You can also mention other people to involve them in the conversation if they need to hear what
+			is being said. In addition to that users can turn on notifications for certain repositories to get all the updates they
+			need.
+			<br/><br/>
+			<a href="www.github.com" target="_blank">Try out GitHub</a>
+			<br/>
+			<center>
+				<img src="https://www.broadleafcommerce.com/cmsstatic/Screen%20Shot%202013-08-28%20at%204.06.26%20PM.png">
+			</center>
+		</div>
+		<div id="jiraana">
+			<h3>JIRA</h3>
+			JIRA is an advanced project tracker that helps software development teams with issue and bug tracking. It also offers online
+			scrum boards and agile reporting tools for sprints. These tools are very useful for tracking the project's progress for
+			teams that are spread around the globe because they are accessible online. Remote teams can thus interact with each other
+			more easily and in an effective way for the project.
+			<br/><br/>
+			<a href="https://www.atlassian.com/software/jira" target="_blank">Try out JIRA</a>
+			<br/>
+			<center>
+				<img src="https://jirasupport.files.wordpress.com/2015/09/jira72.jpg">
+			</center>
+		</div>
 	</div>
 	<hr/>
 
