@@ -231,6 +231,7 @@ var chart = function (d3) {
             if (value.backgroundlogo !== undefined) {
                 $("#desccontainer")[0].style.backgroundImage = "url('" + value.backgroundlogo + "')";
             } else {
+                $("#desccontainer")[0].style.backgroundImage = "none";
                 console.log("could not find logo for ", value.name);
             }
         }
