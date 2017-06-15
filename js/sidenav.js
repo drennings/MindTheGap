@@ -28,6 +28,7 @@ function initMenu() {
                   }
             }
       }
+      addDim("dim", "References", "references", menu);
 }
 
 function addDim(className, name, link, menu) {
