@@ -285,7 +285,7 @@ masterninja = {
           "description": "Training teams so they know how other people work and think will help benefit both the project and team. This can be done by meeting in person and workshop, but also online. The following tool can help people to learn together, indepent of culture.",
           "tools": [
             {
-              "name": "duolingo",
+              "name": "Duolingo",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "A freemium language-learning platform that includes a language-learning website and app, as well as a digital language proficiency assessment exam.",
               "backgroundlogo": "images/logos/duolingo.png",
@@ -316,7 +316,7 @@ masterninja = {
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "SocialCDE is an extension of Collaborative Development Enviroments to aggregate teammates’ content from social software into the developer’s workspace.",
               "backgroundlogo": "https://image.slidesharecdn.com/sse13-20-20can-20social-20awareness-20foster-20trust-20building-20in-20global-20software-20teams-130818071229-phpapp01/95/can-social-awareness-foster-trust-building-in-global-software-teams-5-638.jpg?cb=1378105409",
-              "linkid": "SocialTFS"
+              "linkid": "SocialCDE"
             }]
         },
         {
