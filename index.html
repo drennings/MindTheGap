@@ -2,7 +2,6 @@
 layout: default 
 title: Mind the Gap 
 ---
-
 <head>
 	<meta charset="utf-8">
 	<title>Mind the Gap</title>
@@ -19,6 +18,9 @@ title: Mind the Gap
 	<div id="mySidenav" class="sidenav">
 		<div id="innersidenav">
 			<div class="dim"><a href="#skillmap">The graph</a></div>
+			<div class="dim"><a href="#difficulties">Difficulties</a></div>
+
+
 		</div>
 	</div>
 	<div id="menubuttondiv" class="menubutton">
@@ -65,51 +67,53 @@ title: Mind the Gap
 	</div>
 	<hr/>
 	<div class="difficulties text-div">
-		<h1>Four main difficulties in GSE</h1>
-		Almost two decades ago(!), Carmel described in his renowned book "Global Software Teams: Collaborating Across Borders and
-		Time Zones" (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>) the five centrifugal forces of global software
-		teams:
-		<ul>
-			<li>Geographical dispersion</li>
-			<li>Coordination breakdown</li>
-			<li>Loss of communication richness</li>
-			<li>Loss of teamness</li>
-			<li>Cultural differences</li>
-		</ul>
-		As you may have noticed, here only discuss four of these forces. We chose to do so since we think that there are no tools
-		that directly address and therefore nicely fit the problem of geographical dispersion. Moreover, we see dispersion as a
-		force that strengthens the other four centrifugal forces of GSE, for which we do present technology that can help developers
-		to manage them. In this approach we also freely translated the forces as defined by Carmel in 1999 to: <b>coordination</b>,
-		<b>communication</b>, <b>team bonding</b> and <b>cultural differences</b>. A more elaborate description of these forces,
-		their subcategories and tools that may help developers to manage them is provided next.
+		<div id="difficulties">
+			<h1>Four main difficulties in GSE</h1>
+			Almost two decades ago(!), Carmel described in his renowned book "Global Software Teams: Collaborating Across Borders and
+			Time Zones" (<a href="http://dl.acm.org/citation.cfm?id=293968">[3]</a>) the five centrifugal forces of global software
+			teams:
+			<ul>
+				<li>Geographical dispersion</li>
+				<li>Coordination breakdown</li>
+				<li>Loss of communication richness</li>
+				<li>Loss of teamness</li>
+				<li>Cultural differences</li>
+			</ul>
+			As you may have noticed, here only discuss four of these forces. We chose to do so since we think that there are no tools
+			that directly address and therefore nicely fit the problem of geographical dispersion. Moreover, we see dispersion as
+			a force that strengthens the other four centrifugal forces of GSE, for which we do present technology that can help developers
+			to manage them. In this approach we also freely translated the forces as defined by Carmel in 1999 to: <b>coordination</b>,
+			<b>communication</b>, <b>team bonding</b> and <b>cultural differences</b>. A more elaborate description of these forces,
+			their subcategories and tools that may help developers to manage them is provided next.
 
-		<center>
-			<img src="images/icons/dimensions.png">
-		</center>
+			<center>
+				<img src="images/icons/dimensions.png">
+			</center>
+		</div>
 	</div>
 	<hr/>
 	<div class="communication text-div">
-		<h1 id="communicationtools">Tools for communication</h1>
-		Communication is key in software engineering, but with globally distributed engineering it may very well be even more important,
-		while it is also harder to maintain. In addition, this is not limited to the planned communication (such as the daily stand
-		ups and sprint reflections). The well renowned 'Allen Curve' from the seventies (<a href="https://www.osti.gov/scitech/biblio/7100210">[6]</a>)
-		describes that a gap between two people over 50 meter (or more) drastically reduces the chance of unplanned communicaton.
-		Luckily, there are a lot of tools that can support communication in a distributed setting. We divide these tools into three
-		subcategories, which can all significantly contribute to closing the virtual gap between multiple software teams. The three
-		subcategories are:
-		<ul>
-			<li>Share tools</li>
-			<li>Todo and progress tools</li>
-			<li>Free talk</li>
-		</ul>
-
-		Since we don't want to present you with a mere description of tools, we also provide argumentations of why these tools could
-		be beneficial for your distributed project. The paper <a href="#communicationpaper">Communication tools for distributed software development teams</a>		lists advantages for certain types of tools and their sensory modes (e.g. visual, audio). For example, instant messaging
-		tools can provide instant interaction at low cost, but also let you know who is available before you even start interacting
-		with one another. Instant messaging allows you to touch upon the visual domain through visuals and raw text, but nowadays
-		often covers file sharing (in a graphical context) in addition. Taking into account these types of interaction and what
-		helps these interactions become effective, we provide you with a list of tools that are of great benefit in GSE.
-
+		<div id="communicationtools">
+			<h1>Tools for communication</h1>
+			Communication is key in software engineering, but with globally distributed engineering it may very well be even more important,
+			while it is also harder to maintain. In addition, this is not limited to the planned communication (such as the daily
+			stand ups and sprint reflections). The well renowned 'Allen Curve' from the seventies (<a href="https://www.osti.gov/scitech/biblio/7100210">[6]</a>)
+			describes that a gap between two people over 50 meter (or more) drastically reduces the chance of unplanned communicaton.
+			Luckily, there are a lot of tools that can support communication in a distributed setting. We divide these tools into
+			three subcategories, which can all significantly contribute to closing the virtual gap between multiple software teams.
+			The three subcategories are:
+			<ul>
+				<li>Share tools</li>
+				<li>Todo and progress tools</li>
+				<li>Free talk</li>
+			</ul>
+			Since we don't want to present you with a mere description of tools, we also provide argumentations of why these tools could
+			be beneficial for your distributed project. The paper <a href="#communicationpaper">Communication tools for distributed software development teams</a>			lists advantages for certain types of tools and their sensory modes (e.g. visual, audio). For example, instant messaging
+			tools can provide instant interaction at low cost, but also let you know who is available before you even start interacting
+			with one another. Instant messaging allows you to touch upon the visual domain through visuals and raw text, but nowadays
+			often covers file sharing (in a graphical context) in addition. Taking into account these types of interaction and what
+			helps these interactions become effective, we provide you with a list of tools that are of great benefit in GSE.
+		</div>
 		<!-- TODO: use numbers and other sources to get a better story for the tools. -->
 		<div id="share">
 			<h2>Sharing</h2>
@@ -123,23 +127,10 @@ title: Mind the Gap
 			allows developers that are far away from each other to still work via pair programming.
 
 
-			<h3 id="appearin">Appear.in</h3>
-			Appear.in focuses on remotely distrubted teams and is in essence build for GSE. You can use it right from your browser by
-			creating a new chatroom that enables you to share your screen(s) and have group conversations.
-			<br/><br/> What makes Appear.in great for GSE and closing the virtual gap is the simplicity of use: you can join whenever
-			you want on your mobile/laptop or office PC by just entering the given chatroom address in your browser. Naturally, you
-			still need to have a cause to create a chatroom, but the simplicity to join somewhat closes the virtual gap between the
-			remote teams. Tools that are always running will sometimes be overlooked, wich may very well lead to slower and less utilized
-			communiation channels. On the other hand, when a new chatroom was created and you get invited, there is probably a cause
-			and multiple people will join quickly. This way communiation is improved and with all the features this specific chatroom
-			brings, it is of great use in GSE.
-			<br/><br/>
-			<a href="https://appear.in/" target="_blank">Try out Appear.In</a>
-			<center>
-				<img src="https://d32wid4gq0d4kh.cloudfront.net/da900c51f64ab218dc88942d3823b40f.svg">
-			</center>
 
-			<h3 id="conceptshare">ConceptShare</h3>
+		</div>
+		<div id="conceptshare">
+			<h3>ConceptShare</h3>
 			ConceptShare is a communication tool especially designed for creative types. It helps you streamline the review and approval
 			process for any project and it allows for online proofing with workflow automation. With this tool you can work with clients
 			from one place without having to send a hundred emails back and forth.
@@ -153,7 +144,9 @@ title: Mind the Gap
 			<center>
 				<img src="https://i.ytimg.com/vi/DK87xrQLbXY/maxresdefault.jpg">
 			</center>
-			<h3 id="invision">InVision</h3>
+		</div>
+		<div id="invision">
+			<h3>InVision</h3>
 			InVision is a web-based (and mobile) app that lets designers/developers turn their work into active prototypes with animations.
 			Clients can provide feedback and comments directly on the site and track progress in real-time by looking at your to-do
 			list.
@@ -166,8 +159,9 @@ title: Mind the Gap
 			<center>
 				<img src="https://www.invisionapp.com/assets/img/home/animations/new/mockup-5.png" height="100%">
 			</center>
-
-			<h3 id="screenhero">Screen Hero</h3>
+		</div>
+		<div id="screenhero">
+			<h3>Screen Hero</h3>
 			Screen hero is screen sharing software which works well in combination with Slack. Screen Hero allows members of the team
 			to share their screen in real time, and allows multiple cursors so you can actually pair program on someone else’s machine.
 			<br/><br/> With Screen Hero you can thus combine the power of inhouse programmers with off-shore programmers, both concerning
@@ -178,10 +172,26 @@ title: Mind the Gap
 			<center>
 				<img src="https://filesbear.com/mac/pics/460/screenhero-2.jpg">
 			</center>
-
-			<!---Interactive whiteboards-->
-			<!--Teamviewer-->
 		</div>
+		<div id="bluejeans">
+			<h3>BlueJeans</h3>
+			BlueJeans is a cloud video conferencing platform, which enables your remote teams to video conference on any platform with
+			ease. Seeing the other party when communicating can be a beneficial factor for bonding and expressing yourself, which
+			is hard to do in GSE because of the distance between remote teams.
+			<br/><br/> In GSE communication is key, but many communiation tools rely on instant messaging or concept sharing, which
+			are all good for their own purpose, but for meetings it can be essential to see the other party. Expressing emotion for
+			instance is very hard to do via text alone. When you are able to see the other person, you bond more, and can get your
+			point across in more ways than only text. A conversation gets more natural With facial expressions or hand gestures, this
+			will avoid misunderstandings and wrong assumptions.
+			<br/><br/>
+			<a href="https://www.bluejeans.com/" target="_blank">Try out BlueJeans</a>
+			<br/>
+			<center>
+				<img src="https://www.bluejeans.com/fr/sites/all/themes/bluejeans/images/homepage-v2/banner-slide-1-ent.jpg">
+			</center>
+		</div>
+		<!---Interactive whiteboards-->
+		<!--Teamviewer-->
 		<div id="tasks">
 			<h2>To-do's</h2>
 			To-do's can be seen as a subcategory of coordination, but we here make a distinction between coordination tools for management
@@ -189,7 +199,9 @@ title: Mind the Gap
 			(discussed here). Tools that ease the work of developers are more likely to be used often by them. If these tools in turn
 			also have social features, the chance for unplanned communication increases. That is why the following tools are beneficial
 			for not only communication but also project progress.
-			<h3 id="asana">Asana</h3>
+		</div>
+		<div id="asana">
+			<h3>Asana</h3>
 			Asana is a free project management tool designed to help teams track projects from start to finish. One of its best features
 			is that it lets you see the overall progress of your project step by step, so your clients know exactly how long something
 			will take without having to bug you about it.
@@ -205,8 +217,9 @@ title: Mind the Gap
 			<center>
 				<img src="https://lh3.googleusercontent.com/1eZhXkhRMz_MtXxo4yGrn3ENkX1rVWI1kEt5E32sWtV2kVjgCYRSLLN8iKb-3A6QFCowp52Wz9o=s640-h400-e365">
 			</center>
-
-			<h3 id="wunderlist">Wunderlist</h3>
+		</div>
+		<div id="wunderlist">
+			<h3>Wunderlist</h3>
 			Wunderlist is a to-do list tool that helps you plan your individual tasks, set notifications and reminders, and collaborate
 			with clients so they can see exactly what you’re up to and when you’re working. It is available on both desktop and mobile,
 			so you can update it on the go. If you have clients who want to see the project laid out in detail, this tool will definitely
@@ -220,8 +233,9 @@ title: Mind the Gap
 			<center>
 				<img src="http://www.elatewiki.org/images/Wunderlistpro.png">
 			</center>
-
-			<h3 id="basecamp">Basecamp</h3>
+		</div>
+		<div id="basecamp">
+			<h3>Basecamp</h3>
 			Basecamp is a very popular web-based project management tool that helps multiple groups rally around a single project. Because
 			the project is the focus, you can create a system where both you and the client are on the same page about various stages
 			of the project.
@@ -236,8 +250,9 @@ title: Mind the Gap
 			<center>
 				<img src="https://3.basecamp-static.com/bcxhq/assets/general/device-callouts@2x-676c2d8c7de2fb8b7356a367f85c045277715cedb927a8099ad5c0571ebb0059.png">
 			</center>
-
-			<h3 id="trello">Trello</h3>
+		</div>
+		<div id="trello">
+			<h3>Trello</h3>
 			Trello is a planning tool in which all parts of the project can be listed. This tool offers one location which everyone can
 			access and can use to discuss current dependencies and planning with regard to the project. In Trello, tasks can also
 			be assigned to a person or a team which is especially useful for teams that are located around the world.
@@ -251,14 +266,15 @@ title: Mind the Gap
 				<img src="https://mdn.mozillademos.org/files/10351/mdn_board.JPG">
 			</center>
 		</div>
-
 		<div id="freely">
 			<h2>Free talk</h2>
 			Aside from the communication solely based on work related stuff, it is important that employees also have tools that can
 			be used for all kind of random talk. Hence, the last section of communication is about free talk. This helps the creativity
 			flow and can improve working relations. There are a lot of tools for this, think of instant messaging and social platforms.
 			We will discuss a few that stand out for office use and explain their popularity and why they are suited best for GSE.
-			<h3 id="slack">Slack</h3>
+		</div>
+		<div id="slack">
+			<h3>Slack</h3>
 			Slack is a popular communication tool and for good reason. It takes the best of email and live-chat features and combines
 			them into one app that you can use on your desktop or mobile device. Aside from private messages you can also create collaborative
 			boards around different projects or topics, which is helpful if you’re working with a larger team of people or on multiple
@@ -275,7 +291,26 @@ title: Mind the Gap
 			<center>
 				<img src="https://www.masoutreach.frl/wp-content/uploads/2016/03/Slack-tool_masoutreach.png">
 			</center>
-			<h3 id="skype">Skype for business/Microsoft Teams</h3>
+		</div>
+		<div id="appearin">
+			<h3>Appear.in</h3>
+			Appear.in focuses on remotely distrubted teams and is in essence build for GSE. You can use it right from your browser by
+			creating a new chatroom that enables you to share your screen(s) and have group conversations.
+			<br/><br/> What makes Appear.in great for GSE and closing the virtual gap is the simplicity of use: you can join whenever
+			you want on your mobile/laptop or office PC by just entering the given chatroom address in your browser. Naturally, you
+			still need to have a cause to create a chatroom, but the simplicity to join somewhat closes the virtual gap between the
+			remote teams. Tools that are always running will sometimes be overlooked, wich may very well lead to slower and less utilized
+			communiation channels. On the other hand, when a new chatroom was created and you get invited, there is probably a cause
+			and multiple people will join quickly. This way communiation is improved and with all the features this specific chatroom
+			brings, it is of great use in GSE.
+			<br/><br/>
+			<a href="https://appear.in/" target="_blank">Try out Appear.In</a>
+			<center>
+				<img src="https://d32wid4gq0d4kh.cloudfront.net/da900c51f64ab218dc88942d3823b40f.svg">
+			</center>
+		</div>
+		<div id="skype">
+			<h3>Skype for business/Microsoft Teams</h3>
 			It is very likely that you have used Skype at least once and therefore know that such a tool is a must have when it comes
 			to GSE, so we will not elaborate on that. However, it might be interesting to really look into the advanced features of
 			skype, such as sharing files, screens or a digital whiteboard while calling. There are plenty of ways to use skype as
@@ -290,23 +325,6 @@ title: Mind the Gap
 			<center>
 				<img src="https://c.s-microsoft.com/en-us/CMSImages/Image_SkypeMeetings_713x428.png?version=ccd54ff8-c7b7-13df-7230-781fe9c456d0">
 			</center>
-
-			<h3 id="bluejeans">BlueJeans</h3>
-			BlueJeans is a cloud video conferencing platform, which enables your remote teams to video conference on any platform with
-			ease. Seeing the other party when communicating can be a beneficial factor for bonding and expressing yourself, which
-			is hard to do in GSE because of the distance between remote teams.
-			<br/><br/> In GSE communication is key, but many communiation tools rely on instant messaging or concept sharing, which
-			are all good for their own purpose, but for meetings it can be essential to see the other party. Expressing emotion for
-			instance is very hard to do via text alone. When you are able to see the other person, you bond more, and can get your
-			point across in more ways than only text. A conversation gets more natural With facial expressions or hand gestures, this
-			will avoid misunderstandings and wrong assumptions.
-			<br/><br/>
-			<a href="https://www.bluejeans.com/" target="_blank">Try out BlueJeans</a>
-			<br/>
-			<center>
-				<img src="https://www.bluejeans.com/fr/sites/all/themes/bluejeans/images/homepage-v2/banner-slide-1-ent.jpg">
-			</center>
-
 		</div>
 	</div>
 	<hr/>
@@ -541,60 +559,61 @@ title: Mind the Gap
 	<hr/>
 	<div class="team text-div">
 		<div id="teambonding">
-		<h1 >Tools for team bonding</h1>
-		One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong
-		social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally.
-		Sue Newell, Carole Tansley and Jimmy Huang define two kinds of social capital, described in <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8551.2004.00405.x/epdf">[5]</a>:
-		External bridging social capital, and internal bonding social capital.
-		
-		While this section has few tools, it is worth to note that this is still a very important category. Team bonding however has 
-		a very strong social aspect, and a lack of teamness represents a problem that cannot easily be removed by extra communication 
-		or coordination. It is very much a feeling, and as such this is a challenge that has been faced since whenever people started to
-		perform tasks together rather than by themselves. As a result of that, there are many non-technical solutions, which precede
-		the technical age, which are often preferrable solutions over developing new tools, which explains the lack. Nonetheless we will try to give you a feeling of what is out there concerning tools to support team bonding.
+			<h1>Tools for team bonding</h1>
+			One thing that will increase productivity as well as quality in a global software project is team bonding. A team with strong
+			social bonding will have less need for tools and formal procedures, because many issues will already be resolved informally.
+			Sue Newell, Carole Tansley and Jimmy Huang define two kinds of social capital, described in <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8551.2004.00405.x/epdf">[5]</a>:
+			External bridging social capital, and internal bonding social capital. While this section has few tools, it is worth to
+			note that this is still a very important category. Team bonding however has a very strong social aspect, and a lack of
+			teamness represents a problem that cannot easily be removed by extra communication or coordination. It is very much a
+			feeling, and as such this is a challenge that has been faced since whenever people started to perform tasks together rather
+			than by themselves. As a result of that, there are many non-technical solutions, which precede the technical age, which
+			are often preferrable solutions over developing new tools, which explains the lack. Nonetheless we will try to give you
+			a feeling of what is out there concerning tools to support team bonding.
 		</div>
-		<div id="extbonding"><h2> External bridging social capital</h2>
-		External bridging social capital tools are tools that increase a feeling of 'teamness' between different teams that are working
-		on different locations/projects. An often observed occurrance is that while internal trust and cohesion of the different
-		teams are fine, there is little trust between teams on different locations. Note that many of the tools described before increase
-		this bonding and trust. Here we discuss two other tools that can support your distributed project.
+		<div id="extbonding">
+			<h2> External bridging social capital</h2>
+			External bridging social capital tools are tools that increase a feeling of 'teamness' between different teams that are working
+			on different locations/projects. An often observed occurrance is that while internal trust and cohesion of the different
+			teams are fine, there is little trust between teams on different locations. Note that many of the tools described before
+			increase this bonding and trust. Here we discuss two other tools that can support your distributed project.
 		</div>
 		<div id="ariadne">
-		<h3>Ariadne</h3>
-		Ariadne was initiated in 1996 by the European Commission's telematics for education and training program. Since then, an
-		infrastructure has been developed in Belgium and Switzerland for the production of reusable learning content, including
-		distributed storage and discovery, as well as its exploitation in structured courses. The core of this infrastructure is
-		a distributed library of digital, reusable educational components called the Knowledge Pool System (KPS) now actively used
-		in both academic and corporate contexts.
-		<center>
-			<img src="https://pbs.twimg.com/profile_images/1088782702/ariadne_i_is_for_information_square.png">
-		</center>
+			<h3>Ariadne</h3>
+			Ariadne was initiated in 1996 by the European Commission's telematics for education and training program. Since then, an
+			infrastructure has been developed in Belgium and Switzerland for the production of reusable learning content, including
+			distributed storage and discovery, as well as its exploitation in structured courses. The core of this infrastructure
+			is a distributed library of digital, reusable educational components called the Knowledge Pool System (KPS) now actively
+			used in both academic and corporate contexts.
+			<center>
+				<img src="https://pbs.twimg.com/profile_images/1088782702/ariadne_i_is_for_information_square.png">
+			</center>
 		</div>
-		<div  id="SocialTFS">
-		<h3>SocialCDE</h3>
-		SocialCDE (formerly SocialTFS) is an extension of Collaborative Development Enviroments (aka ALM platforms) to aggregate teammates’ 
-		content from social software into the developer’s workspace. Current services include CodePlex, Team Foundation Server, and GitHub as 
-		supported CDEs. We also provide plugins for Visual Studio and Eclipse-based IDEs to aggregate and show socio-technical content from 
-		the following Twitter and Facebook.
-		SocialCDE is part of a research project in the areas of Social Software Engineering and Global Software Development, led by the 
-		Collaborative Development Group at the University of Bari, Italy. SocialTFS has been developed to support our hypothesis that information 
-		shared on social media can work as a surrogate of the social awareness gained during informal chats, thus helping to build trust among members 
-		of global teams.
-		<center>
-			<img src="https://image.slidesharecdn.com/sse13-20-20can-20social-20awareness-20foster-20trust-20building-20in-20global-20software-20teams-130818071229-phpapp01/95/can-social-awareness-foster-trust-building-in-global-software-teams-5-638.jpg?cb=1378105409">
-		</center>
+		<div id="SocialTFS">
+			<h3>SocialCDE</h3>
+			SocialCDE (formerly SocialTFS) is an extension of Collaborative Development Enviroments (aka ALM platforms) to aggregate
+			teammates’ content from social software into the developer’s workspace. Current services include CodePlex, Team Foundation
+			Server, and GitHub as supported CDEs. We also provide plugins for Visual Studio and Eclipse-based IDEs to aggregate and
+			show socio-technical content from the following Twitter and Facebook. SocialCDE is part of a research project in the areas
+			of Social Software Engineering and Global Software Development, led by the Collaborative Development Group at the University
+			of Bari, Italy. SocialTFS has been developed to support our hypothesis that information shared on social media can work
+			as a surrogate of the social awareness gained during informal chats, thus helping to build trust among members of global
+			teams.
+			<center>
+				<img src="https://image.slidesharecdn.com/sse13-20-20can-20social-20awareness-20foster-20trust-20building-20in-20global-20software-20teams-130818071229-phpapp01/95/can-social-awareness-foster-trust-building-in-global-software-teams-5-638.jpg?cb=1378105409">
+			</center>
 		</div>
 		<div id="intbonding">
-		<h2> Internal bonding social capital</h2>
-		Another challenge that can play a role in globally distributed software engineering is the internal bonding social capital
-		of a team. If there is no internal trust, this will have serious impact on the quality of the software.
-		It is worth to note there are almost no tools available that have strengthening internal social capital as an explicit goal. 
-		Most often these are found to be secondary goals, and even then rarely this is rarely explicitly mentioned. While this may be
-		considered a gap in current technology, one must also think that while there may not be explicit software to strengthen these
-		bonds, there are many other ways internal teambonding can be strengthened. For internal social capital has the advantage that 
-		the entire team is on the same place. It's an entire field in the study of management where, and there are as many techniques as
-		there are experts. The lack of software most likely does not reflect a lack of solutions to the problem, it's just that this part 
-		of the problem may not be one that is most easily solved by adding more tools.
+			<h2> Internal bonding social capital</h2>
+			Another challenge that can play a role in globally distributed software engineering is the internal bonding social capital
+			of a team. If there is no internal trust, this will have serious impact on the quality of the software. It is worth to
+			note there are almost no tools available that have strengthening internal social capital as an explicit goal. Most often
+			these are found to be secondary goals, and even then rarely this is rarely explicitly mentioned. While this may be considered
+			a gap in current technology, one must also think that while there may not be explicit software to strengthen these bonds,
+			there are many other ways internal teambonding can be strengthened. For internal social capital has the advantage that
+			the entire team is on the same place. It's an entire field in the study of management where, and there are as many techniques
+			as there are experts. The lack of software most likely does not reflect a lack of solutions to the problem, it's just
+			that this part of the problem may not be one that is most easily solved by adding more tools.
 		</div>
 	</div>
 	<hr/>
@@ -605,8 +624,8 @@ title: Mind the Gap
 				<ol>
 					<li>Šmite, Darja, and Juris Borzovs. "Managing uncertainty in globally distributed software development projects." University
 						of Latvia, Computer Science and Information Technologies 733 (2008): 9-23.</li>
-					<li>Ågerfalk, Pär J., et al. "Benefits of global software development: the known and unknown." International Conference on
-						Software Process. Springer Berlin Heidelberg, 2008.</li>
+					<li>Ågerfalk, Pär J., et al. "Benefits of global software development: the known and unknown." International Conference
+						on Software Process. Springer Berlin Heidelberg, 2008.</li>
 					<li>Carmel, Erran. Global software teams: collaborating across borders and time zones. Prentice Hall PTR, 1999.</li>
 					<li>Krishna, Srinivas, Sundeep Sahay, and Geoff Walsham. "Managing cross-cultural issues in global software outsourcing."
 						Communications of the ACM 47.4 (2004): 62-66.</li>
@@ -615,8 +634,8 @@ title: Mind the Gap
 					<li>Allen, Thomas J. "Managing the flow of technology: technology transfer and the dissemination of technological information
 						within the R and D organization." (1977).</li>
 					<li id="communicationpaper">Thissen, M. R., Page, J. M., Bharathi, M. C., & Austin, T. L. (2007, April). Communication tools for distributed software
-						development teams. In Proceedings of the 2007 ACM SIGMIS CPR conference on Computer personnel research: The global information
-						technology workforce (pp. 28-35). ACM.</li>
+						development teams. In Proceedings of the 2007 ACM SIGMIS CPR conference on Computer personnel research: The global
+						information technology workforce (pp. 28-35). ACM.</li>
 				</ol>
 			</div>
 		</div>
