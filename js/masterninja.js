@@ -196,10 +196,10 @@ masterninja = {
             "linkid": "githubana"
           },
           {
-            "name": "JIRA",
+            "name": "Jira",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
-            "description": "JIRA Software offers flexible issue and project tracking with agile tooling for software teams.",
-            "backgroundlogo": "images/logos/mywonderfulllogo.png",
+            "description": "A proprietary issue tracking product, which provides bug tracking, issue tracking, and project management functions.",
+            "backgroundlogo": "images/logos/jira.png",
             "linkid": "jiraana"
           }]
         }]
