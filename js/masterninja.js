@@ -196,7 +196,7 @@ masterninja = {
             "linkid": "githubana"
           },
           {
-            "name": "Jira",
+            "name": "JIRA",
             "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
             "description": "A proprietary issue tracking product, which provides bug tracking, issue tracking, and project management functions.",
             "backgroundlogo": "images/logos/jira.png",
@@ -245,7 +245,7 @@ masterninja = {
               "linkid": "trellocd"
             },
             {
-              "name": "Jira",
+              "name": "JIRA",
               "array": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 30, 50, 50, 50],
               "description": "A proprietary issue tracking product, which provides bug tracking, issue tracking, and project management functions.",
               "backgroundlogo": "images/logos/jira.png",
